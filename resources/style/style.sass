@@ -1,5 +1,60 @@
-*
+@font-face 
+    font-family: 'Muli-Bold'
+    src: url("http://localhost/resources/font/Muli-Bold.ttf")
+    
+$colorBumerania: #67bda6
+    
+body
+    font-family: 'Muli-Bold', monospace
     margin: 0
     padding: 0
-    font-family: 
+header
+    font-size: .9em
+    font-weight: bold
+    display: flex
+    align-items: center
+    background-color: black
+    height: 11vh
+    justify-content: space-between
+    padding: 0 6em
+    a
+        color: white
+        text-decoration: none
+        img
+            margin-left: 2em
+            height:6.5vh
+            
+    nav
+        width: 65%
+        display: flex
+        justify-content: center
+        a
+            display: flex
+            transition: .3s
+            padding: 2em 1em
+            &:hover
+                color: $colorBumerania
+            
+            img
+                margin: 10em
+                height: 1.2em
+                filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
 
+
+footer
+    display: flex
+    justify-content: space-around
+    background-color: black
+    color: white
+    width: 100%
+    padding: 2%
+    .headerFooter
+        font-weight: bold
+        font-size: larger
+    .itemFooter
+        padding: 5%
+    .aFooter
+        text-decoration: none
+        color: rgba(255,255,255,0.6)
+        &:hover
+           color: white 

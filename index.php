@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
+
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +12,11 @@
 </head>
 
 <body>
-    <?php include_once './resources/includes/header.php' ?>
-    <?php include_once './resources/includes/footer.php' ?>
+
+    <?php include_once './resources/includes/header.php' ?>   
+    <?php
+    include "./resources/includes/footer.php";
+    ?>
 </body>
 
 </html>
