@@ -37,3 +37,12 @@
         <div class='itemFooter'><a href='#' class='aFooter'>Suiza</a></div>
     </div>
 </footer>
+<nav>
+    <ul>
+        <li><a>Aviso Legal</a></li>
+        <li><a>Políticas de privacidad</a></li>
+        <li><a>Política de Cookies</a></li>
+        <li><a>Política de cookies (UE)</a></li>
+        <li><a>Términos y condiciones</a></li>
+    </ul>
+</nav>
