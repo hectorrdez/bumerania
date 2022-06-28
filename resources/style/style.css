@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Muli-Bold";
   src: url("http://localhost/resources/font/Muli-Bold.ttf");
@@ -41,3 +42,28 @@ header nav a img {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color:white;
+    width:100%;
+    padding:2%;
+}
+.headerFooter{
+    font-weight: bold;
+    font-size:larger;
+}
+.itemFooter {
+    padding:5%;
+}
+.aFooter{
+    text-decoration: none;
+    color:rgba(255,255,255,0.6);
+    
+}
+.aFooter:hover {
+    color:white;
+}
