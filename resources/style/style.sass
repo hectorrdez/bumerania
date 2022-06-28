@@ -2,6 +2,8 @@
     font-family: 'Muli-Bold'
     src: url("http://localhost/resources/font/Muli-Bold.ttf")
     
+$colorBumerania: #67bda6
+    
 body
     font-family: 'Muli-Bold', monospace
     margin: 0
@@ -27,8 +29,32 @@ header
         display: flex
         justify-content: center
         a
+            display: flex
+            transition: .3s
             padding: 2em 1em
+            &:hover
+                color: $colorBumerania
+            
             img
                 margin: 10em
                 height: 1.2em
                 filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
+
+
+footer
+    display: flex
+    justify-content: space-around
+    background-color: black
+    color: white
+    width: 100%
+    padding: 2%
+    .headerFooter
+        font-weight: bold
+        font-size: larger
+    .itemFooter
+        padding: 5%
+    .aFooter
+        text-decoration: none
+        color: rgba(255,255,255,0.6)
+        &:hover
+           color: white 
