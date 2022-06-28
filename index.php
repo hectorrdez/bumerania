@@ -13,7 +13,8 @@
 
 <body>
 
-    <?php include_once './resources/includes/header.php' ?>   
+    <?php $pageSelected = 'index'; 
+     include_once './resources/includes/header.php' ?>   
     <?php
     include "./resources/includes/footer.php";
     ?>
