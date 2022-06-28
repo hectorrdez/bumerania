@@ -1,15 +1,15 @@
 <header>
     <a href="#"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
     <nav>
-        <a href="#">INICIO</a >
-        <a href="#">SOLUCIONES <img src="../resources/icons/caret-down-solid.svg"></a >
-        <a href="#">NOSOTROS </a >
-        <a href="#">SALA DE PRENSA</a >
-        <a href="#">CONTACTO</a >
-        <a href="#">BLOG</a >
-        <a href="#">DISTRIBUIDOR</a >
-        <a href="#">SOPORTE 24/7</a >
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'index') echo 'class=pageSelected' ?>>INICIO</a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'solutions') echo 'class=pageSelected' ?>>SOLUCIONES<img src="../resources/icons/caret-down-solid.svg"></a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'about us') echo 'class=pageSelected' ?>>NOSOTROS<img src="../resources/icons/caret-down-solid.svg"></a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'press') echo 'class=pageSelected' ?>>SALA DE PRENSA</a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'contact') echo 'class=pageSelected' ?>>CONTACTO</a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'blog') echo 'class=pageSelected' ?>>BLOG</a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'distributor') echo 'class=pageSelected' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
+        <a href="#" <?php if(isset($pageSelected) && $pageSelected == 'support') echo 'class=pageSelected' ?>>SOPORTE 24/7</a>
     </nav>
-    <a href="#">IDIOMA</a>
+    <a href="#"><img src="../resources/icons/earth-africa-solid.svg" class="languageBtn"></a>
 </header>
     
