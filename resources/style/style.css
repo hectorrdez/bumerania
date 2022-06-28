@@ -6,6 +6,7 @@ body {
   font-family: "Muli-Bold", monospace;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -45,13 +46,25 @@ header nav a img {
   filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%);
 }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-  width: 100%;
-  padding: 2%;
+
+/*# sourceMappingURL=style.css.map */
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    width:100%;
+    overflow-x:hidden;
+}
+.footerContainer{
+    width:75%;
+    justify-content: space-around;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 2em;
+
 }
 footer .headerFooter {
   font-weight: bold;
