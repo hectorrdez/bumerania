@@ -7,6 +7,7 @@ body {
   font-family: "Muli-Bold", monospace;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -46,11 +47,18 @@ header nav a img {
 /* FOOTER */
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     background-color: black;
     color:white;
     width:100%;
-    padding:2%;
+    overflow-x:hidden;
+}
+.footerContainer{
+    width:75%;
+    justify-content: space-around;
+    overflow: hidden;
+    display: flex;
+    padding-bottom: 2em;
 }
 .headerFooter{
     font-weight: bold;
