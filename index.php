@@ -13,8 +13,13 @@
 
 <body>
 
-    <?php $pageSelected = 'index'; 
-     include_once './resources/includes/header.php' ?>   
+    <?php $pageSelected = 'index';
+    include_once './resources/includes/header.php' ?>
+    <main>
+        <video autoplay loop>
+            <source src="http://localhost/resources/video/temi-The-Personal-Robot-Tech-Video.mp4" type="video/mp4">
+        </video>
+    </main>
     <?php
     include "./resources/includes/footer.php";
     ?>
