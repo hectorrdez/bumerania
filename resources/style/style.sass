@@ -1,10 +1,10 @@
-@font-face 
+@font-face
     font-family: 'Muli-Bold'
     src: url("http://localhost/resources/font/Muli-Bold.ttf")
-    
+
 $colorBumerania: #67bda6
 $colorUneteDistribuidor: #47ba95
-    
+
 body
     font-family: 'Muli-Bold', roboto, monospace
     margin: 0
@@ -14,7 +14,8 @@ body
     color: grey
     &:hover
         color: grey
-
+section
+    background-image: url(http://localhost/resources/img/pattern1.jpg)
 header
     position: sticky
     font-size: .88em
@@ -30,7 +31,7 @@ header
         text-decoration: none
         img
             margin-left: 1em
-            height:6.7vh
+            height: 6.7vh
 
     .languageBtn
         transition: .2s
@@ -38,7 +39,7 @@ header
         height: 2.7em
         &:hover
             filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
-            
+
     nav
         width: 65%
         display: flex
@@ -51,8 +52,7 @@ header
             position: relative
             &:hover
                 color: $colorBumerania
-                
-            
+
             img
                 margin-top: .1em
                 margin-left: .3em
@@ -73,7 +73,7 @@ header
                     left: 1.8em
                     height: 2em
         .soluciones
-            
+
             .botList
                 display: none
                 color: white
@@ -92,9 +92,6 @@ header
             &:hover
                 .botList
                     display: block
-            
-                
-
 
 footer
     display: flex
@@ -112,7 +109,7 @@ footer
         color: rgba(255,255,255,0.6)
         transition: all ease .4s
         &:hover
-           color: white
+            color: white
 
 .footerContainer
     display: flex
