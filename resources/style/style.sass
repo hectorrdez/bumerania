@@ -107,6 +107,7 @@ footer
     .aFooter
         text-decoration: none
         color: rgba(255,255,255,0.6)
+        transition: all ease .4s
         &:hover
             color: white
 
@@ -116,9 +117,47 @@ footer
     width: 60%
     flex-wrap: wrap
 .footerBlock
-    min-width: 14em
+
+    min-width: 12em
+
     text-align: left
 
-@media screen and (max-width:1500px)
+@media screen and (max-width:1600px)
     .footerContainer
         justify-content: left
+.cookies
+    width: 100%
+    background-color: black
+    justify-content: center
+    display: flex
+    flex-wrap: wrap
+    margin-bottom:1em
+    
+    a
+        width:10%
+        min-width: 12em
+        justify-content: center
+        display: flex
+        padding: 1em
+        color: rgba(255,255,255,0.6)
+        border-bottom: 3px solid black
+       
+        &:hover
+            color: $colorUneteDistribuidor
+            border-bottom: 3px solid $colorUneteDistribuidor
+.rrss
+    display: flex
+    justify-content: center
+    .iconosRRSS
+        background-color: $colorUneteDistribuidor
+        border-radius: 10%
+        width: 2.5em
+        height: 2.5em
+        margin: 0 .1em
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+            width:1.4em
+            filter: invert(1)

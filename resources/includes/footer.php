@@ -39,12 +39,27 @@
         </div>
     </div>
 </footer>
-<nav>
-    <ul>
-        <li><a>Aviso Legal</a></li>
-        <li><a>Políticas de privacidad</a></li>
-        <li><a>Política de Cookies</a></li>
-        <li><a>Política de cookies (UE)</a></li>
-        <li><a>Términos y condiciones</a></li>
-    </ul>
-</nav>
+<div class='cookies'>
+    <a>Aviso Legal</a>
+    <a>Políticas de privacidad</a>
+    <a>Política de Cookies</a>
+    <a>Política de cookies (UE)</a>
+    <a>Términos y condiciones</a>
+</div>
+<div class='rrss'>
+    <a href="">
+        <div class='iconosRRSS'><img src='resources/icons/facebook-brands.svg'></div>
+    </a>
+    <a href="">
+        <div class='iconosRRSS'><img src='resources/icons/instagram-brands.svg'></div>
+    </a>
+    <a href="">
+        <div class='iconosRRSS'><img src='resources/icons/youtube-brands.svg'></div>
+    </a>
+    <a href="">
+        <div class='iconosRRSS'><img src='resources/icons/linkedin-brands.svg'></div>
+    </a>
+    <a href="">
+        <div class='iconosRRSS'><img src='resources/icons/blog-solid.svg'></div>
+    </a>
+</div>
