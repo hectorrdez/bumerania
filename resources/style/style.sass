@@ -51,6 +51,7 @@ header
             position: relative
             &:hover
                 color: $colorBumerania
+                
             
             img
                 margin-top: .1em
@@ -71,6 +72,28 @@ header
                     top: 1em
                     left: 1.8em
                     height: 2em
+        .soluciones
+            
+            .botList
+                display: none
+                color: white
+                left: -1em
+                background-color: black
+                list-style: none
+                position: absolute
+                top: 4em
+                font-size: 1em
+                border: 1px solid red
+                li
+                    padding-right: 3em
+                    margin: 2.5em 0
+                    &:hover
+                        color: $colorBumerania
+            &:hover
+                .botList
+                    display: block
+            
+                
 
 
 footer
@@ -97,7 +120,9 @@ footer
     width: 60%
     flex-wrap: wrap
 .footerBlock
+
     min-width: 12em
+
     text-align: left
 
 @media screen and (max-width:1600px)
