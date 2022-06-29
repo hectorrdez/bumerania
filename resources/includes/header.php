@@ -11,14 +11,22 @@
                 <li>Ares</li>
             </ul>
         </div>
-        <a href="#" class="category" <?php if (isset($pageSelected) && $pageSelected == 'about us') echo 'style="color:grey"' ?>>NOSOTROS<img src="../resources/icons/caret-down-solid.svg">
-            <ul class="categoryContent">
-                <li>Quienes Somos</li>
+        <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'about us') echo 'style="color:grey"' ?>>NOSOTROS<img src="../resources/icons/caret-down-solid.svg">
+            <ul class="categoryContent us">
+                <li>
+                    <a href="<?php if (!isset($basePath)) echo './about-us';
+                                else echo $basePath . 'about-us' ?>">
+                        <div>
+                            <img src="../resources/icons/about-us.png">
+                            <div>Quienes Somos</div>
+                        </div>
+                    </a>
+                </li>
                 <li>Casos de Éxito</li>
                 <li>Solidaridad</li>
                 <li>Trabaja con Nosotros</li>
             </ul>
-        </a>
+        </div>
         <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'class=pageSelected' ?>>SALA DE PRENSA</a>
         <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'class=pageSelected' ?>>CONTACTO</a>
         <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'class=pageSelected' ?>>BLOG</a>
