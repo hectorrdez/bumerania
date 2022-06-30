@@ -6,7 +6,7 @@
             <div class='itemFooter'><a href='#' class='aFooter'>Sala de prensa</a></div>
             <div class='itemFooter'><a href='#' class='aFooter'>Casos de éxito</a></div>
             <div class='itemFooter'><a href='#' class='aFooter'>Blog</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Bumerania Merchandise</div>
+            <div class='itemFooter'><a href='#' class='aFooter'>Bumerania Merchandise</a></div>
             <div class='itemFooter'><a href='#' class='aFooter'>Área de Cliente</a></div>
         </div>
         <div class='footerBlock'><span class='headerFooter'>Servicios</span>
@@ -17,8 +17,7 @@
             <div class='itemFooter'><a href='#' class='aFooter'>Seguridad</a></div>
         </div>
         <div class='footerBlock'><span class='headerFooter'>Soluciones</span>
-
-            <div class='itemFooter'><a href='#' class='aFooter'>Robot camarero</div>
+            <div class='itemFooter'><a href='#' class='aFooter'>Robot camarero</a></div>
             <div class='itemFooter'><a href='#' class='aFooter'>Temi</a></div>
             <div class='itemFooter'><a href='#' class='aFooter'>SmartTables</a></div>
             <div class='itemFooter'><a href='#' class='aFooter'>Ares</a></div>
@@ -46,20 +45,22 @@
     <a>Política de cookies (UE)</a>
     <a>Términos y condiciones</a>
 </div>
-<div class='rrss'>
-    <a href="">
-        <div class='iconosRRSS'><img src='resources/icons/facebook-brands.svg'></div>
-    </a>
-    <a href="">
-        <div class='iconosRRSS'><img src='resources/icons/instagram-brands.svg'></div>
-    </a>
-    <a href="">
-        <div class='iconosRRSS'><img src='resources/icons/youtube-brands.svg'></div>
-    </a>
-    <a href="">
-        <div class='iconosRRSS'><img src='resources/icons/linkedin-brands.svg'></div>
-    </a>
-    <a href="">
-        <div class='iconosRRSS'><img src='resources/icons/blog-solid.svg'></div>
-    </a>
-</div>
+<section>
+    <div class='rrss'>
+        <a href="">
+            <div class='iconosRRSS'><img src='resources/icons/facebook-brands.svg'></div>
+        </a>
+        <a href="">
+            <div class='iconosRRSS'><img src='resources/icons/instagram-brands.svg'></div>
+        </a>
+        <a href="">
+            <div class='iconosRRSS'><img src='resources/icons/youtube-brands.svg'></div>
+        </a>
+        <a href="">
+            <div class='iconosRRSS'><img src='resources/icons/linkedin-brands.svg'></div>
+        </a>
+        <a href="">
+            <div class='iconosRRSS'><img src='resources/icons/blog-solid.svg'></div>
+        </a>
+    </div>
+</section>
