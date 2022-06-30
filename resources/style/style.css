@@ -67,6 +67,9 @@ header nav a, header nav .category {
 header nav a:hover, header nav .category:hover {
   color: #67bda6;
 }
+header nav a:hover span, header nav .category:hover span {
+  color: white;
+}
 header nav a img, header nav .category img {
   margin-top: 0.1em;
   margin-left: 0.3em;
@@ -82,6 +85,7 @@ header nav a span, header nav .category span {
   top: 1em;
   left: 33%;
   background-color: #47ba95;
+  transition: 0.4s all ease;
 }
 header nav a span img, header nav .category span img {
   position: absolute;
@@ -111,7 +115,35 @@ header nav .category .categoryContent li:hover {
   color: #67bda6;
 }
 header nav .category:hover .categoryContent {
+  transition: 1s all ease;
   display: block;
+}
+header nav .category:hover .categoryContent a {
+  width: fit-content;
+}
+header nav .category:hover .categoryContent a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+header nav .category:hover .categoryContent a div img {
+  height: 5em;
+}
+header nav .category:hover .categoryContent a div div {
+  display: flex;
+  min-width: fit-content;
+  justify-content: center;
+}
+header nav .category:hover .us {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+header nav .category:hover .us a {
+  text-align: center;
 }
 
 /*Footer*/
