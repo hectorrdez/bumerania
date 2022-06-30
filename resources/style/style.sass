@@ -20,6 +20,8 @@ body
         color: grey
 section
     background: url(http://localhost/resources/img/pattern1.jpg) repeat
+
+/* HEADER */
 header
     position: sticky
     top: 0
@@ -52,7 +54,7 @@ header
             display: flex
             align-items: center
             transition: all ease .4s
-            padding: 2em 1em
+            padding: 1em 1em
             position: relative
             color: white
 
@@ -71,7 +73,7 @@ header
                 padding: 4px 8px
                 font-size: 8px
                 line-height: 1
-                top: 1em
+                top: 20%
                 left: 33%
                 background-color: $colorUneteDistribuidor
                 transition: .4s all ease
@@ -81,7 +83,6 @@ header
                     left: 1.8em
                     height: 2em
         .category
-
             .categoryContent
                 display: none
                 color: white
@@ -89,9 +90,23 @@ header
                 background-color: $colorBlack
                 list-style: none
                 position: absolute
-                top: 5em
+                top: 2em
                 font-size: 1em
-                border: 1px solid red
+
+                .product
+                    .productContent
+                        display: none
+                        width: 20em
+                        background-color: $colorBlack
+                        text-align: center
+                    &:hover
+                        .productContent
+                            display: block
+
+                        .productContentIMG
+                            filter: none
+                            // height: 15em
+
                 a
                     padding: 0
                 li
