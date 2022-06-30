@@ -4,6 +4,10 @@
 
 $colorBumerania: #67bda6
 $colorUneteDistribuidor: #47ba95
+$colorBlack: #0d0d00
+
+*
+    box-sizing: border-box
 
 body
     font-family: 'Muli-Bold', roboto, monospace
@@ -15,15 +19,16 @@ body
     &:hover
         color: grey
 section
-    background-image: url(http://localhost/resources/img/pattern1.jpg)
+    background: url(http://localhost/resources/img/pattern1.jpg) repeat
 header
     position: sticky
-    font-size: .88em
+    top: 0
+    font-size: 15px
     font-weight: bold
     display: flex
     align-items: center
-    background-color: black
-    height: 11vh
+    background-color: $colorBlack
+    height: 12vh
     justify-content: space-between
     padding: 0 6em
     a
@@ -39,20 +44,22 @@ header
         height: 2.7em
         &:hover
             filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
-
     nav
         width: 65%
         display: flex
         justify-content: center
-        a
+        a, .category
             display: flex
             align-items: center
             transition: all ease .4s
             padding: 2em 1em
             position: relative
+            color: white
+
             &:hover
                 color: $colorBumerania
-
+                span
+                    color: white
             img
                 margin-top: .1em
                 margin-left: .3em
@@ -67,33 +74,60 @@ header
                 top: 1em
                 left: 33%
                 background-color: $colorUneteDistribuidor
+                transition: .4s all ease
                 img
                     position: absolute
                     top: 1em
                     left: 1.8em
                     height: 2em
-        .soluciones
+        .category
 
-            .botList
+            .categoryContent
                 display: none
                 color: white
                 left: -1em
-                background-color: black
+                background-color: $colorBlack
                 list-style: none
                 position: absolute
-                top: 4em
+                top: 5em
                 font-size: 1em
                 border: 1px solid red
+                a
+                    padding: 0
                 li
                     padding-right: 3em
                     margin: 2.5em 0
                     &:hover
                         color: $colorBumerania
-            &:hover
-                .botList
-                    display: block
 
+            &:hover
+                .categoryContent
+                    transition: 1s all ease
+                    display: block
+                    a
+                        width: fit-content
+                        div
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            flex-direction: column
+                            width: fit-content
+                            img
+                                height: 5em
+                            div
+                                display: flex
+                                min-width: fit-content
+                                justify-content: center
+                .us
+                    display: flex
+                    justify-content: space-between
+                    align-items: baseline
+                    flex-direction: row
+                    a
+                        text-align: center
+/*Footer*/
 footer
+    padding: 2em
     display: flex
     background-color: black
     justify-content: center
@@ -102,24 +136,34 @@ footer
     .headerFooter
         font-weight: bold
         font-size: larger
+        padding: 1em 0
     .itemFooter
+        font-size: 1em
+        font-weight: normal
         padding: 5%
-    .aFooter
-        text-decoration: none
-        color: rgba(255,255,255,0.6)
         transition: all ease .4s
-        &:hover
-            color: white
+        font-family: muli
+        font-weight: normal
+        user-select: none
+        .aFooter
+            text-decoration: none
+            color: rgba(255,255,255,0.6)
+            &::before
+                content: '>'
+                font-weight: 800
+                color: grey
+                position: relative
+                right: .4em
+            &:hover
+                color: white
 
 .footerContainer
     display: flex
     justify-content: space-around
-    width: 60%
+    max-width: 80%
     flex-wrap: wrap
 .footerBlock
-
     min-width: 12em
-
     text-align: left
 
 @media screen and (max-width:1600px)
@@ -127,27 +171,31 @@ footer
         justify-content: left
 .cookies
     width: 100%
-    background-color: black
+    background-color: $colorBlack
     justify-content: center
     display: flex
     flex-wrap: wrap
-    margin-bottom:1em
-    
+    font-size: .7em
+    padding: .7em
     a
-        width:10%
+        width: 15%
         min-width: 12em
-        justify-content: center
         display: flex
+        justify-content: center
+        align-items: center
         padding: 1em
         color: rgba(255,255,255,0.6)
-        border-bottom: 3px solid black
-       
+        border-bottom: 3px solid $colorBlack
+        text-align: center
+        cursor: pointer
         &:hover
             color: $colorUneteDistribuidor
             border-bottom: 3px solid $colorUneteDistribuidor
+
 .rrss
     display: flex
     justify-content: center
+    padding: 1em 0
     .iconosRRSS
         background-color: $colorUneteDistribuidor
         border-radius: 10%
@@ -157,7 +205,29 @@ footer
         display: flex
         justify-content: center
         align-items: center
-
         img
-            width:1.4em
+            width: 1.4em
             filter: invert(1)
+
+main
+    width: 100%
+    section.video
+        background: black
+        display: flex
+        justify-content: center
+        z-index: -1
+        position: relative
+        div.video
+            height: fit-content
+            position: relative
+            overflow: hidden
+            width: 100%
+            padding-top: 56.25%
+            iframe
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                width: 100%
+                height: 100%

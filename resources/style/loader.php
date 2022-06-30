@@ -5,3 +5,4 @@
 <link rel="shortcut icon" href="<?php if (!isset($basePath)) echo './favicon.png';
                                 else echo $basePath . 'favicon.png';
                                 ?>" type="image/x-icon">
+<link rel="stylesheet" href="https://use.typekit.net/mdk5iqs.css">

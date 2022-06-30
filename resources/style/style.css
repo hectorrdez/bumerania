@@ -2,6 +2,10 @@
   font-family: "Muli-Bold";
   src: url("http://localhost/resources/font/Muli-Bold.ttf");
 }
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Muli-Bold", roboto, monospace;
   margin: 0;
@@ -15,14 +19,19 @@ body {
   color: grey;
 }
 
+section {
+  background: url(http://localhost/resources/img/pattern1.jpg) repeat;
+}
+
 header {
   position: sticky;
-  font-size: 0.88em;
+  top: 0;
+  font-size: 15px;
   font-weight: bold;
   display: flex;
   align-items: center;
-  background-color: black;
-  height: 11vh;
+  background-color: #0d0d00;
+  height: 12vh;
   justify-content: space-between;
   padding: 0 6em;
 }
@@ -47,23 +56,27 @@ header nav {
   display: flex;
   justify-content: center;
 }
-header nav a {
+header nav a, header nav .category {
   display: flex;
   align-items: center;
   transition: all ease 0.4s;
   padding: 2em 1em;
   position: relative;
+  color: white;
 }
-header nav a:hover {
+header nav a:hover, header nav .category:hover {
   color: #67bda6;
 }
-header nav a img {
+header nav a:hover span, header nav .category:hover span {
+  color: white;
+}
+header nav a img, header nav .category img {
   margin-top: 0.1em;
   margin-left: 0.3em;
   height: 1.2em;
   filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%);
 }
-header nav a span {
+header nav a span, header nav .category span {
   text-transform: uppercase;
   position: absolute;
   padding: 4px 8px;
@@ -72,36 +85,70 @@ header nav a span {
   top: 1em;
   left: 33%;
   background-color: #47ba95;
+  transition: 0.4s all ease;
 }
-header nav a span img {
+header nav a span img, header nav .category span img {
   position: absolute;
   top: 1em;
   left: 1.8em;
   height: 2em;
 }
-header nav .soluciones .botList {
+header nav .category .categoryContent {
   display: none;
   color: white;
   left: -1em;
-  background-color: black;
+  background-color: #0d0d00;
   list-style: none;
   position: absolute;
-  top: 4em;
+  top: 5em;
   font-size: 1em;
   border: 1px solid red;
 }
-header nav .soluciones .botList li {
+header nav .category .categoryContent a {
+  padding: 0;
+}
+header nav .category .categoryContent li {
   padding-right: 3em;
   margin: 2.5em 0;
 }
-header nav .soluciones .botList li:hover {
+header nav .category .categoryContent li:hover {
   color: #67bda6;
 }
-header nav .soluciones:hover .botList {
+header nav .category:hover .categoryContent {
+  transition: 1s all ease;
   display: block;
 }
+header nav .category:hover .categoryContent a {
+  width: fit-content;
+}
+header nav .category:hover .categoryContent a div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: fit-content;
+}
+header nav .category:hover .categoryContent a div img {
+  height: 5em;
+}
+header nav .category:hover .categoryContent a div div {
+  display: flex;
+  min-width: fit-content;
+  justify-content: center;
+}
+header nav .category:hover .us {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row;
+}
+header nav .category:hover .us a {
+  text-align: center;
+}
 
+/*Footer*/
 footer {
+  padding: 2em;
   display: flex;
   background-color: black;
   justify-content: center;
@@ -111,28 +158,40 @@ footer {
 footer .headerFooter {
   font-weight: bold;
   font-size: larger;
+  padding: 1em 0;
 }
 footer .itemFooter {
+  font-size: 1em;
+  font-weight: normal;
   padding: 5%;
+  transition: all ease 0.4s;
+  font-family: muli;
+  font-weight: normal;
+  user-select: none;
 }
-footer .aFooter {
+footer .itemFooter .aFooter {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
-  transition: all ease 0.4s;
 }
-footer .aFooter:hover {
+footer .itemFooter .aFooter::before {
+  content: ">";
+  font-weight: 800;
+  color: grey;
+  position: relative;
+  right: 0.4em;
+}
+footer .itemFooter .aFooter:hover {
   color: white;
 }
 
 .footerContainer {
   display: flex;
   justify-content: space-around;
-  width: 60%;
+  max-width: 80%;
   flex-wrap: wrap;
 }
 
 .footerBlock {
-
   min-width: 12em;
   text-align: left;
 }
@@ -144,20 +203,24 @@ footer .aFooter:hover {
 }
 .cookies {
   width: 100%;
-  background-color: black;
+  background-color: #0d0d00;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1em;
+  font-size: 0.7em;
+  padding: 0.7em;
 }
 .cookies a {
-  width: 10%;
+  width: 15%;
   min-width: 12em;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1em;
   color: rgba(255, 255, 255, 0.6);
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #0d0d00;
+  text-align: center;
+  cursor: pointer;
 }
 .cookies a:hover {
   color: #47ba95;
@@ -167,6 +230,7 @@ footer .aFooter:hover {
 .rrss {
   display: flex;
   justify-content: center;
+  padding: 1em 0;
 }
 .rrss .iconosRRSS {
   background-color: #47ba95;
@@ -181,6 +245,33 @@ footer .aFooter:hover {
 .rrss .iconosRRSS img {
   width: 1.4em;
   filter: invert(1);
+}
+
+main {
+  width: 100%;
+}
+main section.video {
+  background: black;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  position: relative;
+}
+main section.video div.video {
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+main section.video div.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
