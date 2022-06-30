@@ -274,4 +274,30 @@ main section.video div.video iframe {
   height: 100%;
 }
 
+.pruebas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+  background-color: black;
+}
+.pruebas a {
+  text-decoration: none;
+}
+.pruebas a div.button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  background-color: #67bda6;
+  color: black;
+  width: fit-content;
+  transition: 0.5s all ease;
+}
+.pruebas a:hover div.button {
+  color: #67bda6;
+  font-weight: bold;
+  background-color: black;
+  border-color: #67bda6;
+}
+
 /*# sourceMappingURL=style.css.map */
