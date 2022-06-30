@@ -58,6 +58,8 @@ header
 
             &:hover
                 color: $colorBumerania
+                span
+                    color: white
             img
                 margin-top: .1em
                 margin-left: .3em
@@ -72,12 +74,14 @@ header
                 top: 1em
                 left: 33%
                 background-color: $colorUneteDistribuidor
+                transition: .4s all ease
                 img
                     position: absolute
                     top: 1em
                     left: 1.8em
                     height: 2em
         .category
+
             .categoryContent
                 display: none
                 color: white
@@ -95,9 +99,32 @@ header
                     margin: 2.5em 0
                     &:hover
                         color: $colorBumerania
+
             &:hover
                 .categoryContent
+                    transition: 1s all ease
                     display: block
+                    a
+                        width: fit-content
+                        div
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            flex-direction: column
+                            width: fit-content
+                            img
+                                height: 5em
+                            div
+                                display: flex
+                                min-width: fit-content
+                                justify-content: center
+                .us
+                    display: flex
+                    justify-content: space-between
+                    align-items: baseline
+                    flex-direction: row
+                    a
+                        text-align: center
 /*Footer*/
 footer
     padding: 2em
