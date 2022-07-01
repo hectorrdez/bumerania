@@ -19,12 +19,21 @@ body {
   color: grey;
 }
 
-hr.verde {
+hr.verdeSmall {
   color: #47ba95;
-  height: 0.2em;
+  height: 0.8vh;
   background-color: #47ba95;
   border: 0;
-  width: 10em;
+  width: 20vh;
+  display: inline-block;
+}
+
+hr.verdeBig {
+  color: #47ba95;
+  height: 1.5vh;
+  background-color: #47ba95;
+  border: 0;
+  width: 51vh;
 }
 
 hr.blanco {
@@ -34,15 +43,38 @@ hr.blanco {
 }
 
 section.bg {
-  background: url(http://localhost/resources/img/pattern1.jpg) repeat;
+  background: url(/resources/img/pattern1.jpg) repeat;
 }
 
-
 /* HEADER */
-
 article.white {
   background-color: white;
   display: flex;
+  padding: 4em;
+  justify-content: center;
+}
+article.white div .title {
+  font-size: 5em;
+  font-family: montserrat;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+article.white div .paragraph {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: grey;
+  font-family: Muli;
+  margin: 1em 0;
+  padding: 0 1.5em;
+}
+article.white div .subtitle2 {
+  line-height: 1.2em;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 1.5em 0;
 }
 
 header {
@@ -268,15 +300,17 @@ footer .itemFooter .aFooter:hover {
 .rrss .iconosRRSS {
   background-color: #47ba95;
   border-radius: 10%;
-  width: 2.5em;
-  height: 2.5em;
+  border: 0;
+  width: 3em;
+  height: 3em;
   margin: 0 0.1em;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .rrss .iconosRRSS img {
-  width: 1.4em;
+  width: 2em;
   filter: invert(1);
 }
 
@@ -332,7 +366,7 @@ main section.bg article.title div {
   align-items: center;
   justify-content: center;
 }
-main section.bg article.title div span {
+main section.bg article.title div div {
   border: 0;
   width: fit-content;
   text-align: center;
@@ -345,6 +379,7 @@ main section.bg article.category {
   justify-content: center;
   width: 100%;
   align-items: stretch;
+  padding: 5em;
 }
 main section.bg article.category div.title {
   color: white;
@@ -352,17 +387,25 @@ main section.bg article.category div.title {
   font-size: 3em;
   margin-right: 1.7em;
 }
-main section.bg article.category div.title a {
-  background-color: #47ba95;
-  color: white;
+main section.bg article.category div.button {
+  border: 2px solid black;
   border-radius: 10px;
-  border: 0;
-  padding: 0.3em;
-  font-size: 0.5em;
-  text-decoration: none;
-}
-main section.bg article.category div.title a:hover {
+  padding: 0.5em 1em;
+  background-color: #67bda6;
   color: black;
+  width: fit-content;
+  transition: 0.5s all ease;
+}
+main section.bg article.category div.button a.boton {
+  text-decoration: none;
+  width: fit-content;
+  color: rgba black, 0;
+}
+main section.bg article.category div.button:hover {
+  color: #67bda6;
+  background-color: black;
+  border-color: #67bda6;
+  width: fit-content;
 }
 main section.bg article.category div.content {
   width: 50%;
@@ -386,17 +429,14 @@ main section.bg article.category div.content div.subtitle2 {
   font-family: roboto;
 }
 
-.pruebas {
+.accordion {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10em;
-  background-color: black;
+  width: 100%;
+  box-sizing: border-box;
+  height: 70vh;
+  overflow-x: hidden;
 }
-.pruebas a {
-  text-decoration: none;
-}
-.pruebas a div.button {
+.accordion div.button {
   border: 2px solid black;
   border-radius: 10px;
   padding: 0.5em 1em;
@@ -405,11 +445,54 @@ main section.bg article.category div.content div.subtitle2 {
   width: fit-content;
   transition: 0.5s all ease;
 }
-.pruebas a:hover div.button {
+.accordion div.button a.boton {
+  text-decoration: none;
+  width: fit-content;
+  color: rgba black, 0;
+}
+.accordion div.button:hover {
   color: #67bda6;
-  font-weight: bold;
   background-color: black;
   border-color: #67bda6;
+  width: fit-content;
+}
+.accordion .box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+.accordion .box img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.8s;
+}
+.accordion .box:hover {
+  flex: 1 1 25%;
+}
+.accordion .box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+.accordion .box div {
+  display: none;
+}
+.accordion .box:hover > div {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  bottom: 50%;
+  z-index: 2;
+  justify-content: center;
+}
+.accordion .box:hover > div img {
+  width: 1em;
+  filter: invert(1);
+  margin-right: 0.1em;
 }
 
 /*# sourceMappingURL=style.css.map */
