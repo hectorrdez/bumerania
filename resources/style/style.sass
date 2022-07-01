@@ -3,7 +3,7 @@ $colorBlack: #0d0d00
 $colorGreen: #67bda6
 
 /* All Mixin */
-@mixin button($font: 1em, $color: white)
+@mixin button($font: 1em, $color: white, $invert: true, $imgSize: 1.4em)
     background-color: $colorGreen
     border: 2px solid $colorGreen
     border-radius: 10px
@@ -13,10 +13,18 @@ $colorGreen: #67bda6
     font-weight: bold
     padding: .5em 1em
     transition: .4s all ease
+    @if $invert
+        img
+            filter: invert(1)
+    img
+        height: $imgSize
     &:hover
         background-color: rgba(black, 0)
         border-color: $colorGreen
         color: $colorGreen
+        img
+            filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
+
 @mixin hr($color: $colorGreen, $height: .2em)
     border-color: $color
     background-color: $color
@@ -37,6 +45,7 @@ $colorGreen: #67bda6
 @media screen and (min-width: 992px)
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
+
 /* All Website */
 *
     box-sizing: border-box
@@ -61,6 +70,44 @@ body
 /* Button */
 button
     @include button()
+
+/* Footer */
+footer
+    background-color: black
+    color: white
+    display: flex
+    font-family: muli
+    justify-content: center
+    width: 100%
+    .container
+        display: flex
+        justify-content: center
+        max-width: 80%
+        flex-wrap: wrap
+        .content
+            min-width: 12em
+            text-align: left
+            .header
+                font-weight: bold
+                font-size: larger
+                padding: 1em 0
+            .item
+                font-family: muli
+                font-size: 1em
+                font-weight: normal
+                @include transition()
+                padding: 5%
+                a
+                    color: rgba(255,255,255,0.6)
+                    text-decoration: none
+                    &::before
+                        color: grey
+                        content: '>'
+                        font-weight: bold
+                        position: relative
+                        right: .4em
+                    &:hover
+                        color: white
 
 /* Header */
 header
@@ -107,6 +154,56 @@ hr.green
 hr.white
     @include hr(white, .1em)
 
+/* Legal */
+.legal
+    background-color: $colorBlack
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    font-size: .7em
+    padding: .7em
+    width: 100%
+    a
+        align-items: center
+        border-bottom: 3px solid rgba($colorGreen, 0)
+        color: rgba(white, 0.6)
+        cursor: pointer
+        display: flex
+        @include transition()
+        justify-content: center
+        min-width: 12em
+        padding: 1em
+        text-align: center
+        width: 15%
+        &:hover
+            color: $colorGreen
+            border-bottom-color: $colorGreen
+
+/* Main */
+main
+    width: 100%
+    min-height: 60em
+    section.video
+        background: black
+        display: flex
+        justify-content: center
+        z-index: -1
+        position: relative
+        div.video
+            height: fit-content
+            position: relative
+            overflow: hidden
+            width: 100%
+            padding-top: 56.25%
+            iframe
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                width: 100%
+                height: 100%
+
 /* Preloader */
 #preloader
     position: fixed
@@ -133,3 +230,23 @@ hr.white
         overflow: hidden
         img.gif
             height: 110%
+
+/* Social */
+.social
+    display: flex
+    justify-content: center
+    padding: 1em 0
+    button
+        background-color: $colorGreen
+        border-radius: 10%
+        width: 2.5em
+        height: 2.5em
+        margin: 0 .1em
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 1.4em
+            filter: invert(1)
+        &:hover
+            opacity: 0.8
