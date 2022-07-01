@@ -261,6 +261,7 @@ main
                 right: 0
                 width: 100%
                 height: 100%
+
     section.bg
         article
             background-color: rgba(black , 0.7)
@@ -330,3 +331,26 @@ main
                     line-height: 2em
                     min-height: 5em
                     font-family: roboto
+
+.pruebas
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 10em
+    background-color: black
+    a
+        text-decoration: none
+        div.button
+            border: 2px solid black
+            border-radius: 10px
+            padding: .5em 1em
+            background-color: $colorBumerania
+            color: black
+            width: fit-content
+            transition: .5s all ease
+        &:hover
+            div.button
+                color: $colorBumerania
+                font-weight: bold
+                background-color: black
+
