@@ -5,10 +5,33 @@
         <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'solutions') echo 'style="color:grey"' ?>>SOLUCIONES
             <img src="../resources/icons/caret-down-solid.svg">
             <ul class="categoryContent">
-                <li><a href="./bumibot">BumiBot</a></li>
-                <li>Temi*</li>
-                <li>SmartTable</li>
-                <li>Ares</li>
+                <li class="product">
+                    <a href="./bumibot">BumiBot
+                        <div class="productContent">
+                        </div>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href="./bumibot">Temi
+                        <div class="productContent">
+                            <img class="productContentIMG" src="" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href="./bumibot">SmartTable
+                        <div class="productContent">
+                            <img class="productContentIMG" src="" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li class="product">
+                    <a href="./bumibot">Ares
+                        <div class="productContent">
+                            <img class="productContentIMG" src="" alt="">
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'about us') echo 'style="color:grey"' ?>>NOSOTROS<img src="../resources/icons/caret-down-solid.svg">
@@ -35,3 +58,5 @@
     </nav>
     <a href="#"><img src="../resources/icons/earth-africa-solid.svg" class="languageBtn"></a>
 </header>
+<script src="<?php if (!isset($basePath)) echo './resources/code/header.js';
+                else echo $basePath . 'resources/code/header.js' ?>"></script>

@@ -45,8 +45,8 @@
     <a>Política de cookies (UE)</a>
     <a>Términos y condiciones</a>
 </div>
-<section>
-    <div class='rrss'>
+<section class='bg'>
+    <div class='rrss' id='rrss'>
         <a href="">
             <div class='iconosRRSS'><img src='resources/icons/facebook-brands.svg'></div>
         </a>
