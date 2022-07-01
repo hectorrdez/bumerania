@@ -13,8 +13,17 @@
 
 <body style="background-color: black;">
     <?php include_once './resources/includes/preloader.php' ?>
-    <?php include_once './resources/includes/header.php' ?>
-    <!-- <script src="./resources/code/main.js"></script> -->
+    <script src="./resources/code/main.js"></script>
+    <!-- <?php include_once './resources/includes/header.php' ?> -->
+    <main>
+        <section class="video">
+            <div class="video">
+                <iframe style="object-fit:contain" height="720px" width="1280px" src="https://www.youtube-nocookie.com/embed/abv6JRsCsv4?autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&mute=1&rel=0&showinfo=0&playlist=abv6JRsCsv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
+            </div>
+        </section>
+        <span style="color: white;">tu verga madres</span>
+    </main>
+    <?php include_once './resources/includes/footer.php' ?>
 </body>
 
 </html>
