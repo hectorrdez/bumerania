@@ -1,5 +1,7 @@
 <header>
-    <a href="#"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
+    <div class="logo">
+        <a href="#"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
+    </div>
     <nav>
         <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'class=pageSelected' ?>>INICIO</a>
         <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'solutions') echo 'style="color:grey"' ?>>SOLUCIONES
