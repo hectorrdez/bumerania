@@ -37,6 +37,9 @@ section.bg {
   background: url(http://localhost/resources/img/pattern1.jpg) repeat;
 }
 
+
+/* HEADER */
+
 article.white {
   background-color: white;
   display: flex;
@@ -79,7 +82,7 @@ header nav a, header nav .category {
   display: flex;
   align-items: center;
   transition: all ease 0.4s;
-  padding: 2em 1em;
+  padding: 1em 1em;
   position: relative;
   color: white;
 }
@@ -101,7 +104,7 @@ header nav a span, header nav .category span {
   padding: 4px 8px;
   font-size: 8px;
   line-height: 1;
-  top: 1em;
+  top: 20%;
   left: 33%;
   background-color: #47ba95;
   transition: 0.4s all ease;
@@ -119,9 +122,20 @@ header nav .category .categoryContent {
   background-color: #0d0d00;
   list-style: none;
   position: absolute;
-  top: 5em;
+  top: 2em;
   font-size: 1em;
-  border: 1px solid red;
+}
+header nav .category .categoryContent .product .productContent {
+  display: none;
+  width: 20em;
+  background-color: #0d0d00;
+  text-align: center;
+}
+header nav .category .categoryContent .product:hover .productContent {
+  display: block;
+}
+header nav .category .categoryContent .product:hover .productContentIMG {
+  filter: none;
 }
 header nav .category .categoryContent a {
   padding: 0;
@@ -370,6 +384,32 @@ main section.bg article.category div.content div.subtitle2 {
   line-height: 2em;
   min-height: 5em;
   font-family: roboto;
+}
+
+.pruebas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10em;
+  background-color: black;
+}
+.pruebas a {
+  text-decoration: none;
+}
+.pruebas a div.button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  background-color: #67bda6;
+  color: black;
+  width: fit-content;
+  transition: 0.5s all ease;
+}
+.pruebas a:hover div.button {
+  color: #67bda6;
+  font-weight: bold;
+  background-color: black;
+  border-color: #67bda6;
 }
 
 /*# sourceMappingURL=style.css.map */
