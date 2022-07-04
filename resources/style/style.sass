@@ -404,16 +404,19 @@ main
             height: 100%
         div
             display: none
-        &:hover > div
-            display: block
-            color: white
-            text-align: center
-            font-size: 3em
-            position: relative
-            bottom: 50%
-            z-index: 2
-            justify-content: center
+        &:hover
+            div
+                display: block
+                color: white
+                text-align: center
+                font-size: 3em
+                position: relative
+                bottom: 50%
+                z-index: 2
+                justify-content: center
             img
                 width: 1em
                 filter: invert(1)
                 margin-right: 0.1em
+            div
+                a

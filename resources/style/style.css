@@ -479,7 +479,7 @@ main section.bg article.category div.content div.subtitle2 {
 .accordion .box div {
   display: none;
 }
-.accordion .box:hover > div {
+.accordion .box:hover div {
   display: block;
   color: white;
   text-align: center;
@@ -489,7 +489,7 @@ main section.bg article.category div.content div.subtitle2 {
   z-index: 2;
   justify-content: center;
 }
-.accordion .box:hover > div img {
+.accordion .box:hover img {
   width: 1em;
   filter: invert(1);
   margin-right: 0.1em;
