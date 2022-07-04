@@ -7,6 +7,7 @@
     display: none;
   }
 }
+
 @media screen and (orientation: portrait) {
   article {
     width: 100%;
@@ -18,6 +19,7 @@
     width: 100%;
   }
 }
+
 /* All Website */
 * {
   box-sizing: border-box;
@@ -74,6 +76,11 @@ a {
   flex: 1;
   overflow: hidden;
   transition: 0.5s;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+.accordion .box img {
+  width: 200%;
   line-height: 0;
 }
 .accordion .box img {
@@ -142,7 +149,20 @@ button:hover {
 button:hover img {
   filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.expand {
+  max-width: 100% !important;
+}
 /* Footer */
 footer {
   background-color: black;
@@ -354,11 +374,12 @@ main article.title div {
   align-items: center;
   justify-content: center;
 }
+
 main article.category {
   display: flex;
   justify-content: center;
   width: 100%;
-  align-items: stretch;
+  align-items: center;
   padding: 5em;
   flex-wrap: wrap;
 }
@@ -388,6 +409,24 @@ main article.category div.content div.subtitle2 {
   line-height: 2em;
   min-height: 5em;
   font-family: roboto;
+}
+
+main article.white {
+  background-color: white;
+  display: flex;
+  font-family: roboto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main article.white div.image {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.4em;
+  max-width: 30%;
+}
+main article.white div.image img {
+  max-width: 100%;
 }
 main article.category button {
   background-color: #67bda6;
@@ -456,6 +495,40 @@ main article.white .content .text {
   font-family: nunito;
   font-size: 1.1em;
 }
+
+main article.white .content .containerValores {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
+}
+main article.white .content .containerValores .valores {
+  display: flex;
+  transition: 0.4s all ease;
+  border: 1px solid #f5f5f5;
+  width: 20em;
+  height: 22em;
+  min-width: 20%;
+  margin: 0.5em;
+}
+main article.white .content .containerValores .valores:hover {
+  transition: 0.4s all ease;
+  color: #67bda6;
+}
+main article.white .content .containerValores .valores:hover img {
+  filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
+}
+main article.white .content .containerValores .valores img {
+  width: 3em;
+}
+main article.white .content .containerValores .valores .valoresTitle {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+main article.white .content .containerValores .valores:hover {
+  box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07);
+}
+
 
 /* Preloader */
 #preloader {
