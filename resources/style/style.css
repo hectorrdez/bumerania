@@ -128,6 +128,12 @@ button:hover img {
   filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .column {
   display: flex;
   flex-direction: column;
@@ -362,6 +368,7 @@ main article.category {
   width: 100%;
   align-items: center;
   padding: 5em;
+  flex-wrap: wrap;
 }
 main article.category div.title {
   color: white;
@@ -395,6 +402,7 @@ main article.white {
   display: flex;
   font-family: roboto;
   justify-content: center;
+  flex-wrap: wrap;
 }
 main article.white div.image {
   justify-content: center;
@@ -432,11 +440,37 @@ main article.white .content .text {
   font-family: nunito;
   font-size: 1.1em;
 }
-main article.white .content .valores {
-  border: 1px solid grey;
+main article.white .content .containerValores {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2em;
 }
-main article.white .content .valores .valoresTitle {
+main article.white .content .containerValores .valores {
+  display: flex;
+  transition: 0.4s all ease;
+  border: 1px solid #f5f5f5;
+  width: 20em;
+  height: 22em;
+  min-width: 20%;
+  margin: 0.5em;
+}
+main article.white .content .containerValores .valores:hover {
+  transition: 0.4s all ease;
+  color: #67bda6;
+}
+main article.white .content .containerValores .valores:hover img {
+  filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
+}
+main article.white .content .containerValores .valores img {
+  width: 3em;
+}
+main article.white .content .containerValores .valores .valoresTitle {
   font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+main article.white .content .containerValores .valores:hover {
+  box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07);
 }
 
 /* Preloader */

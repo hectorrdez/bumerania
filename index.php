@@ -48,7 +48,6 @@
                 <div class="image"><img src="./resources/img/soluciones1.png" alt="soluciones"></div>
                 <div class="content">
                     <div class='title'>Soluciones</div>
-
                     <div class='divisorContainer'>
                         <div style="width: 70%;">
                             <hr class='green'>
@@ -157,25 +156,28 @@
                         Valores que nos identifican
                     </div>
                     <div class='divisorContainer'>
-                        <div style="width: 100%;">
+                        <div style="width: 65%;">
                             <hr class='green'>
                         </div>
                     </div>
-                    <div class='valores'>
-                        <div class='valoresTitle'>Responsabilidad social</div>
-                        <img src='./resources/icons/hand-holding-heart-solid.svg'>
-                    </div>
-                    <div class='valores'>
-                        <div class='valoresTitle'>Innovación</div>
-                        <img src='./resources/icons/lightbulb-solid.svg'>
-                    </div>
-                    <div class='valores'>
-                        <div class='valoresTitle'>Trabajo en equipo</div>
-                        <img src='./resources/icons/people-group-solid.svg'>
-                    </div>
-                    <div class='valores'>
-                        <div class='valoresTitle'>Internacionalización</div>
-                        <img src='./resources/icons/globe-solid.svg'>
+                    <div class="containerValores">
+                        <div class='column valores center'>
+                            <img src='./resources/icons/hand-holding-heart-solid.svg'>
+                            <div class=' valoresTitle'>Responsabilidad social
+                            </div>
+                        </div>
+                        <div class='column valores center'>
+                            <img src='./resources/icons/lightbulb-solid.svg'>
+                            <div class='valoresTitle'>Innovación</div>
+                        </div>
+                        <div class='column valores center'>
+                            <img src='./resources/icons/people-group-solid.svg'>
+                            <div class='valoresTitle'>Trabajo en equipo</div>
+                        </div>
+                        <div class='column valores center'>
+                            <img src='./resources/icons/globe-solid.svg'>
+                            <div class='valoresTitle'>Internacionalización</div>
+                        </div>
                     </div>
 
                 </div>
