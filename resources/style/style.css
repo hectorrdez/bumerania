@@ -51,6 +51,7 @@ a {
 .accordion button img {
   height: 1.4em;
 }
+
 .accordion button:hover {
   background-color: rgba(0, 0, 0, 0);
   border-color: #67bda6;
@@ -173,6 +174,31 @@ footer .container .content .item a::before {
 }
 footer .container .content .item a:hover {
   color: white;
+  padding: 4em;
+  justify-content: center;
+}
+footer div .title {
+  font-size: 5em;
+  font-family: montserrat;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+footer div .paragraph {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: grey;
+  font-family: Muli;
+  margin: 1em 0;
+  padding: 0 1.5em;
+}
+footer div .subtitle2 {
+  line-height: 1.2em;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 1.5em 0;
 }
 footer div .title {
   font-size: 5em;
@@ -459,6 +485,7 @@ main article.white .content .text {
 .bg {
   background: url("http://localhost/resources/img/pattern1.jpg") repeat;
   color: white;
+
 }
 
 /* Social */

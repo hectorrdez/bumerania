@@ -48,11 +48,13 @@
                 <div class="image"><img src="./resources/img/soluciones1.png" alt="soluciones"></div>
                 <div class="content">
                     <div class='title'>Soluciones</div>
+
                     <div class='divisorContainer'>
                         <div style="width: 50%;">
                             <hr class='green'>
                         </div>
                     </div>
+
                     <div class='subtitle2'>
                         Robots dotados de inteligencia artificial que interactúan con el entorno
                     </div>
