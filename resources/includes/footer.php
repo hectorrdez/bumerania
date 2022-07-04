@@ -47,24 +47,22 @@
     <a>Términos y condiciones</a>
 </div>
 <section class='bg'>
-
     <div class='social' id='rrss'>
-        <button>
+        <button onclick="window.open ('https://www.facebook.com/bumerania/' ,  '_blank' )">
             <img src='resources/icons/facebook-brands.svg'>
         </button>
-        <button>
+        <button onclick="window.open ('https://www.instagram.com/bumerania/' ,  '_blank' )">
             <img src='resources/icons/instagram-brands.svg'>
-
         </button>
-        <button>
+        <button onclick="window.open ('https://www.youtube.com/c/Bumerania_robotics' ,  '_blank' )">
             <img src='resources/icons/youtube-brands.svg'>
         </button>
-        <button>
+        <button onclick="window.open ('https://es.linkedin.com/company/bumeran' ,  '_blank' )">
             <img src='resources/icons/linkedin-brands.svg'>
         </button>
-        <button>
+        <button onclick="window.open ('https://blog.bumerania.com/' ,  '_blank' )">
             <img src='resources/icons/blog-solid.svg'>
         </button>
-      </div>
+    </div>
 </section>
 <script src=""></script>
