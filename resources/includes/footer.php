@@ -47,6 +47,7 @@
     <a>Términos y condiciones</a>
 </div>
 <section class='bg'>
+
     <div class='social' id='rrss'>
         <button>
             <img src='resources/icons/facebook-brands.svg'>
@@ -64,6 +65,6 @@
         <button>
             <img src='resources/icons/blog-solid.svg'>
         </button>
-    </div>
+      </div>
 </section>
 <script src=""></script>
