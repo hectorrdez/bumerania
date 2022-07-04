@@ -109,11 +109,16 @@ body
     margin: 0
     padding: 0
 
-
 /* Button */
 button
     @include button()
-
+// Column
+.column
+    display: flex
+    flex-direction: column
+// Expand
+.expand
+    max-width: 100% !important
 /* Footer */
 footer
     background-color: black
@@ -305,7 +310,7 @@ main
         display: flex
         justify-content: center
         width: 100%
-        align-items: stretch
+        align-items: center
         padding: 5em
         div.title
             color: white
@@ -364,6 +369,10 @@ main
                 color: #757575
                 font-family: nunito
                 font-size: 1.1em
+            .valores
+                border: 1px solid grey
+                .valoresTitle
+                    font-weight: bold
 
 /* Preloader */
 #preloader
