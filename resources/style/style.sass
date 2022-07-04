@@ -62,18 +62,53 @@ a
     color: $colorGreen
     text-decoration: none
 
+/* Accordion */
+.accordion
+    display: flex
+    width: 100%
+    box-sizing: border-box
+    height: 70vh
+    overflow-x: hidden
+    button
+        @include button(.5em)
+        margin-top: .5em
+    .box
+        flex: 1
+        overflow: hidden
+        transition: .5s
+        box-shadow: 0 20px 30px rgba(0,0,0,.1)
+        line-height: 0
+        img
+            width: 200%
+            height: 100%
+            object-fit: cover
+            transition: .8s
+
+        &:hover
+            flex: 1 1 25%
+        .content
+            display: none
+        &:hover
+            div.content
+                display: block
+                color: white
+                text-align: center
+                font-size: 3em
+                position: relative
+                bottom: 50%
+                z-index: 2
+                justify-content: center
+                overflow-x: hidden
+                img
+                    width: 1em
+                    filter: invert(1)
+                    margin-right: 0.1em
+
 /* Body */
 body
     margin: 0
     padding: 0
 
-.pageSelected
-    color: grey
-    &:hover
-        color: grey
-
-section.bg
-    background: url(/resources/img/pattern1.jpg) repeat
 
 /* Button */
 button
@@ -86,6 +121,7 @@ footer
     display: flex
     font-family: muli
     justify-content: center
+    padding: 4em 0
     width: 100%
     .container
         display: flex
@@ -116,8 +152,6 @@ footer
                         right: .4em
                     &:hover
                         color: white
-                        padding: 4em
-                        justify-content: center
     div
         .title
             font-size: 5em
@@ -236,6 +270,101 @@ main
                 width: 100%
                 height: 100%
 
+    article
+        background-color: rgba(black , 0.7)
+        padding: 2em 0
+    article.title
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 15em
+        font-size: 1em
+        font-weight: bold
+        color: white
+        text-transform: uppercase
+        font-family: montserrat
+        letter-spacing: 3em
+        div
+            line-height: 4em
+            border-bottom: 1px solid white
+            width: fit-content
+            padding: 0 2em
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            div
+                border: 0
+                width: fit-content
+                text-align: center
+                justify-content: center
+                display: flex
+                margin-right: -3em
+    article.category
+        display: flex
+        justify-content: center
+        width: 100%
+        align-items: stretch
+        padding: 5em
+        div.title
+            color: white
+            font-weight: bold
+            font-size: 3em
+            margin-right: 1.7em
+        div.content
+            width: 50%
+            display: flex
+            flex-direction: column
+            margin-left: 1.7em
+            div.subtitle1
+                font-size: 1.25em
+                font-weight: bold
+                color: white
+                min-height: 5em
+                padding-bottom: 2em
+            div.subtitle2
+                color: #C8C8C8
+                font-size: 1em
+                font-weight: 300
+                line-height: 2em
+                min-height: 5em
+                font-family: roboto
+    article.white
+        background-color: white
+        display: flex
+        font-family: roboto
+        justify-content: center
+        div.image
+            justify-content: center
+            align-items: center
+            text-align: center
+            line-height: 1.4em
+            max-width: 30%
+            img
+                max-width: 100%
+        .content
+            max-width: 30%
+            padding: 0 .5em
+            .title
+                font-size: 4em
+                font-weight: bold
+                font-family: montserrat
+                text-align: center
+            .divisorContainer
+                width: 100%
+                display: flex
+                justify-content: center
+            .subtitle2
+                font-size: 1.5em
+                font-weight: bold
+                margin: 1em 0
+            .text
+                text-align: center
+                color: #757575
+                font-family: nunito
+                font-size: 1.1em
+
 /* Preloader */
 #preloader
     position: fixed
@@ -249,7 +378,7 @@ main
     justify-content: center
     align-items: center
     flex-direction: column
-    img.logo
+    img.log
         filter: drop-shadow(5px 5px 0px $colorGreen) drop-shadow(-5px -5px 0px $colorGreen)
         max-width: 80%
         max-height: 80%
@@ -262,6 +391,11 @@ main
         overflow: hidden
         img.gif
             height: 110%
+
+/* Section */
+.bg
+    background: url("http://localhost/resources/img/pattern1.jpg") repeat
+    color: white
 
 /* Social */
 .social
@@ -282,110 +416,3 @@ main
             filter: invert(1)
         &:hover
             opacity: 0.8
-
-    section.bg
-        article
-            background-color: rgba(black , 0.7)
-        article.title
-            text-align: center
-            display: flex
-            align-items: center
-            justify-content: center
-            height: 15em
-            font-size: 1em
-            font-weight: bold
-            color: white
-            text-transform: uppercase
-            font-family: montserrat
-            letter-spacing: 3em
-            div
-                line-height: 4em
-                border-bottom: 1px solid white
-                width: fit-content
-                padding: 0 2em
-                display: flex
-                flex-direction: column
-                align-items: center
-                justify-content: center
-                div
-                    border: 0
-                    width: fit-content
-                    text-align: center
-                    justify-content: center
-                    display: flex
-                    margin-right: -3em
-        article.category
-            display: flex
-            justify-content: center
-            width: 100%
-            align-items: stretch
-            padding: 5em
-            div.title
-                color: white
-                font-weight: bold
-                font-size: 3em
-                margin-right: 1.7em
-            div.content
-                width: 50%
-                display: flex
-                flex-direction: column
-                margin-left: 1.7em
-                div.subtitle1
-                    font-size: 1.25em
-                    font-weight: bold
-                    color: white
-                    min-height: 5em
-                    padding-bottom: 2em
-                div.subtitle2
-                    color: #C8C8C8
-                    font-size: 1em
-                    font-weight: 300
-                    line-height: 2em
-                    min-height: 5em
-                    font-family: roboto
-// ACORDEÓN
-.accordion
-    @include button
-    display: flex
-    width: 100%
-    box-sizing: border-box
-    height: 70vh
-    overflow-x: hidden
-
-    .box
-        flex: 1
-        overflow: hidden
-        transition: .5s
-        box-shadow: 0 20px 30px rgba(0,0,0,.1)
-        line-height: 0
-
-        img
-            width: 200%
-            height: 100%
-            object-fit: cover
-            transition: .8s
-
-        &:hover
-            flex: 1 1 25%
-
-        &:hover > img
-            width: 100%
-            height: 100%
-        div
-            display: none
-        &:hover
-            div
-                display: block
-                color: white
-                text-align: center
-                font-size: 3em
-                position: relative
-                bottom: 50%
-                z-index: 2
-                justify-content: center
-            img
-                width: 1em
-                filter: invert(1)
-                margin-right: 0.1em
-            div
-                a
