@@ -1,25 +1,6 @@
 /* All Variables */
 /* All Mixin */
 /* All Animations */
-/* All @Media */
-@media screen and (min-width: 768px) {
-  #preloader .logo {
-    display: none;
-  }
-}
-
-@media screen and (orientation: portrait) {
-  article {
-    width: 100%;
-  }
-  article .subtitle1 {
-    width: 100%;
-  }
-  article .subtitle2 {
-    width: 100%;
-  }
-}
-
 /* All Website */
 * {
   box-sizing: border-box;
@@ -44,7 +25,7 @@ a {
   width: 100%;
   box-sizing: border-box;
   height: 70vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .accordion button {
   background-color: #67bda6;
@@ -81,24 +62,15 @@ a {
 }
 .accordion .box img {
   width: 200%;
-  line-height: 0;
-}
-.accordion .box img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.8s;
 }
+.accordion .box:hover {
+  flex: 1 1 25%;
+}
 .accordion .box .content {
   display: none;
-}
-.accordion .box:hover {
-  flex: 1 1 50%;
-  overflow-y: hidden;
-}
-.accordion .box:hover img {
-  width: 100%;
-  height: 100%;
 }
 .accordion .box:hover div.content {
   display: block;
@@ -121,6 +93,7 @@ a {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /* Button */
@@ -149,6 +122,7 @@ button:hover {
 button:hover img {
   filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
 }
+
 .center {
   display: flex;
   justify-content: center;
@@ -163,6 +137,7 @@ button:hover img {
 .expand {
   max-width: 100% !important;
 }
+
 /* Footer */
 footer {
   background-color: black;
@@ -208,29 +183,6 @@ footer .container .content .item a::before {
 }
 footer .container .content .item a:hover {
   color: white;
-}
-footer div .title {
-  font-size: 5em;
-  font-family: montserrat;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-}
-footer div .paragraph {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5em;
-  color: grey;
-  font-family: Muli;
-  margin: 1em 0;
-  padding: 0 1.5em;
-}
-footer div .subtitle2 {
-  line-height: 1.2em;
-  font-size: 2em;
-  text-align: center;
-  font-weight: bold;
-  margin: 1.5em 0;
 }
 
 /* Header */
@@ -362,19 +314,21 @@ main article.title {
   color: white;
   text-transform: uppercase;
   font-family: montserrat;
-  letter-spacing: 3em;
+  flex-wrap: wrap;
+  width: 100%;
+  letter-spacing: normal;
 }
 main article.title div {
   line-height: 4em;
-  border-bottom: 1px solid white;
-  width: fit-content;
+  letter-spacing: 3vw;
+  width: 100%;
   padding: 0 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
 }
-
 main article.category {
   display: flex;
   justify-content: center;
@@ -401,6 +355,7 @@ main article.category div.content div.subtitle1 {
   color: white;
   min-height: 5em;
   padding-bottom: 2em;
+  width: 100%;
 }
 main article.category div.content div.subtitle2 {
   color: #C8C8C8;
@@ -410,54 +365,12 @@ main article.category div.content div.subtitle2 {
   min-height: 5em;
   font-family: roboto;
 }
-
 main article.white {
   background-color: white;
   display: flex;
   font-family: roboto;
   justify-content: center;
   flex-wrap: wrap;
-}
-main article.white div.image {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  line-height: 1.4em;
-  max-width: 30%;
-}
-main article.white div.image img {
-  max-width: 100%;
-}
-main article.category button {
-  background-color: #67bda6;
-  border: 2px solid #67bda6;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 0.7em;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  transition: 0.4s all ease;
-}
-main article.category button img {
-  filter: invert(1);
-}
-main article.category button img {
-  height: 1.4em;
-}
-main article.category button:hover {
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #67bda6;
-  color: #67bda6;
-}
-main article.category button:hover img {
-  filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
-}
-main article.white {
-  background-color: white;
-  display: flex;
-  font-family: roboto;
-  justify-content: center;
 }
 main article.white div.image {
   justify-content: center;
@@ -472,9 +385,11 @@ main article.white div.image img {
 main article.white .content {
   max-width: 30%;
   padding: 0 0.5em;
+  flex-wrap: wrap;
+  min-width: 20em;
 }
 main article.white .content .title {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: bold;
   font-family: montserrat;
   text-align: center;
@@ -488,6 +403,7 @@ main article.white .content .subtitle2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 1em 0;
+  text-align: center;
 }
 main article.white .content .text {
   text-align: center;
@@ -495,11 +411,11 @@ main article.white .content .text {
   font-family: nunito;
   font-size: 1.1em;
 }
-
 main article.white .content .containerValores {
   display: flex;
   flex-wrap: wrap;
   padding: 2em;
+  justify-content: center;
 }
 main article.white .content .containerValores .valores {
   display: flex;
@@ -528,7 +444,6 @@ main article.white .content .containerValores .valores .valoresTitle {
 main article.white .content .containerValores .valores:hover {
   box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07);
 }
-
 
 /* Preloader */
 #preloader {
@@ -572,6 +487,7 @@ main article.white .content .containerValores .valores:hover {
   display: flex;
   justify-content: center;
   padding: 1em 0;
+  /* All @Media */
 }
 .social button {
   background-color: #67bda6;
@@ -589,6 +505,34 @@ main article.white .content .containerValores .valores:hover {
 }
 .social button:hover {
   opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  #preloader .logo {
+    display: none;
+  }
+}
+@media screen and (orientation: portrait) {
+  div.content {
+    width: 20%;
+  }
+  article.category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+  }
+  article.category .title {
+    padding-left: 2em;
+  }
+  article.category .subtitle1 {
+    width: 100%;
+    padding-top: 1em;
+  }
+  article.category .subtitle2 {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
