@@ -25,6 +25,14 @@ $colorGreen: #67bda6
         img
             filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
 
+@mixin hover($image: false)
+    &:hover
+        @include transition
+        color: $colorGreen
+        @if $image
+            img
+                filter: filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
+
 @mixin hr($color: $colorGreen, $height: .2em)
     border-color: $color
     background-color: $color
@@ -68,7 +76,7 @@ a
     width: 100%
     box-sizing: border-box
     height: 70vh
-    overflow-x: hidden
+    overflow: hidden
     button
         @include button(.5em)
         margin-top: .5em
@@ -76,19 +84,20 @@ a
         flex: 1
         overflow: hidden
         transition: .5s
-        box-shadow: 0 20px 30px rgba(0,0,0,.1)
         line-height: 0
         img
-            width: 200%
+            width: 100%
             height: 100%
             object-fit: cover
             transition: .8s
-
-        &:hover
-            flex: 1 1 25%
         .content
             display: none
         &:hover
+            flex: 1 1 50%
+            overflow-y: hidden
+            img
+                width: 100%
+                height: 100%
             div.content
                 display: block
                 color: white
@@ -108,7 +117,6 @@ a
 body
     margin: 0
     padding: 0
-
 
 /* Button */
 button
@@ -294,13 +302,6 @@ main
             flex-direction: column
             align-items: center
             justify-content: center
-            div
-                border: 0
-                width: fit-content
-                text-align: center
-                justify-content: center
-                display: flex
-                margin-right: -3em
     article.category
         display: flex
         justify-content: center
@@ -330,6 +331,8 @@ main
                 line-height: 2em
                 min-height: 5em
                 font-family: roboto
+        button
+            @include button(.7em)
     article.white
         background-color: white
         display: flex

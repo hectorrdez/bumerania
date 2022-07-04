@@ -33,7 +33,6 @@
                     </div>
                     <div>
                         <button onclick="window.open('#rrss','_self')">Conócenos</button>
-
                     </div>
                 </div>
                 <div class='content'>
@@ -125,6 +124,7 @@
                 </div>
             </div>
         </section>
+
     </main>
     <?php include_once './resources/includes/footer.php' ?>
 </body>
