@@ -14,7 +14,7 @@
 <body style="background-color: black;">
     <?php include_once './resources/includes/preloader.php' ?>
     <?php include_once './resources/includes/header.php' ?>
-    <!-- <script src="./resources/code/main.js"></script> -->
+    <script src="./resources/code/main.js"></script>
 </body>
 
 </html>
