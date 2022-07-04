@@ -7,6 +7,19 @@
     display: none;
   }
 }
+
+@media screen and (orientation: portrait) {
+  article {
+    width: 100%;
+  }
+  article .subtitle1 {
+    width: 100%;
+  }
+  article .subtitle2 {
+    width: 100%;
+  }
+}
+
 /* All Website */
 * {
   box-sizing: border-box;
@@ -31,7 +44,7 @@ a {
   width: 100%;
   box-sizing: border-box;
   height: 70vh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .accordion button {
   background-color: #67bda6;
@@ -68,15 +81,24 @@ a {
 }
 .accordion .box img {
   width: 200%;
+  line-height: 0;
+}
+.accordion .box img {
+  width: 100%;
   height: 100%;
   object-fit: cover;
   transition: 0.8s;
 }
-.accordion .box:hover {
-  flex: 1 1 25%;
-}
 .accordion .box .content {
   display: none;
+}
+.accordion .box:hover {
+  flex: 1 1 50%;
+  overflow-y: hidden;
+}
+.accordion .box:hover img {
+  width: 100%;
+  height: 100%;
 }
 .accordion .box:hover div.content {
   display: block;
@@ -127,7 +149,6 @@ button:hover {
 button:hover img {
   filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
 }
-
 .center {
   display: flex;
   justify-content: center;
@@ -142,7 +163,6 @@ button:hover img {
 .expand {
   max-width: 100% !important;
 }
-
 /* Footer */
 footer {
   background-color: black;
@@ -354,14 +374,7 @@ main article.title div {
   align-items: center;
   justify-content: center;
 }
-main article.title div div {
-  border: 0;
-  width: fit-content;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  margin-right: -3em;
-}
+
 main article.category {
   display: flex;
   justify-content: center;
@@ -397,12 +410,54 @@ main article.category div.content div.subtitle2 {
   min-height: 5em;
   font-family: roboto;
 }
+
 main article.white {
   background-color: white;
   display: flex;
   font-family: roboto;
   justify-content: center;
   flex-wrap: wrap;
+}
+main article.white div.image {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.4em;
+  max-width: 30%;
+}
+main article.white div.image img {
+  max-width: 100%;
+}
+main article.category button {
+  background-color: #67bda6;
+  border: 2px solid #67bda6;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.7em;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  transition: 0.4s all ease;
+}
+main article.category button img {
+  filter: invert(1);
+}
+main article.category button img {
+  height: 1.4em;
+}
+main article.category button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #67bda6;
+  color: #67bda6;
+}
+main article.category button:hover img {
+  filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
+}
+main article.white {
+  background-color: white;
+  display: flex;
+  font-family: roboto;
+  justify-content: center;
 }
 main article.white div.image {
   justify-content: center;
@@ -440,6 +495,7 @@ main article.white .content .text {
   font-family: nunito;
   font-size: 1.1em;
 }
+
 main article.white .content .containerValores {
   display: flex;
   flex-wrap: wrap;
@@ -472,6 +528,7 @@ main article.white .content .containerValores .valores .valoresTitle {
 main article.white .content .containerValores .valores:hover {
   box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07);
 }
+
 
 /* Preloader */
 #preloader {
