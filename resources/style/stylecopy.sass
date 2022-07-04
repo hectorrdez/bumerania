@@ -5,9 +5,30 @@
 $colorBumerania: #67bda6
 $colorUneteDistribuidor: #47ba95
 $colorBlack: #0d0d00
-
+$colorGreen: #67bda6
 *
     box-sizing: border-box
+@mixin button($font: 1em, $color: white, $invert: true, $imgSize: 1.4em)
+    background-color: $colorGreen
+    border: 2px solid $colorGreen
+    border-radius: 10px
+    cursor: pointer
+    color: $color
+    font-size: $font
+    font-weight: bold
+    padding: .5em 1em
+    transition: .4s all ease
+    @if $invert
+        img
+            filter: invert(1)
+    img
+        height: $imgSize
+    &:hover
+        background-color: rgba(black, 0)
+        border-color: $colorGreen
+        color: $colorGreen
+        img
+            filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
 
 body
     font-family: 'Muli-Bold', roboto, monospace
@@ -331,24 +352,49 @@ main
                     min-height: 5em
                     font-family: roboto
 
-.pruebas
+// ACORDEÓN
+.accordion
+    @include button
     display: flex
-    justify-content: center
-    align-items: center
-    height: 10em
-    background-color: black
-    a
-        text-decoration: none
-        div.button
-            border: 2px solid black
-            border-radius: 10px
-            padding: .5em 1em
-            background-color: $colorBumerania
-            color: black
-            width: fit-content
-            transition: .5s all ease
+    width: 100%
+    box-sizing: border-box
+    height: 70vh
+    overflow-x: hidden
+
+    .box
+        flex: 1
+        overflow: hidden
+        transition: .5s
+        box-shadow: 0 20px 30px rgba(0,0,0,.1)
+        line-height: 0
+
+        img
+            width: 200%
+            height: 100%
+            object-fit: cover
+            transition: .8s
+
         &:hover
-            div.button
-                color: $colorBumerania
-                font-weight: bold
-                background-color: black
+            flex: 1 1 25%
+
+        &:hover > img
+            width: 100%
+            height: 100%
+        div
+            display: none
+        &:hover
+            div
+                display: block
+                color: white
+                text-align: center
+                font-size: 3em
+                position: relative
+                bottom: 50%
+                z-index: 2
+                justify-content: center
+            img
+                width: 1em
+                filter: invert(1)
+                margin-right: 0.1em
+            div
+                a

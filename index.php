@@ -48,7 +48,7 @@
                 <div><img src="./resources/img/soluciones1.png" alt="soluciones"></div>
                 <div>
                     <div class='title'>Soluciones</div>
-                    <hr class='verdeBig'>
+                    <hr class='green'>
                     <div class='subtitle2'>
                         Robots dotados de inteligencia artificial que interactúan con el entorno
                     </div>
