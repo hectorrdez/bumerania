@@ -31,7 +31,7 @@ $colorGreen: #67bda6
         color: $colorGreen
         @if $image
             img
-                filter: filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
+                filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
 
 @mixin hr($color: $colorGreen, $height: .2em)
     border-color: $color
@@ -53,6 +53,13 @@ $colorGreen: #67bda6
 @media screen and (min-width: 992px)
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
+@media screen and(orientation: portrait)
+    article
+        width: 100%
+        .subtitle1
+            width: 100%
+        .subtitle2
+            width: 100%
 
 /* All Website */
 *
@@ -308,6 +315,7 @@ main
         width: 100%
         align-items: stretch
         padding: 5em
+        flex-wrap: wrap
         div.title
             color: white
             font-weight: bold
