@@ -31,18 +31,47 @@ body {
   padding: 0;
 }
 
-/* Button */
-button {
-  background-color: #67bda6;
-  border: 2px solid #67bda6;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 0.5em 1em;
-  transition: 0.4s all ease;
+.pageSelected {
+  color: grey;
 }
+.pageSelected:hover {
+  color: grey;
+}
+
+section.bg {
+  background: url(/resources/img/pattern1.jpg) repeat;
+}
+article.white {
+  background-color: white;
+  display: flex;
+  padding: 4em;
+  justify-content: center;
+}
+article.white div .title {
+  font-size: 5em;
+  font-family: montserrat;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+}
+article.white div .paragraph {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: grey;
+  font-family: Muli;
+  margin: 1em 0;
+  padding: 0 1.5em;
+}
+article.white div .subtitle2 {
+  line-height: 1.2em;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+
+
 button img {
   filter: invert(1);
 }
@@ -161,7 +190,6 @@ hr.white {
   background-color: white;
   height: 0.1em;
 }
-
 /* Legal */
 .legal {
   background-color: #0d0d00;
@@ -237,6 +265,14 @@ main section.video div.video iframe {
   filter: drop-shadow(5px 5px 0px #67bda6) drop-shadow(-5px -5px 0px #67bda6);
   max-width: 80%;
   max-height: 80%;
+
+main section.bg article.title div div {
+  border: 0;
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-right: -3em;
 }
 #preloader .gif {
   width: 30em;
@@ -248,6 +284,36 @@ main section.video div.video iframe {
 }
 #preloader .gif img.gif {
   height: 110%;
+
+  width: 100%;
+  align-items: stretch;
+  padding: 5em;
+}
+main section.bg article.category div.title {
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  margin-right: 1.7em;
+}
+main section.bg article.category div.button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  background-color: #67bda6;
+  color: black;
+  width: fit-content;
+  transition: 0.5s all ease;
+}
+main section.bg article.category div.button a.boton {
+  text-decoration: none;
+  width: fit-content;
+  color: rgba black, 0;
+}
+main section.bg article.category div.button:hover {
+  color: #67bda6;
+  background-color: black;
+  border-color: #67bda6;
+  width: fit-content;
 }
 
 /* Social */
@@ -256,6 +322,7 @@ main section.video div.video iframe {
   justify-content: center;
   padding: 1em 0;
 }
+
 .social button {
   background-color: #67bda6;
   border-radius: 10%;
@@ -272,6 +339,71 @@ main section.video div.video iframe {
 }
 .social button:hover {
   opacity: 0.8;
+
+.accordion {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  height: 70vh;
+  overflow-x: hidden;
+}
+.accordion div.button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  background-color: #67bda6;
+  color: black;
+  width: fit-content;
+  transition: 0.5s all ease;
+}
+.accordion div.button a.boton {
+  text-decoration: none;
+  width: fit-content;
+  color: rgba black, 0;
+}
+.accordion div.button:hover {
+  color: #67bda6;
+  background-color: black;
+  border-color: #67bda6;
+  width: fit-content;
+}
+.accordion .box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+}
+.accordion .box img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.8s;
+}
+.accordion .box:hover {
+  flex: 1 1 25%;
+}
+.accordion .box:hover > img {
+  width: 100%;
+  height: 100%;
+}
+.accordion .box div {
+  display: none;
+}
+.accordion .box:hover div {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  bottom: 50%;
+  z-index: 2;
+  justify-content: center;
+}
+.accordion .box:hover img {
+  width: 1em;
+  filter: invert(1);
+  margin-right: 0.1em;
 }
 
 /*# sourceMappingURL=style.css.map */
