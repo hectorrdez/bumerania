@@ -1,36 +1,72 @@
-@font-face
-    font-family: 'Muli-Bold'
-    src: url("http://localhost/resources/font/Muli-Bold.ttf")
-
-$colorBumerania: #67bda6
-$colorUneteDistribuidor: #47ba95
+/* All Variables */
 $colorBlack: #0d0d00
+$colorGreen: #67bda6
 
+/* All Mixin */
+@mixin button($font: 1em, $color: white, $invert: true, $imgSize: 1.4em)
+    background-color: $colorGreen
+    border: 2px solid $colorGreen
+    border-radius: 10px
+    cursor: pointer
+    color: $color
+    font-size: $font
+    font-weight: bold
+    padding: .5em 1em
+    transition: .4s all ease
+    @if $invert
+        img
+            filter: invert(1)
+    img
+        height: $imgSize
+    &:hover
+        background-color: rgba(black, 0)
+        border-color: $colorGreen
+        color: $colorGreen
+        img
+            filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
+
+@mixin hr($color: $colorGreen, $height: .2em)
+    border-color: $color
+    background-color: $color
+    height: $height
+
+@mixin transition()
+    transition: .4s all ease
+
+/* All Animations */
+
+/* All @Media */
+@media screen and(max-width: 576px)
+@media screen and(min-width: 576px)
+@media screen and (min-width: 768px)
+    #preloader
+        .logo
+            display: none
+@media screen and (min-width: 992px)
+@media screen and (min-width: 1200px)
+@media screen and (min-width: 1400px)
+
+/* All Website */
 *
     box-sizing: border-box
+    font-family: monserrat, muli, roboto
+    -moz-window-dragging: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    -webkit-user-drag: none
+    -webkit-user-select: none
 
+/* All Links */
+a
+    color: $colorGreen
+    text-decoration: none
+
+/* Body */
 body
-    font-family: 'Muli-Bold', roboto, monospace
     margin: 0
     padding: 0
-@mixin boton
-    div.button
-        border: 2px solid black
-        border-radius: 10px
-        padding: .5em 1em
-        background-color: $colorBumerania
-        color: black
-        width: fit-content
-        transition: .5s all ease
-        a.boton
-            text-decoration: none
-            width: fit-content
-            color: rgba (black,0)
-        &:hover
-            color: $colorBumerania
-            background-color: black
-            border-color: $colorBumerania
-            width: fit-content
+
 .pageSelected
     color: grey
     &:hover
@@ -55,11 +91,48 @@ hr.blanco
 section.bg
     background: url(/resources/img/pattern1.jpg) repeat
 
-/* HEADER */
 
-article.white
-    background-color: white
+/* Button */
+button
+    @include button()
+
+/* Footer */
+footer
+    background-color: black
+    color: white
     display: flex
+    font-family: muli
+    justify-content: center
+    width: 100%
+    .container
+        display: flex
+        justify-content: center
+        max-width: 80%
+        flex-wrap: wrap
+        .content
+            min-width: 12em
+            text-align: left
+            .header
+                font-weight: bold
+                font-size: larger
+                padding: 1em 0
+            .item
+                font-family: muli
+                font-size: 1em
+                font-weight: normal
+                @include transition()
+                padding: 5%
+                a
+                    color: rgba(255,255,255,0.6)
+                    text-decoration: none
+                    &::before
+                        color: grey
+                        content: '>'
+                        font-weight: bold
+                        position: relative
+                        right: .4em
+                    &:hover
+                        color: white
     padding: 4em
     justify-content: center
     div
@@ -84,213 +157,81 @@ article.white
             font-weight: bold
             margin: 1.5em 0
 
+/* Header */
 header
-    position: sticky
-    top: 0
-    font-size: 15px
-    font-weight: bold
-    display: flex
     align-items: center
     background-color: $colorBlack
+    display: flex
+    font-family: 'Muli-Bold'
+    font-size: 15px
+    font-weight: bold
     height: 12vh
     justify-content: space-between
     padding: 0 6em
-    a
-        color: white
-        text-decoration: none
-        img
-            margin-left: 1em
-            height: 6.7vh
-
-    .languageBtn
-        transition: .2s
-        filter: invert(100%)
-        height: 2.7em
-        &:hover
-            filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
+    position: sticky
+    top: 0
+    .logo
+        height: 6.7vh
     nav
         width: 65%
         display: flex
         justify-content: center
-        a, .category
+        .menu
             display: flex
             align-items: center
-            transition: all ease .4s
-            padding: 1em 1em
-            position: relative
-            color: white
-
+            justify-content: center
+            transition: .4s all ease
             &:hover
-                color: $colorBumerania
-                span
-                    color: white
-            img
-                margin-top: .1em
-                margin-left: .3em
-                height: 1.2em
-                filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
-            span
-                text-transform: uppercase
-                position: absolute
-                padding: 4px 8px
-                font-size: 8px
-                line-height: 1
-                top: 20%
-                left: 33%
-                background-color: $colorUneteDistribuidor
-                transition: .4s all ease
-                img
-                    position: absolute
-                    top: 1em
-                    left: 1.8em
-                    height: 2em
-        .category
-            .categoryContent
-                display: none
-                color: white
-                left: -1em
-                background-color: $colorBlack
-                list-style: none
-                position: absolute
-                top: 2em
-                font-size: 1em
+                color: $colorGreen
 
-                .product
-                    .productContent
-                        display: none
-                        width: 20em
-                        background-color: $colorBlack
-                        text-align: center
-                    &:hover
-                        .productContent
-                            display: block
+    .language
+        transition: .2s
+        filter: invert(1)
+        height: 2.7em
+        &:hover
+            filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
 
-                        .productContentIMG
-                            filter: none
-                            // height: 15em
-
-                a
-                    padding: 0
-                li
-                    padding-right: 3em
-                    margin: 2.5em 0
-                    &:hover
-                        color: $colorBumerania
-
-            &:hover
-                .categoryContent
-                    transition: 1s all ease
-                    display: block
-                    a
-                        width: fit-content
-                        div
-                            display: flex
-                            justify-content: center
-                            align-items: center
-                            flex-direction: column
-                            width: fit-content
-                            img
-                                height: 5em
-                            div
-                                display: flex
-                                min-width: fit-content
-                                justify-content: center
-                .us
-                    display: flex
-                    justify-content: space-between
-                    align-items: baseline
-                    flex-direction: row
-                    a
-                        text-align: center
-/*Footer*/
-footer
-    padding: 2em
-    display: flex
-    background-color: black
-    justify-content: center
-    color: white
+/* HR */
+hr
+    border: 0
     width: 100%
-    .headerFooter
-        font-weight: bold
-        font-size: larger
-        padding: 1em 0
-    .itemFooter
-        font-size: 1em
-        font-weight: normal
-        padding: 5%
-        transition: all ease .4s
-        font-family: muli
-        font-weight: normal
-        user-select: none
-        .aFooter
-            text-decoration: none
-            color: rgba(255,255,255,0.6)
-            &::before
-                content: '>'
-                font-weight: 800
-                color: grey
-                position: relative
-                right: .4em
-            &:hover
-                color: white
 
-.footerContainer
-    display: flex
-    justify-content: space-around
-    max-width: 80%
-    flex-wrap: wrap
-.footerBlock
-    min-width: 12em
-    text-align: left
+hr.green
+    @include hr($colorGreen, .2em)
 
-@media screen and (max-width:1600px)
-    .footerContainer
-        justify-content: left
-.cookies
-    width: 100%
+hr.white
+    @include hr(white, .1em)
+
+/* Legal */
+.legal
     background-color: $colorBlack
-    justify-content: center
     display: flex
+    justify-content: center
     flex-wrap: wrap
     font-size: .7em
     padding: .7em
+    width: 100%
     a
-        width: 15%
+        align-items: center
+        border-bottom: 3px solid rgba($colorGreen, 0)
+        color: rgba(white, 0.6)
+        cursor: pointer
+        display: flex
+        @include transition()
+        justify-content: center
         min-width: 12em
-        display: flex
-        justify-content: center
-        align-items: center
         padding: 1em
-        color: rgba(255,255,255,0.6)
-        border-bottom: 3px solid $colorBlack
         text-align: center
-        cursor: pointer
+        width: 15%
         &:hover
-            color: $colorUneteDistribuidor
-            border-bottom: 3px solid $colorUneteDistribuidor
 
-.rrss
-    display: flex
-    justify-content: center
-    padding: 1em 0
-    .iconosRRSS
-        background-color: $colorUneteDistribuidor
-        border-radius: 10%
-        border: 0
-        width: 3em
-        height: 3em
-        margin: 0 .1em
-        display: flex
-        justify-content: center
-        align-items: center
-        cursor: pointer
-        img
-            width: 2em
-            filter: invert(1)
+            color: $colorGreen
+            border-bottom-color: $colorGreen
 
-    // INDEX
+/* Main */
 main
     width: 100%
+    min-height: 60em
     section.video
         background: black
         display: flex
@@ -312,6 +253,54 @@ main
                 width: 100%
                 height: 100%
 
+
+/* Preloader */
+#preloader
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+    background-color: white
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    img.logo
+        filter: drop-shadow(5px 5px 0px $colorGreen) drop-shadow(-5px -5px 0px $colorGreen)
+        max-width: 80%
+        max-height: 80%
+    .gif
+        width: 30em
+        height: 20em
+        display: flex
+        align-items: center
+        justify-content: center
+        overflow: hidden
+        img.gif
+            height: 110%
+
+/* Social */
+.social
+    display: flex
+    justify-content: center
+    padding: 1em 0
+    button
+        background-color: $colorGreen
+        border-radius: 10%
+        width: 2.5em
+        height: 2.5em
+        margin: 0 .1em
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 1.4em
+            filter: invert(1)
+        &:hover
+            opacity: 0.8
+            
     section.bg
         article
             background-color: rgba(black , 0.7)
@@ -354,8 +343,6 @@ main
                 font-weight: bold
                 font-size: 3em
                 margin-right: 1.7em
-
-            @include boton
             div.content
                 width: 50%
                 display: flex
@@ -376,7 +363,7 @@ main
                     font-family: roboto
 // ACORDEÓN
 .accordion
-    @include boton
+    @include button
     display: flex
     width: 100%
     box-sizing: border-box
@@ -420,3 +407,4 @@ main
                 margin-right: 0.1em
             div
                 a
+
