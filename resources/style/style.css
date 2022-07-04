@@ -434,7 +434,7 @@ main article.white .content .containerValores .valores:hover img {
   filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%);
 }
 main article.white .content .containerValores .valores img {
-  width: 3em;
+  height: 3em;
 }
 main article.white .content .containerValores .valores .valoresTitle {
   font-weight: bold;
