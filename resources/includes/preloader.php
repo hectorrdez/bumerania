@@ -1,6 +1,6 @@
 <div id="preloader">
-    <img class="logo" src="./resources/img/logo-blanco-cortado.png" alt="">
+    <img class="logo" src="./resources/img/logo-vectorial.png" alt="">
     <div class="gif">
-        <img src="./resources/img/preloader.gif" alt="">
+        <img class="gif" src="./resources/img/preloader.gif" alt="">
     </div>
 </div>

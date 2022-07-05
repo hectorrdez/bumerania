@@ -12,9 +12,11 @@
 </head>
 
 <body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <?php include_once './resources/includes/preloader.php' ?>
     <script src="./resources/code/main.js"></script>
-    <?php include_once './resources/includes/header.php' ?>
+    <?php $pageSelected = 'index';
+    include_once './resources/includes/header.php' ?>
 
     <main>
         <section class="video">
@@ -216,8 +218,6 @@
                             <hr class='green'>
                         </div>
                     </div>
-
-
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
@@ -273,8 +273,86 @@
         </section>
         <section class="bg">
             <article class="category">
-                <div></div>
-                <div></div>
+                <div class="press center">
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/DvcTnEK7yjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/YnqEociwoO0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/5okiN2XBSPo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/VhNMANDeM14?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/CpVqoyI1tXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/q03waJmPy3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/jsDZSNsZRgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'>
+                        <iframe width="420" height="235" src="https://www.youtube.com/embed/KpwtvA1y3_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class='bg'>
+            <article class='category'>
+                <div class="title">PARTNERS
+                    <div style="width: 30%;">
+                        <hr class="green">
+                    </div>
+                </div>
+                <div class="content" style='font-weight:bold;font-size:1.2em;'>
+                    <div class="subtitle1">Colaboramos y trabajamos junto con entidades, organismos y universidades</div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="partner center">
+                    <img src="./resources/img/partners/1.jpg">
+                    <img src="./resources/img/partners/2.jpg">
+                    <img src="./resources/img/partners/3.jpg">
+                    <img src="./resources/img/partners/4.jpg">
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="partner center">
+                    <img src="./resources/img/partners/5.jpg">
+                    <img src="./resources/img/partners/6.jpg">
+                    <img src="./resources/img/partners/7.jpg">
+                    <img src="./resources/img/partners/8.jpg">
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="content expand center">
+                    <div class="title">Premios y distinciones</div>
+                    <div class='divisorContainer'>
+                        <div style="width: 20%;">
+                            <hr class='green'>
+                        </div>
+                    </div>
+                    <div class="premioContainer center">
+                        <div class="premio center">
+                            <img src='./resources/img/premio1.jpg'>
+                            <div>Premio VIDA SENIOR a la Pyme Social. Se reconoce a Empresas que destaquen por sus prolongadas acciones de Responsabilidad Social Corporativa en favor de las Personas Mayores y/o del Envejecimiento Activo. Málaga Septiembre 2021</div>
+                        </div>
+                        <div class="premio center">
+                            <img src='./resources/img/premio2.jpg'>
+                            <div>Business Merit Awards por la excelencia profesional otorgada por la prestigiosa Fondazione Italiana de Costanza.Sicily, Italia 2020.</div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </section>
     </main>
