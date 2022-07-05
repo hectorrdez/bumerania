@@ -14,7 +14,7 @@
 <body>
     <?php include_once './resources/includes/preloader.php' ?>
     <script src="./resources/code/main.js"></script>
-    <!-- <?php include_once './resources/includes/header.php' ?> -->
+    <?php include_once './resources/includes/header.php' ?>
     <main>
         <section class="video">
             <div class="video">
