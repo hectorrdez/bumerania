@@ -188,6 +188,19 @@
                 </div>
             </article>
         </section>
+        <section class='bg'>
+            <article class='category'>
+                <div class="title">¿QUIERES SER NUESTRO<br>DISTRIBUIDOR?
+                    <div style="width: 50%;">
+                        <hr class="green">
+                    </div>
+                </div>
+                <div class="content" style='font-weight:bold;font-size:1.2em;width:20%'>
+                    Nuestro canal de distribución es una pieza fundamental para aumentar la fuerza de ventas de nuestras soluciones.
+                    <div class="text" style='margin-top:.5em'><button>Más información</button></div>
+                </div>
+            </article>
+        </section>
     </main>
     <?php include_once './resources/includes/footer.php' ?>
 </body>
