@@ -5,51 +5,55 @@
     <nav>
         <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'class=pageSelected' ?>>INICIO</a>
         <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'solutions') echo 'style="color:grey"' ?>>SOLUCIONES
-            <img src="../resources/icons/caret-down-solid.svg">
-            <ul class="categoryContent">
+            <img class="symbol" src="../resources/icons/caret-down-solid.svg">
+            <ul class="categoryContent products">
                 <li class="product">
-                    <a href="./bumibot">BumiBot
-                        <div class="productContent">
-                        </div>
-                    </a>
+                    <a class="productName" href="./bumibot">BumiBot</a>
                 </li>
                 <li class="product">
-                    <a href="./bumibot">Temi
-                        <div class="productContent">
-                            <img class="productContentIMG" src="" alt="">
-                        </div>
-                    </a>
+                    <a class="productName" href="./bumibot">Temi</a>
                 </li>
                 <li class="product">
-                    <a href="./bumibot">SmartTable
-                        <div class="productContent">
-                            <img class="productContentIMG" src="" alt="">
-                        </div>
-                    </a>
+                    <a class="productName" href="./bumibot">SmartTable</a>
                 </li>
                 <li class="product">
-                    <a href="./bumibot">Ares
-                        <div class="productContent">
-                            <img class="productContentIMG" src="" alt="">
-                        </div>
-                    </a>
+                    <a class="productName" href="./bumibot">Ares</a>
                 </li>
             </ul>
+            <div class="productContent"><img class='productContentIMG' src=''></div>
         </div>
-        <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'about us') echo 'style="color:grey"' ?>>NOSOTROS<img src="../resources/icons/caret-down-solid.svg">
+        <div class="category" <?php if (isset($pageSelected) && $pageSelected == 'about us') echo 'style="color:grey"' ?>>NOSOTROS
+            <img class="symbol" src="../resources/icons/caret-down-solid.svg">
             <ul class="categoryContent us">
-                <li>
+                <li class="linkUs">
                     <a href="<?php if (!isset($basePath)) echo './about-us';
                                 else echo $basePath . 'about-us' ?>">
-                        <div>
-                            <img src="../resources/icons/about-us.png">
-                            <div>Quienes Somos</div>
-                        </div>
+
+                        <img src="../resources/icons/about-us.png">
+                        Quienes Somos
                     </a>
                 </li>
-                <li>Casos de Éxito</li>
-                <li>Solidaridad</li>
-                <li>Trabaja con Nosotros</li>
+                <li class="linkUs"><a href="<?php if (!isset($basePath)) echo './about-us';
+                                            else echo $basePath . 'about-us' ?>">
+
+                        <img src="../resources/icons/about-us.png">
+                        Casos de Éxito
+                    </a>
+                </li>
+                <li class="linkUs"><a href="<?php if (!isset($basePath)) echo './about-us';
+                                            else echo $basePath . 'about-us' ?>">
+
+                        <img src="../resources/icons/about-us.png">
+                        Solidaridad
+                    </a>
+                </li>
+                <li class="linkUs"><a href="<?php if (!isset($basePath)) echo './about-us';
+                                            else echo $basePath . 'about-us' ?>">
+
+                        <img src="../resources/icons/about-us.png">
+                        Trabaja con Nosotros
+                    </a>
+                </li>
             </ul>
         </div>
         <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'class=pageSelected' ?>>SALA DE PRENSA</a>

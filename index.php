@@ -15,6 +15,7 @@
     <?php include_once './resources/includes/preloader.php' ?>
     <script src="./resources/code/main.js"></script>
     <?php include_once './resources/includes/header.php' ?>
+
     <main>
         <section class="video">
             <div class="video">
@@ -195,14 +196,97 @@
                         <hr class="green">
                     </div>
                 </div>
-                <div class="content" style='font-weight:bold;font-size:1.2em;width:20%'>
-                    Nuestro canal de distribución es una pieza fundamental para aumentar la fuerza de ventas de nuestras soluciones.
-                    <div class="text" style='margin-top:.5em'><button>Más información</button></div>
+                <div class="content" style='font-weight:bold;font-size:1.2em;'>
+                    <div class="subtitle1">Nuestro canal de distribución es una pieza fundamental para aumentar la fuerza de ventas de nuestras soluciones.</div>
+                    <div class="text"><button>Más información</button></div>
                 </div>
             </article>
         </section>
+        <section>
+            <article class="white">
+                <div class="content expand">
+                    <div class='center'>
+                        <div class="bumerania">BUMERANIA</div>
+                    </div>
+                    <div class="title">
+                        Casos de éxito
+                    </div>
+                    <div class='divisorContainer'>
+                        <div style="width: 100%;">
+                            <hr class='green'>
+                        </div>
+                    </div>
+
+
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="content expand">
+                    <div class="title">
+                        Nuestro blog
+                    </div>
+                    <div class='divisorContainer'>
+                        <div style="width: 100%;">
+                            <hr class='green'>
+                        </div>
+                    </div>
+                    <div class="text">
+                        <button>
+                            Entra a nuestro blog
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="content expand">
+                    <div class="title">
+                        Sala de Prensa
+                    </div>
+                    <div class='divisorContainer'>
+                        <div style="width: 100%;">
+                            <hr class='green'>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="bg">
+            <article class="category">
+                <div></div>
+                <div></div>
+            </article>
+        </section>
     </main>
+    <script type="module">
+        import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+    </script>
+    <script src="./resources/code/swiper.js"></script>
+
     <?php include_once './resources/includes/footer.php' ?>
+
+    <script src="./resources/code/main.js"></script>
+
 </body>
 
 </html>
