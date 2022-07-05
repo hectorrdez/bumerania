@@ -33,6 +33,7 @@
                     </div>
                     <div>
                         <button onclick="window.open('#rrss','_self')">Conócenos</button>
+
                     </div>
                 </div>
                 <div class='content'>
@@ -47,9 +48,8 @@
                 <div class="image"><img src="./resources/img/soluciones1.png" alt="soluciones"></div>
                 <div class="content">
                     <div class='title'>Soluciones</div>
-
                     <div class='divisorContainer'>
-                        <div style="width: 50%;">
+                        <div style="width: 70%;">
                             <hr class='green'>
                         </div>
                     </div>
@@ -82,14 +82,16 @@
         </section>
         <section>
             <article class='white'>
-                <div class='title'>Proyectos</div>
-                <div>
-                    <hr class='green'>
-                </div>
-                <div class='subtitle2'>
-                    Estamos especializados en ofrecer las mejores soluciones para los sectores de Hostelería, Restauración, Salud y Seguridad.
-                </div>
+                <div class="expand content">
+                    <div class='title'>Proyectos</div>
+                    <div class='divisorContainer'>
+                        <hr class='green' style='width:25%'>
+                    </div>
+                    <div class='subtitle2'>
+                        Estamos especializados en ofrecer las mejores soluciones para los sectores de Hostelería, Restauración, Salud y Seguridad.
+                    </div>
 
+                </div>
             </article>
         </section>
         <section>
@@ -124,7 +126,63 @@
                 </div>
             </div>
         </section>
+        <section>
+            <article class="white">
+                <div class="content expand column" style='display:flex; justify-content:center;width:60%'>
+                    <div class='text'>
+                        A través de la robótica y la inteligencia artificial puedes garantizar niveles superiores de satisfacción y mejorar la experiencia de cliente, al aumentar la productividad de los servicios ofrecidos, reducir tiempos de espera innecesarios y evitar tareas repetitivas y costosas
+                    </div>
+                    <img src='./resources/img/robots.png'>
+                    <div class="text"><button>Más información</button></div>
+                </div>
+            </article>
+        </section>
+        <section class='bg'>
+            <article class='category'>
+                <div class="title">NUESTRA<br>MISIÓN
+                    <div style="width: 50%;">
+                        <hr class="green">
+                    </div>
+                </div>
+                <div class="content" style='font-weight:bold;font-size:1.2em'>
+                    Poner la robótica social inteligente al servicio de las personas para convertirnos en un referente capaz de mejorar la calidad de vida
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="content expand">
+                    <div class="title">
+                        Valores que nos identifican
+                    </div>
+                    <div class='divisorContainer'>
+                        <div style="width: 65%;">
+                            <hr class='green'>
+                        </div>
+                    </div>
+                    <div class="containerValores">
+                        <div class='column valores center'>
+                            <img src='./resources/icons/hand-holding-heart-solid.svg'>
+                            <div class=' valoresTitle'>Responsabilidad social
+                            </div>
+                        </div>
+                        <div class='column valores center'>
+                            <img src='./resources/icons/lightbulb-solid.svg'>
+                            <div class='valoresTitle'>Innovación</div>
+                        </div>
+                        <div class='column valores center'>
+                            <img src='./resources/icons/people-group-solid.svg'>
+                            <div class='valoresTitle'>Trabajo en equipo</div>
+                        </div>
+                        <div class='column valores center'>
+                            <img src='./resources/icons/globe-solid.svg'>
+                            <div class='valoresTitle'>Internacionalización</div>
+                        </div>
+                    </div>
 
+                </div>
+            </article>
+        </section>
     </main>
     <?php include_once './resources/includes/footer.php' ?>
 </body>

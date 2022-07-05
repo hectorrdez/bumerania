@@ -24,15 +24,13 @@ $colorGreen: #67bda6
         color: $colorGreen
         img
             filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
-
 @mixin hover($image: false)
     &:hover
-        @include transition
+        @include transition()
         color: $colorGreen
         @if $image
             img
-                filter: filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
-
+                filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
 @mixin hr($color: $colorGreen, $height: .2em)
     border-color: $color
     background-color: $color
@@ -53,6 +51,13 @@ $colorGreen: #67bda6
 @media screen and (min-width: 992px)
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
+@media screen and(orientation: portrait)
+    article
+        width: 100%
+        .subtitle1
+            width: 100%
+        .subtitle2
+            width: 100%
 
 /* All Website */
 *
@@ -76,7 +81,7 @@ a
     width: 100%
     box-sizing: border-box
     height: 70vh
-    overflow: hidden
+    overflow-x: hidden
     button
         @include button(.5em)
         margin-top: .5em
@@ -84,20 +89,19 @@ a
         flex: 1
         overflow: hidden
         transition: .5s
+        box-shadow: 0 20px 30px rgba(0,0,0,.1)
         line-height: 0
         img
-            width: 100%
+            width: 200%
             height: 100%
             object-fit: cover
             transition: .8s
+
+        &:hover
+            flex: 1 1 25%
         .content
             display: none
         &:hover
-            flex: 1 1 50%
-            overflow-y: hidden
-            img
-                width: 100%
-                height: 100%
             div.content
                 display: block
                 color: white
@@ -121,7 +125,18 @@ body
 /* Button */
 button
     @include button()
-
+// Center
+.center
+    display: flex
+    justify-content: center
+    align-items: center
+// Column
+.column
+    display: flex
+    flex-direction: column
+// Expand
+.expand
+    max-width: 100% !important
 /* Footer */
 footer
     background-color: black
@@ -302,12 +317,20 @@ main
             flex-direction: column
             align-items: center
             justify-content: center
+            div
+                border: 0
+                width: fit-content
+                text-align: center
+                justify-content: center
+                display: flex
+                margin-right: -3em
     article.category
         display: flex
         justify-content: center
         width: 100%
-        align-items: stretch
+        align-items: center
         padding: 5em
+        flex-wrap: wrap
         div.title
             color: white
             font-weight: bold
@@ -331,13 +354,12 @@ main
                 line-height: 2em
                 min-height: 5em
                 font-family: roboto
-        button
-            @include button(.7em)
     article.white
         background-color: white
         display: flex
         font-family: roboto
         justify-content: center
+        flex-wrap: wrap
         div.image
             justify-content: center
             align-items: center
@@ -367,6 +389,27 @@ main
                 color: #757575
                 font-family: nunito
                 font-size: 1.1em
+            .containerValores
+                display: flex
+                flex-wrap: wrap
+                padding: 2em
+                .valores
+                    display: flex
+                    @include hover(true)
+                    @include transition()
+                    border: 1px solid #f5f5f5
+                    width: 20em
+                    height: 22em
+                    min-width: 20%
+                    margin: .5em
+                    img
+                        width: 3em
+                    .valoresTitle
+                        font-weight: bold
+                        font-size: 1.5em
+                        margin-top: 2em
+                    &:hover
+                        box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
 
 /* Preloader */
 #preloader
