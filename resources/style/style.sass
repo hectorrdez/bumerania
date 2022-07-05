@@ -398,7 +398,11 @@ main
             flex-wrap: wrap
             width: 100%
             .pressVideo
-                    width
+                padding: 1em
+                margin: 1em
+                background-color: white
+                border-radius: 1.5em
+
     article.white
         background-color: white
         display: flex
@@ -428,6 +432,27 @@ main
                 width: 100%
                 display: flex
                 justify-content: center
+            .premioContainer
+                margin: 3em
+                width: 60%
+                display: flex
+                .premio
+                    flex-wrap: wrap
+                    display: flex
+                    min-width: 12em
+                    align-items: stretch
+                    div
+                        paddig: 1em
+                        text-align: center
+                        flex-wrap: wrap
+                        display: flex
+                        color: #333
+                        font-size: 1em
+                        font-style: italic
+                        font-weight: 400
+                        line-height: 1.4
+                        font-family: muli
+
             .subtitle2
                 font-size: 1.5em
                 font-weight: bold
@@ -460,6 +485,13 @@ main
                         margin-top: 2em
                     &:hover
                         box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
+        div.partner
+            width: 100%
+            flex-wrap: wrap
+            display: flex
+            img
+                min-width: 12em
+                width: 20%
 
 /* Preloader */
 #preloader
@@ -539,6 +571,11 @@ main
             padding-top: 1em
         .subtitle2
             width: 100%
+        div.press
+            .pressVideo
+                iframe
+                    width: fit-content
+
     .accordion
         flex-direction: column
         width: 100%
