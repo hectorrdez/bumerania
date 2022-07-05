@@ -328,6 +328,7 @@ main
         justify-content: center
         z-index: -1
         position: relative
+        overflow: hidden
         div.video
             height: fit-content
             position: relative
@@ -342,7 +343,24 @@ main
                 right: 0
                 width: 100%
                 height: 100%
-
+        div.superposition
+            top: 30%
+            position: absolute
+            color: white
+            height: 100%
+            width: 100%
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                text-transform: uppercase
+                .title
+                    font-size: 10vw
+                    font-weight: bold
+                .subtitle
+                    margin-top: .5em
+                    font-size: 3em
     article
         background-color: rgba(black , 0.7)
         padding: 2em 0
@@ -443,7 +461,7 @@ main
                     min-width: 12em
                     align-items: stretch
                     div
-                        paddig: 1em
+                        padding: 1em
                         text-align: center
                         flex-wrap: wrap
                         display: flex
@@ -493,7 +511,11 @@ main
             img
                 min-width: 12em
                 width: 20%
-
+/* Page  Selected (Header) */
+.pageSelected
+    color: grey
+    &:hover
+        color: grey
 /* Preloader */
 #preloader
     position: fixed

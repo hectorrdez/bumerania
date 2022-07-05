@@ -15,7 +15,8 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <?php include_once './resources/includes/preloader.php' ?>
     <script src="./resources/code/main.js"></script>
-    <?php include_once './resources/includes/header.php' ?>
+    <?php $pageSelected = 'index';
+    include_once './resources/includes/header.php' ?>
 
     <main>
         <section class="video">
