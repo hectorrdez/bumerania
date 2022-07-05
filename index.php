@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <?php include_once './resources/includes/preloader.php' ?>
     <script src="./resources/code/main.js"></script>
     <?php include_once './resources/includes/header.php' ?>
@@ -216,8 +217,6 @@
                             <hr class='green'>
                         </div>
                     </div>
-
-
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
