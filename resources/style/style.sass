@@ -6,12 +6,12 @@ $colorGreen: #67bda6
 @mixin button($font: 1em, $color: white, $invert: true, $imgSize: 1.4em)
     background-color: $colorGreen
     border: 2px solid $colorGreen
-    border-radius: 10px
+    border-radius: calc($font * .6)
     cursor: pointer
     color: $color
     font-size: $font
     font-weight: bold
-    padding: .5em 1em
+    padding: calc($font * .5) calc($font *1)
     transition: .4s all ease
     @if $invert
         img
@@ -41,24 +41,6 @@ $colorGreen: #67bda6
 
 /* All Animations */
 
-/* All @Media */
-@media screen and(max-width: 576px)
-@media screen and(min-width: 576px)
-@media screen and (min-width: 768px)
-    #preloader
-        .logo
-            display: none
-@media screen and (min-width: 992px)
-@media screen and (min-width: 1200px)
-@media screen and (min-width: 1400px)
-@media screen and(orientation: portrait)
-    article
-        width: 100%
-        .subtitle1
-            width: 100%
-        .subtitle2
-            width: 100%
-
 /* All Website */
 *
     box-sizing: border-box
@@ -83,7 +65,7 @@ a
     height: 70vh
     overflow-x: hidden
     button
-        @include button(.5em)
+        @include button(.7em)
         margin-top: .5em
     .box
         flex: 1
@@ -121,6 +103,7 @@ a
 body
     margin: 0
     padding: 0
+    width: 100%
 
 /* Button */
 button
@@ -175,27 +158,6 @@ footer
                         right: .4em
                     &:hover
                         color: white
-    div
-        .title
-            font-size: 5em
-            font-family: montserrat
-            font-weight: bold
-            width: 100%
-            text-align: center
-        .paragraph
-            width: 100%
-            text-align: center
-            font-size: 1.5em
-            color: grey
-            font-family: Muli
-            margin: 1em 0
-            padding: 0 1.5em
-        .subtitle2
-            line-height: 1.2em
-            font-size: 2em
-            text-align: center
-            font-weight: bold
-            margin: 1.5em 0
 
 /* Header */
 header
@@ -307,29 +269,23 @@ main
         color: white
         text-transform: uppercase
         font-family: montserrat
-        letter-spacing: 3em
+        flex-wrap: wrap
+        width: 100%
+        letter-spacing: normal
         div
             line-height: 4em
-            border-bottom: 1px solid white
-            width: fit-content
+            letter-spacing: 3vw
+            width: 100%
             padding: 0 2em
             display: flex
             flex-direction: column
             align-items: center
             justify-content: center
-            div
-                border: 0
-                width: fit-content
-                text-align: center
-                justify-content: center
-                display: flex
-                margin-right: -3em
+            max-width: 100%
     article.category
         display: flex
         justify-content: center
-        width: 100%
         align-items: center
-        padding: 5em
         flex-wrap: wrap
         div.title
             color: white
@@ -337,16 +293,15 @@ main
             font-size: 3em
             margin-right: 1.7em
         div.content
-            width: 50%
             display: flex
             flex-direction: column
-            margin-left: 1.7em
             div.subtitle1
                 font-size: 1.25em
                 font-weight: bold
                 color: white
                 min-height: 5em
                 padding-bottom: 2em
+                width: 100%
             div.subtitle2
                 color: #C8C8C8
                 font-size: 1em
@@ -371,11 +326,14 @@ main
         .content
             max-width: 30%
             padding: 0 .5em
+            flex-wrap: wrap
+            min-width: 20em
             .title
-                font-size: 4em
+                font-size: 3em
                 font-weight: bold
                 font-family: montserrat
                 text-align: center
+
             .divisorContainer
                 width: 100%
                 display: flex
@@ -384,6 +342,7 @@ main
                 font-size: 1.5em
                 font-weight: bold
                 margin: 1em 0
+                text-align: center
             .text
                 text-align: center
                 color: #757575
@@ -393,6 +352,7 @@ main
                 display: flex
                 flex-wrap: wrap
                 padding: 2em
+                justify-content: center
                 .valores
                     display: flex
                     @include hover(true)
@@ -403,7 +363,7 @@ main
                     min-width: 20%
                     margin: .5em
                     img
-                        width: 3em
+                        height: 3em
                     .valoresTitle
                         font-weight: bold
                         font-size: 1.5em
@@ -462,3 +422,76 @@ main
             filter: invert(1)
         &:hover
             opacity: 0.8
+
+    /* All @Media */
+@media screen and(max-width: 576px)
+@media screen and(min-width: 576px)
+@media screen and (min-width: 768px)
+    #preloader
+        .logo
+            display: none
+@media screen and (min-width: 992px)
+@media screen and (min-width: 1200px)
+@media screen and (min-width: 1400px)
+@media screen and(orientation: portrait)
+    div.content
+        width: 100%
+    article.category
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 5em 2em
+        .title
+            padding-left: 2em
+        .subtitle1
+            width: 100%
+            padding-top: 1em
+        .subtitle2
+            width: 100%
+    .accordion
+        flex-direction: column
+        width: 100%
+        box-sizing: border-box
+        height: 70vh
+        overflow-x: hidden
+        button
+            @include button(.3em)
+            margin-top: 1em
+        .box
+            flex: 1
+            overflow: hidden
+            transition: .5s
+            box-shadow: 0 20px 30px rgba(0,0,0,.1)
+            line-height: 0
+            img
+                width: 120%
+                height: 100%
+                object-fit: cover
+                transition: .8s
+
+            &:hover
+                flex: 1 1 25%
+            .content
+                display: none
+            &:hover
+                div.content
+                    display: block
+                    color: white
+                    text-align: center
+                    font-size: 2em
+                    position: relative
+                    z-index: 2
+                    overflow-x: hidden
+                    margin: auto 0
+                    height: 100%
+                    img
+                        width: 1em
+                        height: 1em
+                        filter: invert(1)
+                        margin-right: 0.1em
+@media screen and (orientation: landscape)
+    article.category
+        padding: 5em 0
+        div.content
+            width: 50%

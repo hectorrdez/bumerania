@@ -24,7 +24,13 @@
 
         <section class='bg'>
             <article class='title'>
-                <div><span>bumerania robotics</span><br><span>Robótica social</span></div>
+                <div>
+                    <div>bumerania robotics</div>
+                    <div>Robótica social</div>
+                    <div style='width:70%'>
+                        <hr class='white'>
+                    </div>
+                </div>
             </article>
             <article class='category'>
                 <div class='title'>QUÉ<br>HACEMOS
@@ -33,7 +39,6 @@
                     </div>
                     <div>
                         <button onclick="window.open('#rrss','_self')">Conócenos</button>
-
                     </div>
                 </div>
                 <div class='content'>
@@ -132,7 +137,7 @@
                     <div class='text'>
                         A través de la robótica y la inteligencia artificial puedes garantizar niveles superiores de satisfacción y mejorar la experiencia de cliente, al aumentar la productividad de los servicios ofrecidos, reducir tiempos de espera innecesarios y evitar tareas repetitivas y costosas
                     </div>
-                    <img src='./resources/img/robots.png'>
+                    <img src='./resources/img/robots.png' style='width:100%'>
                     <div class="text"><button>Más información</button></div>
                 </div>
             </article>
@@ -180,6 +185,19 @@
                         </div>
                     </div>
 
+                </div>
+            </article>
+        </section>
+        <section class='bg'>
+            <article class='category'>
+                <div class="title">¿QUIERES SER NUESTRO<br>DISTRIBUIDOR?
+                    <div style="width: 50%;">
+                        <hr class="green">
+                    </div>
+                </div>
+                <div class="content" style='font-weight:bold;font-size:1.2em;width:20%'>
+                    Nuestro canal de distribución es una pieza fundamental para aumentar la fuerza de ventas de nuestras soluciones.
+                    <div class="text" style='margin-top:.5em'><button>Más información</button></div>
                 </div>
             </article>
         </section>
