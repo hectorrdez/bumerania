@@ -15,6 +15,7 @@
     <?php include_once './resources/includes/preloader.php' ?>
     <script src="./resources/code/main.js"></script>
     <?php include_once './resources/includes/header.php' ?>
+
     <main>
         <section class="video">
             <div class="video">
@@ -289,6 +290,9 @@
     <script src="./resources/code/swiper.js"></script>
 
     <?php include_once './resources/includes/footer.php' ?>
+
+    <script src="./resources/code/main.js"></script>
+
 </body>
 
 </html>
