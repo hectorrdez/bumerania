@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <?php $pageSelected = 'aboutUs';
+    <?php $pageSelected = 'success';
     include_once './resources/includes/header.php' ?>
     <main>
 
