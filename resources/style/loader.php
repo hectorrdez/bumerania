@@ -6,3 +6,4 @@
                                 else echo $basePath . 'favicon.png';
                                 ?>" type="image/x-icon">
 <link rel="stylesheet" href="https://use.typekit.net/mdk5iqs.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />

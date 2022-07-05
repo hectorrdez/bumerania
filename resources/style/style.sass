@@ -104,7 +104,16 @@ body
     margin: 0
     padding: 0
     width: 100%
-
+// Bumerania
+.bumerania
+    margin-bottom: .9rem
+    text-align: center
+    color: #54D3AA
+    font-family: "Montserrat", roboto
+    font-size: .8em
+    font-weight: 500
+    line-height: 1em
+    letter-spacing: .5em
 /* Button */
 button
     @include button()
@@ -290,8 +299,7 @@ main
         div.title
             color: white
             font-weight: bold
-            font-size: 3em
-            margin-right: 1.7em
+            font-size: 2.5em
         div.content
             display: flex
             flex-direction: column
@@ -299,15 +307,13 @@ main
                 font-size: 1.25em
                 font-weight: bold
                 color: white
-                min-height: 5em
-                padding-bottom: 2em
+                padding-bottom: 1em
                 width: 100%
             div.subtitle2
                 color: #C8C8C8
                 font-size: 1em
                 font-weight: 300
                 line-height: 2em
-                min-height: 5em
                 font-family: roboto
     article.white
         background-color: white
@@ -400,7 +406,7 @@ main
 
 /* Section */
 .bg
-    background: url("http://localhost/resources/img/pattern1.jpg") repeat
+    background: url("/resources/img/pattern1.jpg") repeat
     color: white
 
 /* Social */
@@ -443,7 +449,7 @@ main
         align-items: center
         padding: 5em 2em
         .title
-            padding-left: 2em
+            width: 100%
         .subtitle1
             width: 100%
             padding-top: 1em
@@ -492,6 +498,8 @@ main
                         margin-right: 0.1em
 @media screen and (orientation: landscape)
     article.category
-        padding: 5em 0
+        padding: 5em 1em
         div.content
-            width: 50%
+            width: 40%
+        div.title
+            width: 30%
