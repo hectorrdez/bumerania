@@ -272,8 +272,14 @@
         </section>
         <section class="bg">
             <article class="category">
-                <div></div>
-                <div></div>
+                <div class="press center">
+                    <div class='pressVideo'>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DvcTnEK7yjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class='pressVideo'></div>
+                    <div class='pressVideo'></div>
+                    <div class='pressVideo'></div>
+                </div>
             </article>
         </section>
     </main>
