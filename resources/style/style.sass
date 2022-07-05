@@ -3,20 +3,34 @@ $colorBlack: #0d0d00
 $colorGreen: #67bda6
 
 /* All Mixin */
-@mixin button($font: 1em, $color: white)
+@mixin button($font: 1em, $color: white, $invert: true, $imgSize: 1.4em)
     background-color: $colorGreen
     border: 2px solid $colorGreen
-    border-radius: 10px
+    border-radius: calc($font * .6)
     cursor: pointer
     color: $color
     font-size: $font
     font-weight: bold
-    padding: .5em 1em
+    padding: calc($font * .5) calc($font *1)
     transition: .4s all ease
+    @if $invert
+        img
+            filter: invert(1)
+    img
+        height: $imgSize
     &:hover
         background-color: rgba(black, 0)
         border-color: $colorGreen
         color: $colorGreen
+        img
+            filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
+@mixin hover($image: false)
+    &:hover
+        @include transition()
+        color: $colorGreen
+        @if $image
+            img
+                filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
 @mixin hr($color: $colorGreen, $height: .2em)
     border-color: $color
     background-color: $color
@@ -27,16 +41,6 @@ $colorGreen: #67bda6
 
 /* All Animations */
 
-/* All @Media */
-@media screen and(max-width: 576px)
-@media screen and(min-width: 576px)
-@media screen and (min-width: 768px)
-    #preloader
-        .logo
-            display: none
-@media screen and (min-width: 992px)
-@media screen and (min-width: 1200px)
-@media screen and (min-width: 1400px)
 /* All Website */
 *
     box-sizing: border-box
@@ -53,14 +57,116 @@ a
     color: $colorGreen
     text-decoration: none
 
+/* Accordion */
+.accordion
+    display: flex
+    width: 100%
+    box-sizing: border-box
+    height: 70vh
+    overflow-x: hidden
+    button
+        @include button(.7em)
+        margin-top: .5em
+    .box
+        flex: 1
+        overflow: hidden
+        transition: .5s
+        box-shadow: 0 20px 30px rgba(0,0,0,.1)
+        line-height: 0
+        img
+            width: 200%
+            height: 100%
+            object-fit: cover
+            transition: .8s
+
+        &:hover
+            flex: 1 1 25%
+        .content
+            display: none
+        &:hover
+            div.content
+                display: block
+                color: white
+                text-align: center
+                font-size: 3em
+                position: relative
+                bottom: 50%
+                z-index: 2
+                justify-content: center
+                overflow-x: hidden
+                img
+                    width: 1em
+                    filter: invert(1)
+                    margin-right: 0.1em
+
 /* Body */
 body
     margin: 0
     padding: 0
-
+    width: 100%
+// Bumerania
+.bumerania
+    margin-bottom: .9rem
+    text-align: center
+    color: #54D3AA
+    font-family: "Montserrat", roboto
+    font-size: .8em
+    font-weight: 500
+    line-height: 1em
+    letter-spacing: .5em
 /* Button */
 button
     @include button()
+// Center
+.center
+    display: flex
+    justify-content: center
+    align-items: center
+// Column
+.column
+    display: flex
+    flex-direction: column
+// Expand
+.expand
+    max-width: 100% !important
+/* Footer */
+footer
+    background-color: black
+    color: white
+    display: flex
+    font-family: muli
+    justify-content: center
+    padding: 4em 0
+    width: 100%
+    .container
+        display: flex
+        justify-content: center
+        max-width: 80%
+        flex-wrap: wrap
+        .content
+            min-width: 12em
+            text-align: left
+            .header
+                font-weight: bold
+                font-size: larger
+                padding: 1em 0
+            .item
+                font-family: muli
+                font-size: 1em
+                font-weight: normal
+                @include transition()
+                padding: 5%
+                a
+                    color: rgba(255,255,255,0.6)
+                    text-decoration: none
+                    &::before
+                        color: grey
+                        content: '>'
+                        font-weight: bold
+                        position: relative
+                        right: .4em
+                    &:hover
+                        color: white
 
 /* Header */
 header
@@ -185,6 +291,170 @@ hr.green
 hr.white
     @include hr(white, .1em)
 
+/* Legal */
+.legal
+    background-color: $colorBlack
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    font-size: .7em
+    padding: .7em
+    width: 100%
+    a
+        align-items: center
+        border-bottom: 3px solid rgba($colorGreen, 0)
+        color: rgba(white, 0.6)
+        cursor: pointer
+        display: flex
+        @include transition()
+        justify-content: center
+        min-width: 12em
+        padding: 1em
+        text-align: center
+        width: 15%
+        &:hover
+
+            color: $colorGreen
+            border-bottom-color: $colorGreen
+
+/* Main */
+main
+    width: 100%
+    min-height: 60em
+    section.video
+        background: black
+        display: flex
+        justify-content: center
+        z-index: -1
+        position: relative
+        div.video
+            height: fit-content
+            position: relative
+            overflow: hidden
+            width: 100%
+            padding-top: 56.25%
+            iframe
+                position: absolute
+                top: 0
+                left: 0
+                bottom: 0
+                right: 0
+                width: 100%
+                height: 100%
+
+    article
+        background-color: rgba(black , 0.7)
+        padding: 2em 0
+    article.title
+        text-align: center
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 15em
+        font-size: 1em
+        font-weight: bold
+        color: white
+        text-transform: uppercase
+        font-family: montserrat
+        flex-wrap: wrap
+        width: 100%
+        letter-spacing: normal
+        div
+            line-height: 4em
+            letter-spacing: 3vw
+            width: 100%
+            padding: 0 2em
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            max-width: 100%
+    article.category
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        div.title
+            color: white
+            font-weight: bold
+            font-size: 2.5em
+        div.content
+            display: flex
+            flex-direction: column
+            div.subtitle1
+                font-size: 1.25em
+                font-weight: bold
+                color: white
+                padding-bottom: 1em
+                width: 100%
+            div.subtitle2
+                color: #C8C8C8
+                font-size: 1em
+                font-weight: 300
+                line-height: 2em
+                font-family: roboto
+    article.white
+        background-color: white
+        display: flex
+        font-family: roboto
+        justify-content: center
+        flex-wrap: wrap
+        div.image
+            justify-content: center
+            align-items: center
+            text-align: center
+            line-height: 1.4em
+            max-width: 30%
+            img
+                max-width: 100%
+        .content
+            max-width: 30%
+            padding: 0 .5em
+            flex-wrap: wrap
+            min-width: 20em
+            .title
+                font-size: 3em
+                font-weight: bold
+                font-family: montserrat
+                text-align: center
+
+            .divisorContainer
+                width: 100%
+                display: flex
+                justify-content: center
+            .subtitle2
+                font-size: 1.5em
+                font-weight: bold
+                margin: 1em 0
+                text-align: center
+            .text
+                text-align: center
+                color: #757575
+                font-family: nunito
+                font-size: 1.1em
+            .containerValores
+                display: flex
+                flex-wrap: wrap
+                padding: 2em
+                justify-content: center
+                .valores
+                    display: flex
+                    @include hover(true)
+                    @include transition()
+                    border: 1px solid #f5f5f5
+                    width: 20em
+                    height: 22em
+                    min-width: 20%
+                    margin: .5em
+                    img
+                        height: 3em
+                    .valoresTitle
+                        font-weight: bold
+                        font-size: 1.5em
+                        margin-top: 2em
+                    &:hover
+                        box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
+
 /* Preloader */
 #preloader
     position: fixed
@@ -198,7 +468,7 @@ hr.white
     justify-content: center
     align-items: center
     flex-direction: column
-    img.logo
+    img.log
         filter: drop-shadow(5px 5px 0px $colorGreen) drop-shadow(-5px -5px 0px $colorGreen)
         max-width: 80%
         max-height: 80%
@@ -211,3 +481,103 @@ hr.white
         overflow: hidden
         img.gif
             height: 110%
+
+/* Section */
+.bg
+    background: url("/resources/img/pattern1.jpg") repeat
+    color: white
+
+/* Social */
+.social
+    display: flex
+    justify-content: center
+    padding: 1em 0
+    button
+        background-color: $colorGreen
+        border-radius: 10%
+        width: 2.5em
+        height: 2.5em
+        margin: 0 .1em
+        display: flex
+        justify-content: center
+        align-items: center
+        img
+            width: 1.4em
+            filter: invert(1)
+        &:hover
+            opacity: 0.8
+
+    /* All @Media */
+@media screen and(max-width: 576px)
+@media screen and(min-width: 576px)
+@media screen and (min-width: 768px)
+    #preloader
+        .logo
+            display: none
+@media screen and (min-width: 992px)
+@media screen and (min-width: 1200px)
+@media screen and (min-width: 1400px)
+@media screen and(orientation: portrait)
+    div.content
+        width: 100%
+    article.category
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 5em 2em
+        .title
+            width: 100%
+        .subtitle1
+            width: 100%
+            padding-top: 1em
+        .subtitle2
+            width: 100%
+    .accordion
+        flex-direction: column
+        width: 100%
+        box-sizing: border-box
+        height: 70vh
+        overflow-x: hidden
+        button
+            @include button(.3em)
+            margin-top: 1em
+        .box
+            flex: 1
+            overflow: hidden
+            transition: .5s
+            box-shadow: 0 20px 30px rgba(0,0,0,.1)
+            line-height: 0
+            img
+                width: 120%
+                height: 100%
+                object-fit: cover
+                transition: .8s
+
+            &:hover
+                flex: 1 1 25%
+            .content
+                display: none
+            &:hover
+                div.content
+                    display: block
+                    color: white
+                    text-align: center
+                    font-size: 2em
+                    position: relative
+                    z-index: 2
+                    overflow-x: hidden
+                    margin: auto 0
+                    height: 100%
+                    img
+                        width: 1em
+                        height: 1em
+                        filter: invert(1)
+                        margin-right: 0.1em
+@media screen and (orientation: landscape)
+    article.category
+        padding: 5em 1em
+        div.content
+            width: 40%
+        div.title
+            width: 30%

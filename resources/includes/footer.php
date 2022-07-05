@@ -1,44 +1,45 @@
 <footer>
-    <div class='footerContainer'>
-        <div class='footerBlock'>
-            <span class='headerFooter'>Bumerania</span>
-            <div class='itemFooter'><a href='#' class='aFooter'>Contacto</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Sala de prensa</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Casos de éxito</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Blog</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Bumerania Merchandise</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Área de Cliente</a></div>
+    <div class='container'>
+        <div class='content'>
+            <span class='header'>Bumerania</span>
+            <div class='item'><a href='#'>Contacto</a></div>
+            <div class='item'><a href='#'>Sala de prensa</a></div>
+            <div class='item'><a href='#'>Casos de éxito</a></div>
+            <div class='item'><a href='#'>Blog</a></div>
+            <div class='item'><a href='#'>Bumerania Merchandise</a></div>
+            <div class='item'><a href='#'>Área de Cliente</a></div>
         </div>
-        <div class='footerBlock'><span class='headerFooter'>Servicios</span>
+        <div class='content'>
+            <span class='header'>Servicios</span>
+            <div class='item'><a href='#'>Hostelería</a></div>
+            <div class='item'><a href='#'>Restauración</a></div>
+            <div class='item'><a href='#'>Salud</a></div>
+            <div class='item'><a href='#'>Seguridad</a></div>
+        </div>
+        <div class='content'>
+            <span class='header'>Soluciones</span>
+            <div class='item'><a href='#'>Robot camarero</a></div>
+            <div class='item'><a href='#'>Temi</a></div>
+            <div class='item'><a href='#'>SmartTables</a></div>
+            <div class='item'><a href='#'>Ares</a></div>
+        </div>
+        <div class='content'>
+            <span class='header'>Soporte</span>
+            <div class='item'><img src='resources/img/bot.png'></div>
 
-            <div class='itemFooter'><a href='#' class='aFooter'>Hostelería</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Restauración</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Salud</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Seguridad</a></div>
         </div>
-        <div class='footerBlock'><span class='headerFooter'>Soluciones</span>
-            <div class='itemFooter'><a href='#' class='aFooter'>Robot camarero</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Temi</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>SmartTables</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Ares</a></div>
-        </div>
-        <div class='footerBlock'>
-            <span class='headerFooter'>Soporte</span>
-            <div class='itemFooter'><img src='resources/img/bot.png'></div>
-
-        </div>
-        <div class='footerBlock'><span class='headerFooter'>Delegaciones</span>
-            <div class='itemFooter'><a href='#' class='aFooter'>Abu Dabi</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Argentina</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>España</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Paraguay</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Portugal</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Reino Unido</a></div>
-            <div class='itemFooter'><a href='#' class='aFooter'>Suiza</a></div>
+        <div class='content'><span class='header'>Delegaciones</span>
+            <div class='item'><a href='#'>Abu Dabi</a></div>
+            <div class='item'><a href='#'>Argentina</a></div>
+            <div class='item'><a href='#'>España</a></div>
+            <div class='item'><a href='#'>Paraguay</a></div>
+            <div class='item'><a href='#'>Portugal</a></div>
+            <div class='item'><a href='#'>Reino Unido</a></div>
+            <div class='item'><a href='#'>Suiza</a></div>
         </div>
     </div>
 </footer>
-<div class='cookies'>
+<div class='legal'>
     <a>Aviso Legal</a>
     <a>Políticas de privacidad</a>
     <a>Política de Cookies</a>
@@ -46,22 +47,22 @@
     <a>Términos y condiciones</a>
 </div>
 <section class='bg'>
-    <div class='rrss' id='rrss'>
-        <a href="">
-            <div class='iconosRRSS'><img src='resources/icons/facebook-brands.svg'></div>
-        </a>
-        <a href="">
-            <div class='iconosRRSS'><img src='resources/icons/instagram-brands.svg'></div>
-        </a>
-        <a href="">
-            <div class='iconosRRSS'><img src='resources/icons/youtube-brands.svg'></div>
-        </a>
-        <a href="">
-            <div class='iconosRRSS'><img src='resources/icons/linkedin-brands.svg'></div>
-        </a>
-        <a href="">
-            <div class='iconosRRSS'><img src='resources/icons/blog-solid.svg'></div>
-        </a>
+    <div class='social' id='rrss'>
+        <button onclick="window.open ('https://www.facebook.com/bumerania/' ,  '_blank' )">
+            <img src='resources/icons/facebook-brands.svg'>
+        </button>
+        <button onclick="window.open ('https://www.instagram.com/bumerania/' ,  '_blank' )">
+            <img src='resources/icons/instagram-brands.svg'>
+        </button>
+        <button onclick="window.open ('https://www.youtube.com/c/Bumerania_robotics' ,  '_blank' )">
+            <img src='resources/icons/youtube-brands.svg'>
+        </button>
+        <button onclick="window.open ('https://es.linkedin.com/company/bumeran' ,  '_blank' )">
+            <img src='resources/icons/linkedin-brands.svg'>
+        </button>
+        <button onclick="window.open ('https://blog.bumerania.com/' ,  '_blank' )">
+            <img src='resources/icons/blog-solid.svg'>
+        </button>
     </div>
 </section>
 <script src=""></script>
