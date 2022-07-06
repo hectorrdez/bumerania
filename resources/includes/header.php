@@ -61,11 +61,13 @@
         <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
         <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
         <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
-        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
+        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
     </nav>
-    <button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt=""></button>
+
+    <div class="menuBtnContainer"><button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt="Menu"></button></div>
     <div class="menuBtn menuBtnTransparent"></div>
     <a href="#"><img src="../resources/icons/earth-africa-solid.svg" class="languageBtn"></a>
 </header>
+<button class="btnUp"><img src="./resources/icons/chevron-up-solid.svg" alt="Up"></button>
 <script src="<?php if (!isset($basePath)) echo './resources/code/header.js';
                 else echo $basePath . 'resources/code/header.js' ?>"></script>
