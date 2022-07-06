@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- <?php include_once './resources/includes/preloader.php' ?> -->
     <?php $pageSelected = 'aboutUs';
     include_once './resources/includes/header.php' ?>
     <main>
@@ -50,7 +51,7 @@
             </article>
             <article class="white">
                 <div class="content2">
-                    <div class="title">Empleados</div>
+                    <div class="title">Organigrama</div>
                     <div class="center">
                         <div style="width:50%">
                             <hr class="green">
@@ -58,10 +59,102 @@
                     </div>
                     <div class="grid">
                         <div class="chip">
+                            <a href="https://www.linkedin.com/in/isidrofernandezortuno/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQHFlS3t6BmRSw/profile-displayphoto-shrink_200_200/0/1574276489810?e=1662595200&v=beta&t=K5wjrjvFC4TWUpW1W_5T0Vde2YNE3yDprEMM3pFSFGA" alt=""></div>
+                                <div class="name">Isidro Fernández</div>
+                                <div class="function">CEO</div>
+                            </a>
+                        </div>
+                        <div class="chip">
                             <a href="https://www.linkedin.com/in/jonathan-mortes-esquer-894875183/" target="_blank">
                                 <div class="img"><img src="./resources/img/employers/1649406970387.jfif" alt=""></div>
                                 <div class="name">Jonathan Mortes Esquer</div>
                                 <div class="function">CTO & COO</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/fernando-mart%C3%ADn-b805b110/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQHNjg8d74CDBA/profile-displayphoto-shrink_200_200/0/1582143892816?e=1662595200&v=beta&t=qS4PltAGEH0Wh8euhkbDbXhiYlq1yoM1sBTpeaxxwvk" alt=""></div>
+                                <div class="name">Fernando Martín</div>
+                                <div class="function">CFO</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/gabrielmartinezbennasar/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQHSWXrv3yUruw/profile-displayphoto-shrink_200_200/0/1618602113665?e=1662595200&v=beta&t=Zp6WN-MDqb8IKbhTJU6dAupD1WU1oPMSsPhk3FsmEys" alt=""></div>
+                                <div class="name">Gabriel Martinez Bennasar</div>
+                                <div class="function">Business Developer </div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/jos%C3%A9-luis-molina-fern%C3%A1ndez-24812460/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5103AQGwwNQCU7s79w/profile-displayphoto-shrink_200_200/0/1517534545355?e=1662595200&v=beta&t=CkDrmQR1CND6ZQ3F7chNu2YP-fpnliEDYYzkOxdsLZI" alt=""></div>
+                                <div class="name">José Luis Molina Fernández</div>
+                                <div class="function">Business Developer</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/robertojavaloyas/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQFgGXhTKQI3dw/profile-displayphoto-shrink_200_200/0/1653685334847?e=1662595200&v=beta&t=ePiNfo3tDbPt8In7AK6Zp2GeWNVK6fu-AguguQawPG0" alt=""></div>
+                                <div class="name">Roberto Javaloyas</div>
+                                <div class="function">Bussiness Developer</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/noemi-vi%C3%B1a/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQEf6LM-iEuIig/profile-displayphoto-shrink_200_200/0/1613684064362?e=1662595200&v=beta&t=dwg-P-q5VpUsDW8yFskQZcdQQmX2v0WR7ihegi2-6Bc" alt=""></div>
+                                <div class="name">Noemi Viña Fernández</div>
+                                <div class="function">Directora Financiera</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/marcosrabasco/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5603AQGkQE_D1-qavQ/profile-displayphoto-shrink_200_200/0/1642778959870?e=1662595200&v=beta&t=Un2PCJ9lSSQUihTp3IF3tXBEIUjPo8rd1KAbMJ8MPsI" alt=""></div>
+                                <div class="name">Marcos Rabasco Patón</div>
+                                <div class="function">Director Distribución</div>
+                            </a>
+                        </div>
+
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/priscila-juliana-lopes-572b80232/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQGxMHD4E20B9w/profile-displayphoto-shrink_200_200/0/1645711845227?e=1662595200&v=beta&t=zGphGLSOeeNzHzzJwBL3RahopWHoShPiyuSPW9qMUEc" alt=""></div>
+                                <div class="name">Priscila Juliana Lopes</div>
+                                <div class="function">Country Manager</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/elena-pomares-16b2171a1/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQEExcd-3RFBhw/profile-displayphoto-shrink_200_200/0/1652514048811?e=1662595200&v=beta&t=g2CUXkDEZR00AddL7ajKzxN2V1MfDgl7O_lvkSVIUi4" alt=""></div>
+                                <div class="name">Elena Pomares</div>
+                                <div class="function">Representante en Emiratos y España</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/raquel-capel-798999124/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQEPU2w2tyD6Sw/profile-displayphoto-shrink_200_200/0/1655723799859?e=1662595200&v=beta&t=VH45bH0bD2RehLrZ0dL8uf8btZ8pR9aFmajkt5736Ro" alt=""></div>
+                                <div class="name">Raquel Capel</div>
+                                <div class="function">Responsable Red Distribución Murcia Andalucía </div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/francisco-p%C3%A9rez-segurosyservicios2022/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQGqkXyenAPoXw/profile-displayphoto-shrink_200_200/0/1615136648820?e=1662595200&v=beta&t=wXTfdWxXs3tIr7onDt8LKRLaHFSZO7Oq7_EJXhYeNwg" alt=""></div>
+                                <div class="name">Francisco Pérez</div>
+                                <div class="function">Distribuidor para Catalunya y Baleares</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/carina-cristiani-25025838/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5603AQFWaSMf8wf_qw/profile-displayphoto-shrink_200_200/0/1516785644393?e=1662595200&v=beta&t=rbw-1Ky0VYRCtrkDD7EEvBBDJBxDz9SF921gNFXFpWU" alt=""></div>
+                                <div class="name">Carina Cristiani</div>
+                                <div class="function">Director Comercial Alicante</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/mohammadali92/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQHt-G5Xaqz8Vg/profile-displayphoto-shrink_200_200/0/1611057606962?e=1662595200&v=beta&t=jUZGmT9GbFo8hvV-5414G3YtH3Cx6uXo8qAB3lNYsMM" alt=""></div>
+                                <div class="name">Mohammad Ali</div>
+                                <div class="function">Managing Director</div>
                             </a>
                         </div>
                         <div class="chip">
@@ -83,6 +176,20 @@
                                 <div class="img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
                                 <div class="name">Antonio Blanco Córdoba</div>
                                 <div class="function">Web Dev (en prácticas)</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="#" target="_blank">
+                                <div class="img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
+                                <div class="name">Juan Francisco Sempere Matute</div>
+                                <div class="function">Web Dev (en prácticas)</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="#" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5603AQGILJJIgiaqpA/profile-displayphoto-shrink_200_200/0/1638738056546?e=1662595200&v=beta&t=OPA7JjAARCaZWX_0hiQ5g8XvQf7vzsmNuRqqWkYea-Q" alt=""></div>
+                                <div class="name">Francisco Javier López Gea</div>
+                                <div class="function">Fotografo</div>
                             </a>
                         </div>
                     </div>
