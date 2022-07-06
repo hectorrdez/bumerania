@@ -107,28 +107,28 @@
                     <img src="/resources/img/acordeon/acordeon1.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon1.svg">HOSTELERÍA<br>
-                        <button>Más información</button>
+                        <button onclick="window.open('#','_blank')">Más información</button>
                     </div>
                 </div>
-                <div class="box">
+                <div class=" box">
                     <img src="/resources/img/acordeon/acordeon2.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon2.svg">RESTAURACIÓN<br>
-                        <button>Más información</button>
+                        <button onclick="window.open('#','_blank')">Más información</button>
                     </div>
                 </div>
                 <div class="box">
                     <img src="/resources/img/acordeon/acordeon3.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon3.svg">SALUD <br>
-                        <button>Más información</button>
+                        <button onclick="window.open('#','_blank')">Más información</button>
                     </div>
                 </div>
                 <div class="box">
                     <img src="/resources/img/acordeon/acordeon4.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon4.svg">SEGURIDAD<br>
-                        <button>Más información</button>
+                        <button onclick="window.open('#','_blank')">Más información</button>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@
                         A través de la robótica y la inteligencia artificial puedes garantizar niveles superiores de satisfacción y mejorar la experiencia de cliente, al aumentar la productividad de los servicios ofrecidos, reducir tiempos de espera innecesarios y evitar tareas repetitivas y costosas
                     </div>
                     <img src='./resources/img/robots.png' style='width:100%'>
-                    <div class="text"><button>Más información</button></div>
+                    <div class="text"><button onclick="window.open('#','_blank')">Más información</button></div>
                 </div>
             </article>
         </section>
@@ -199,7 +199,7 @@
                 </div>
                 <div class="content" style='font-weight:bold;font-size:1.2em;'>
                     <div class="subtitle1">Nuestro canal de distribución es una pieza fundamental para aumentar la fuerza de ventas de nuestras soluciones.</div>
-                    <div class="text"><button>Más información</button></div>
+                    <div class="text"><button onclick="window.open('#','_blank')">Más información</button></div>
                 </div>
             </article>
         </section>
@@ -213,7 +213,7 @@
                         Casos de éxito
                     </div>
                     <div class='divisorContainer'>
-                        <div style="width: 100%;">
+                        <div style="width: 20%;">
                             <hr class='green'>
                         </div>
                     </div>
@@ -249,7 +249,7 @@
                         </div>
                     </div>
                     <div class="text">
-                        <button>
+                        <button onclick="window.open('https://blog.bumerania.com','_blank')">
                             Entra a nuestro blog
                         </button>
                     </div>
