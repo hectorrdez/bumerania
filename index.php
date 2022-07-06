@@ -17,7 +17,7 @@
     <script src="./resources/code/main.js"></script>
     <?php $pageSelected = 'index';
     include_once './resources/includes/header.php' ?>
-    <!-- 
+
     <main>
         <section class="video">
             <div class="video">
@@ -351,7 +351,7 @@
                 </div>
             </article>
         </section>
-    </main> -->
+    </main>
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
     </script>
