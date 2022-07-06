@@ -69,3 +69,10 @@ for (let i = 0; i < productContainer.length; i++) {
         productContent.style.display = "none"
     })
 }
+
+
+const btnUp = document.querySelector(".btnUp")
+
+btnUp.addEventListener("click", function () {
+    window.scrollTo(0, 0)
+})

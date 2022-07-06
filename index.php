@@ -17,14 +17,13 @@
     <script src="./resources/code/main.js"></script>
     <?php $pageSelected = 'index';
     include_once './resources/includes/header.php' ?>
-
+    <!-- 
     <main>
         <section class="video">
             <div class="video">
                 <iframe style="object-fit:contain" height="720px" width="1280px" src="https://www.youtube-nocookie.com/embed/abv6JRsCsv4?autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&mute=1&rel=0&showinfo=0&playlist=abv6JRsCsv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
             </div>
         </section>
-
         <section class='bg'>
             <article class='title'>
                 <div>
@@ -39,9 +38,6 @@
                 <div class='title'>QUÉ<br>HACEMOS
                     <div style="width: 50%;">
                         <hr class='green'>
-                    </div>
-                    <div>
-                        <button onclick="window.open('#rrss','_self')">Conócenos</button>
                     </div>
                 </div>
                 <div class='content'>
@@ -219,18 +215,18 @@
                         </div>
                     </div>
                     <div class="swiper">
-                        <!-- Additional required wrapper -->
+                        // Additional required wrapper
                         <div class="swiper-wrapper">
-                            <!-- Slides -->
+                            // Slides
                             <div class="swiper-slide">Slide 1</div>
                             <div class="swiper-slide">Slide 2</div>
                             <div class="swiper-slide">Slide 3</div>
                             ...
                         </div>
-                        <!-- If we need pagination -->
+                        // If we need pagination
                         <div class="swiper-pagination"></div>
 
-                        <!-- If we need navigation buttons -->
+                        // If we need navigation buttons
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
@@ -275,28 +271,28 @@
             <article class="category">
                 <div class="press center">
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/DvcTnEK7yjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/DvcTnEK7yjs?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/YnqEociwoO0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/YnqEociwoO0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/5okiN2XBSPo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/5okiN2XBSPo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/VhNMANDeM14?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/VhNMANDeM14?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/CpVqoyI1tXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/CpVqoyI1tXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/q03waJmPy3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/q03waJmPy3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/jsDZSNsZRgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/jsDZSNsZRgg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <div class='pressVideo'>
-                        <iframe width="420" height="235" src="https://www.youtube.com/embed/KpwtvA1y3_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/KpwtvA1y3_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </article>
@@ -338,7 +334,7 @@
                 <div class="content expand center">
                     <div class="title">Premios y distinciones</div>
                     <div class='divisorContainer'>
-                        <div style="width: 20%;">
+                        <div>
                             <hr class='green'>
                         </div>
                     </div>
@@ -355,7 +351,7 @@
                 </div>
             </article>
         </section>
-    </main>
+    </main> -->
     <script type="module">
         import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
     </script>
