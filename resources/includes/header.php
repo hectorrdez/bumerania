@@ -3,9 +3,9 @@
         <a href="#"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
     </div>
     <nav>
-        <a href="<?php if (!isset($basePath)) echo './';
-                    else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'class=pageSelected' ?>>INICIO</a>
-        <div class="category" <?php if (isset($pageSelected) && ($pageSelected == 'solutions' || $pageSelected == 'bumibot' || $pageSelected == 'temi' || $pageSelected == 'smartTable' || $pageSelected == 'ares')) echo 'style="color:grey"' ?>>SOLUCIONES
+        <a class="menu" href="<?php if (!isset($basePath)) echo './';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'style="color:grey"' ?>>INICIO</a>
+        <div class="category menu" <?php if (isset($pageSelected) && ($pageSelected == 'solutions' || $pageSelected == 'bumibot' || $pageSelected == 'temi' || $pageSelected == 'smartTable' || $pageSelected == 'ares')) echo 'style="color:grey"' ?>>SOLUCIONES
             <img class="symbol" src="../resources/icons/caret-down-solid.svg">
             <ul class="categoryContent products">
                 <li class="product">
@@ -23,7 +23,7 @@
             </ul>
             <div class="productContent"><img class='productContentIMG' src=''></div>
         </div>
-        <div class="category" <?php if (isset($pageSelected) && ($pageSelected == 'aboutUs' || $pageSelected == 'solidarity' || $pageSelected == 'successCases' || $pageSelected == 'workWithUs')) echo 'style="color:grey"' ?>>NOSOTROS
+        <div class="category menu" <?php if (isset($pageSelected) && ($pageSelected == 'aboutUs' || $pageSelected == 'solidarity' || $pageSelected == 'successCases' || $pageSelected == 'workWithUs')) echo 'style="color:grey"' ?>>NOSOTROS
             <img class="symbol" src="../resources/icons/caret-down-solid.svg">
             <ul class="categoryContent us">
                 <li class="linkUs">
@@ -57,12 +57,14 @@
                 </li>
             </ul>
         </div>
-        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'class=pageSelected' ?>>SALA DE PRENSA</a>
-        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'class=pageSelected' ?>>CONTACTO</a>
-        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'class=pageSelected' ?>>BLOG</a>
-        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'class=pageSelected' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
-        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'class=pageSelected' ?>>SOPORTE 24/7</a>
+        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
+        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
+        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
+        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
+        <a href="#" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
     </nav>
+    <button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt=""></button>
+    <div class="menuBtn menuBtnTransparent"></div>
     <a href="#"><img src="../resources/icons/earth-africa-solid.svg" class="languageBtn"></a>
 </header>
 <script src="<?php if (!isset($basePath)) echo './resources/code/header.js';
