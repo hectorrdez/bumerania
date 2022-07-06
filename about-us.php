@@ -83,21 +83,21 @@
                             <a href="https://www.linkedin.com/in/gabrielmartinezbennasar/" target="_blank">
                                 <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4D03AQHSWXrv3yUruw/profile-displayphoto-shrink_200_200/0/1618602113665?e=1662595200&v=beta&t=Zp6WN-MDqb8IKbhTJU6dAupD1WU1oPMSsPhk3FsmEys" alt=""></div>
                                 <div class="name">Gabriel Martinez Bennasar</div>
-                                <div class="function">Business Developer </div>
+                                <div class="function">Business Developer (Palma de Mallorca)</div>
                             </a>
                         </div>
                         <div class="chip">
                             <a href="https://www.linkedin.com/in/jos%C3%A9-luis-molina-fern%C3%A1ndez-24812460/" target="_blank">
                                 <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5103AQGwwNQCU7s79w/profile-displayphoto-shrink_200_200/0/1517534545355?e=1662595200&v=beta&t=CkDrmQR1CND6ZQ3F7chNu2YP-fpnliEDYYzkOxdsLZI" alt=""></div>
                                 <div class="name">José Luis Molina Fernández</div>
-                                <div class="function">Business Developer</div>
+                                <div class="function">Business Developer (Barcelona)</div>
                             </a>
                         </div>
                         <div class="chip">
                             <a href="https://www.linkedin.com/in/robertojavaloyas/" target="_blank">
                                 <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQFgGXhTKQI3dw/profile-displayphoto-shrink_200_200/0/1653685334847?e=1662595200&v=beta&t=ePiNfo3tDbPt8In7AK6Zp2GeWNVK6fu-AguguQawPG0" alt=""></div>
                                 <div class="name">Roberto Javaloyas</div>
-                                <div class="function">Bussiness Developer</div>
+                                <div class="function">Bussiness Developer (Valencia)</div>
                             </a>
                         </div>
                         <div class="chip">
@@ -119,7 +119,7 @@
                             <a href="https://www.linkedin.com/in/priscila-juliana-lopes-572b80232/" target="_blank">
                                 <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQGxMHD4E20B9w/profile-displayphoto-shrink_200_200/0/1645711845227?e=1662595200&v=beta&t=zGphGLSOeeNzHzzJwBL3RahopWHoShPiyuSPW9qMUEc" alt=""></div>
                                 <div class="name">Priscila Juliana Lopes</div>
-                                <div class="function">Country Manager</div>
+                                <div class="function">Country Manager (Suiza)</div>
                             </a>
                         </div>
                         <div class="chip">
@@ -144,17 +144,10 @@
                             </a>
                         </div>
                         <div class="chip">
-                            <a href="https://www.linkedin.com/in/carina-cristiani-25025838/" target="_blank">
-                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5603AQFWaSMf8wf_qw/profile-displayphoto-shrink_200_200/0/1516785644393?e=1662595200&v=beta&t=rbw-1Ky0VYRCtrkDD7EEvBBDJBxDz9SF921gNFXFpWU" alt=""></div>
-                                <div class="name">Carina Cristiani</div>
-                                <div class="function">Director Comercial Alicante</div>
-                            </a>
-                        </div>
-                        <div class="chip">
                             <a href="https://www.linkedin.com/in/mohammadali92/" target="_blank">
                                 <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQHt-G5Xaqz8Vg/profile-displayphoto-shrink_200_200/0/1611057606962?e=1662595200&v=beta&t=jUZGmT9GbFo8hvV-5414G3YtH3Cx6uXo8qAB3lNYsMM" alt=""></div>
                                 <div class="name">Mohammad Ali</div>
-                                <div class="function">Managing Director</div>
+                                <div class="function">Managing Director (Jordania)</div>
                             </a>
                         </div>
                         <div class="chip">
