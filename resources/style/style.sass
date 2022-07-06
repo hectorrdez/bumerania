@@ -595,7 +595,6 @@ main
             display: flex
             flex-wrap: wrap
             .pressVideo
-                width: 90vw
                 padding: 1em
                 margin: .5em
                 background-color: white
@@ -851,9 +850,13 @@ main
             background-color: $colorBlack
 
             .category
-                &:hover
+                .categoryContainer
+                    height: 0
                     .categoryContent
-                        display: none
+                        height: 0
+                &:hover
+                    // .categoryContent
+                    //     // display: none
         nav.active
             animation: appearMenu .4s ease-in-out
             transform: translateX(0)

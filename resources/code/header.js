@@ -1,18 +1,16 @@
 const menuBtn = document.querySelectorAll(".menuBtn");
-const menu = document.querySelector("header nav");
+const headerNav = document.querySelector("header nav");
 console.log(window.innerWidth);
 for (let i = 0; i < menuBtn.length; i++) {
     menuBtn[i].addEventListener("click", () => {
-        menu.classList.toggle("active")
-        if (menu.classList.contains("active")) {
+        headerNav.classList.toggle("active")
+        if (headerNav.classList.contains("active")) {
             document.querySelector(".menuBtnTransparent").display = "block"
         } else {
             document.querySelector(".menuBtnTransparent").display = "none"
         }
     })
 }
-
-
 
 const category = document.querySelectorAll(".category");
 const categoryContent = document.querySelectorAll(".categoryContent");
@@ -70,9 +68,24 @@ for (let i = 0; i < productContainer.length; i++) {
     })
 }
 
+// BOTON GO TOP UP ARRIBA
 
 const btnUp = document.querySelector(".btnUp")
 
 btnUp.addEventListener("click", function () {
     window.scrollTo(0, 0)
 })
+
+// MENU DESPLEGABLE MODO MOVIL
+
+const categoryContainer = document.querySelectorAll(".categoryContainer");
+
+
+for (i = 0; i < category.length; i++) {
+    if (i == 0) {
+        category[i].addEventListener('click', () => {
+            let altura = categoryContent.clientHeight;
+            categoryContainer.style.height = altura;
+        })
+    }
+}
