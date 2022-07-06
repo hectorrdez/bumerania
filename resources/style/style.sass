@@ -280,7 +280,6 @@ header
         padding: 0 2.5em
         display: flex
         justify-content: space-between
-        align-items: center
         width: fit-content
         height: 12vh
         .menu
@@ -375,13 +374,51 @@ header
         filter: invert(1)
         &:hover
             filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
-.menuBtnTransparent
-    display: none
-    background-color: rgba(0,0 ,0 ,.5 )
-    height: 100%
-    width: 100%
-    z-index: 1
+
+    .menuBtn
+        background-color: $colorBlack
+        border: 2px solid $colorGreen
+        border-radius: 0
+        cursor: pointer
+        color: white
+        font-size: 1em
+        font-weight: bold
+        padding: calc(1em * .5) calc(1em *1)
+        transition: .4s all ease
+        &:hover
+            background-color: $colorGreen
+            border-color: $colorGreen
+            img
+                filter: none
+    .menuBtnTransparent
+        display: none
+        background-color: rgba(0,0 ,0 ,.5 )
+        height: 100%
+        width: 100%
+        z-index: 1
+        position: fixed
+
+// BOTÓN SUBIR ARRIBA GO TOP
+.btnUp
     position: fixed
+    bottom: 4vh
+    right: 4vw
+    background-color: $colorGreen
+    border: 3px solid $colorGreen
+    cursor: pointer
+    color: white
+    font-weight: bold
+    height: 3em
+    width: 3em
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: .2s all ease
+    &:hover
+        background-color: rgba(0, 0, 0, 0)
+        color: $colorGreen
+        img
+            filter: invert(71%) sepia(11%) saturate(1219%) hue-rotate(113deg) brightness(93%) contrast(92%)
 
 /* HR */
 hr
@@ -422,7 +459,7 @@ hr.white
 
 /* Main */
 main
-    width: 100%
+    max-width: 100%
     min-height: 60em
     section.video
         background: black
@@ -557,12 +594,15 @@ main
         div.press
             display: flex
             flex-wrap: wrap
-            width: 100%
             .pressVideo
+                width: 90vw
                 padding: 1em
-                margin: 1em
+                margin: .5em
                 background-color: white
                 border-radius: 1.5em
+                iframe
+                    width: 100%
+                    height: 50%
 
     article.white
         background-color: white
@@ -611,6 +651,8 @@ main
                 width: 100%
                 display: flex
                 justify-content: center
+                div
+                    width: 20%
             .premioContainer
                 margin: 3em
                 width: 60%
@@ -782,15 +824,22 @@ main
             text-align: left !important
 
 /* All @Media */
-@media screen and(max-width: 576px)
-@media screen and(min-width: 576px)
+@media screen and (max-width: 576px)
+@media screen and (min-width: 576px)
 @media screen and (min-width: 768px)
+
+@media screen and (max-width: 768px)
+    .premioContainer
+        flex-direction: column
+
 @media screen and (max-width: 1300px)
     header
+        text-align: left
+        justify-content: space-between
+        padding: 0 1vw
         button
             display: flex
             justify-content: center
-            margin: auto
         nav
             display: none
             flex-direction: column
@@ -810,13 +859,26 @@ main
             transform: translateX(0)
             display: flex
             position: absolute
+            height: 100vh
+            justify-content: start
+            .menu
+                padding: 0
+                padding: 1em
+            a
+                span
+                    display: none
 
-        .languageBtn
-            display: none
+        .menuBtnContainer
+            width: 100%
+            display: flex
+            justify-content: right
+
+    .languageBtn
+        display: none
 @media screen and (min-width: 992px)
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
-@media screen and(orientation: portrait)
+@media screen and (orientation: portrait)
     div.content
         width: 100%
     article.category
