@@ -50,15 +50,69 @@
                         </div>
                         <div class="listBumi">
                             <ul>
-                                <li>Gestión digital</li>
-                                <li>Visión SLAM</li>
-                                <li>Sistema inteligente para evitar obstáculos</li>
-                                <li>Opciones múltiples de promoción</li>
+                                <li><img src='./resources/icons/check-solid.svg'>Gestión digital</li>
+                                <li><img src='./resources/icons/check-solid.svg'>Visión SLAM</li>
+                                <li><img src='./resources/icons/check-solid.svg'>Sistema inteligente para evitar obstáculos</li>
+                                <li><img src='./resources/icons/check-solid.svg'>Opciones múltiples de promoción</li>
                             </ul>
                         </div>
                     </div>
                     <div>
-                        <img src="./resources/img/bumibot.jpg">
+                        <img src="./resources/img/bumibot.png">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="bg">
+            <article class='bumibot'>
+                <div class="title">
+                    Solución avanzada de doble SLAM con completa cobertura en cualquier espacio
+                </div>
+                <p class="subtitle">
+                    La solución SLAM dual le permite al robot camarero reconocer los marcadores de ubicación garantizando su recorrido inclusive con muy poca luz.
+                </p>
+                <video autoplay loop>
+                    <source src='/resources/video/bumi1.mp4' type='video/mp4'>
+                </video>
+            </article>
+            <article class='bumibot'>
+                <div class="title">
+                    Cooperación Multi-Robot
+                </div>
+                <div class="subtitle">
+                    <p>Cuando dos o más de nuestros robots camareros se encuentran en una bifurcación, pueden evitar su encuentro de forma autónoma sin la intervención humana, según sea la prioridad del número de robot programada para viajar de forma inteligente.</p>
+                </div>
+                <video autoplay loop>
+                    <source src='/resources/video/bumi2.mp4' type='video/mp4'>
+                </video>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="bumibotSkills">
+                    <div class="bumibotHeader">
+                        <div class="title">Una propuesta <span>novedosa</span> que dinamiza el establecimiento</div>
+                        <div class="subtitle">
+                            La robótica inteligente colaborativa, como son los robots camarero, ocupa un importante eslabón en la cadena del servicio de mesas: lleva y trae platos, bebidas, bayetas; lo que haga falta para hacer la tarea más fácil a los camareros, que al aliviar el estrés de la sala pueden concentrarse mucho más en el trato cercano y amable con los clientes.
+                        </div>
+                    </div>
+                    <div class="bumibotParts">
+                        <img src='./resources/img/bumibot/1.jpg'>
+                        <div class="bumibotInfo">
+                            <div class='title'>Altavoz y micrófono</div>
+                            <div class='subtitle'>
+                                Matriz de timbre de 6 micrófonos, cobertura 360º, efectividad de hasta 5 metros, captación precisa, tono claro y suave.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bumibotParts">
+                        <div class="bumibotInfo">
+                            <div class='title'>Altavoz y micrófono</div>
+                            <div class='subtitle'>
+                                Matriz de timbre de 6 micrófonos, cobertura 360º, efectividad de hasta 5 metros, captación precisa, tono claro y suave.
+                            </div>
+                        </div>
+                        <img src='./resources/img/bumibot/1.jpg'>
                     </div>
                 </div>
             </article>
