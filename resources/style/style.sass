@@ -36,8 +36,8 @@ $colorGreen: #67bda6
     background-color: $color
     height: $height
 
-@mixin transition()
-    transition: .4s all ease
+@mixin transition($time:.4s)
+    transition: $time all ease
 
 /* All Animations */
 @keyframes appair-v
@@ -47,6 +47,24 @@ $colorGreen: #67bda6
     100%
         opacity: 100%
         transform: translateY(0)
+
+@-webkit-keyframes appearMenu
+  100% 
+    -webkit-transform: translateX(0)
+    transform: translateX(0)
+
+  0% 
+    -webkit-transform: translateX(-100%)
+    transform: translateX(-100%)
+
+@keyframes appearMenu
+    100%
+        -webkit-transform: translateX(0)
+        transform: translateX(0)
+
+    0%
+        -webkit-transform: translateX(-100%)
+        transform: translateX(-100%)
 
 /* All Website */
 *
@@ -224,14 +242,21 @@ footer
             border-color: $colorGreen
 /* Header */
 header
+    z-index: 2
     display: flex
+    position: sticky
+    position: -webkit-sticky
+    top: 0
     background-color: $colorBlack
     font-family: 'Muli-Bold'
     font-size: 1em
+    min-height: 12vh
     max-height: 12vh
     align-items: center
-    justify-content: space
     color: white
+    justify-content: space-between
+    button
+        display: none
     .logo
         padding: 0 2em
         height: 6.7vh
@@ -239,23 +264,23 @@ header
         font-weight: bold
         text-align: center
         align-items: center
-        margin: auto
         padding: 0 2.5em
         display: flex
         justify-content: space-between
-        position: sticky
-        top: 0
-        width: 65%
+        align-items: center
+        width: fit-content
         height: 12vh
-        .category
+        .menu
             cursor: pointer
             position: relative
-            padding: 2em 0
+            padding: 2em .5em
             @include transition
 
             .symbol
+                transform: rotate(90deg)
                 height: .9em
                 filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
+                @include transition($time: .2s)
 
             .categoryContent
                 display: none
@@ -276,6 +301,8 @@ header
 
             &:hover
                 color: $colorGreen
+                .symbol
+                    transform: rotate(0deg)
 
             .us
                 display: none
@@ -312,16 +339,17 @@ header
                 text-transform: uppercase
                 font-weight: 600
                 position: absolute
-                top: -2.3vh
-                left: 3.3vh
+                top: .5vh
+                left: 4vh
                 padding: .6em 1em .3em 1em
                 background-color: $colorGreen
                 font-size: .6em
+                border-radius: 3px
                 img
                     position: absolute
                     filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
-                    top: .8vh
-                    left: 1.8vh
+                    top: 1vh
+                    left: 2vh
                     height: 2em
             &:hover
                 color: $colorGreen
@@ -334,6 +362,13 @@ header
         filter: invert(1)
         &:hover
             filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
+.menuBtnTransparent
+    display: none
+    background-color: rgba(0,0 ,0 ,.5 )
+    height: 100%
+    width: 100%
+    z-index: 1
+    position: fixed
 
 /* HR */
 hr
@@ -382,7 +417,6 @@ main
         justify-content: center
         z-index: -1
         position: relative
-        overflow: hidden
         div.video
             height: fit-content
             position: relative
@@ -506,6 +540,7 @@ main
                 font-weight: 300
                 line-height: 2em
                 font-family: roboto
+
         div.press
             display: flex
             flex-wrap: wrap
@@ -522,6 +557,7 @@ main
         font-family: roboto
         justify-content: center
         flex-wrap: wrap
+
         div.image
             justify-content: center
             align-items: center
@@ -555,27 +591,6 @@ main
                 width: 100%
                 display: flex
                 justify-content: center
-            .premioContainer
-                margin: 3em
-                width: 60%
-                display: flex
-                .premio
-                    flex-wrap: wrap
-                    display: flex
-                    min-width: 12em
-                    align-items: stretch
-                    div
-                        padding: 1em
-                        text-align: center
-                        flex-wrap: wrap
-                        display: flex
-                        color: #333
-                        font-size: 1em
-                        font-style: italic
-                        font-weight: 400
-                        line-height: 1.4
-                        font-family: muli
-
             .subtitle2
                 font-size: 1.5em
                 font-weight: bold
@@ -608,6 +623,38 @@ main
                         margin-top: 2em
                     &:hover
                         box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
+
+    .pageBumi
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%
+        .detailsBumi
+            display: flex
+            flex-wrap: wrap
+            width: 40%
+            .titleBumi
+                font-family: "Muli"
+                font-size: 2em
+                font-weight: 800
+                line-height: 2em
+                text-align: center
+            .descriptionBumi
+            .listBumi
+                ul
+                    li
+                        font-size: 2em
+                        list-style: none
+                        padding-left: 2rem
+                        background-image: url('/resources/icons/check-solid-green.png')
+                        background-position: 0 50%
+                        background-size: 1.3rem 1.3rem
+                        background-repeat: no-repeat
+        div
+            display: flex
+            flex-wrap: wrap
+            img
+                width: 30em
         div.partner
             width: 100%
             flex-wrap: wrap
@@ -615,11 +662,13 @@ main
             img
                 min-width: 12em
                 width: 20%
+
 /* Page  Selected (Header) */
 .pageSelected
     color: grey
     &:hover
         color: grey
+
 /* Preloader */
 #preloader
     position: fixed
@@ -633,18 +682,19 @@ main
     justify-content: center
     align-items: center
     flex-direction: column
-    img.logo
-        max-width: 50%
-        max-height: 50%
+    img.log
+        filter: drop-shadow(5px 5px 0px $colorGreen) drop-shadow(-5px -5px 0px $colorGreen)
+        max-width: 80%
+        max-height: 80%
     .gif
-        width: 20em
-        height: 12em
+        width: 30em
+        height: 20em
         display: flex
         align-items: center
         justify-content: center
         overflow: hidden
         img.gif
-            height: 120%
+            height: 110%
 
 /* Section */
 .bg
@@ -694,10 +744,46 @@ main
 @media screen and(max-width: 576px)
 @media screen and(min-width: 576px)
 @media screen and (min-width: 768px)
+    #preloader
+        .logo
+            display: none
+@media screen and (max-width: 1300px)
+    header
+        button
+            display: flex
+            justify-content: center
+            margin: auto
+        nav
+            display: none
+            flex-direction: column
+            position: absolute
+            top: 12vh
+            transform: translateX(-100%)
+            width: fit-content
+            height: fit-content
+            background-color: $colorBlack
+
+            .category
+                &:hover
+                    .categoryContent
+                        display: none
+        nav.active
+            animation: appearMenu .4s ease-in-out
+            transform: translateX(0)
+            display: flex
+            position: absolute
+
+        .languageBtn
+            display: none
 @media screen and (min-width: 992px)
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
 @media screen and(orientation: portrait)
+    header
+        // position: -webkit-sticky
+        position: fixed
+        top: 0
+        z-index: 100
     div.content
         width: 100%
     article.category
@@ -713,11 +799,6 @@ main
             padding-top: 1em
         .subtitle2
             width: 100%
-        div.press
-            .pressVideo
-                iframe
-                    width: fit-content
-
     .accordion
         flex-direction: column
         width: 100%
