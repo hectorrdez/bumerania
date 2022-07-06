@@ -107,12 +107,56 @@
                     </div>
                     <div class="bumibotParts">
                         <div class="bumibotInfo">
-                            <div class='title'>Altavoz y micrófono</div>
+                            <div class='title'>Bandeja grande y abierta</div>
                             <div class='subtitle'>
-                                Matriz de timbre de 6 micrófonos, cobertura 360º, efectividad de hasta 5 metros, captación precisa, tono claro y suave.
+                                <ul>
+                                    <li>Área de una sola bandeja: 0,2m<sup>2</sup></li>
+                                    <li>Capacidad total: 40 Kg</li>
+                                    <li>Fácil recogida de los alimentos</li>
+                                </ul>
                             </div>
                         </div>
-                        <img src='./resources/img/bumibot/1.jpg'>
+                        <img src='./resources/img/bumibot/2.jpg'>
+                    </div>
+                    <div class="bumibotParts">
+                        <img src='./resources/img/bumibot/3.jpg'>
+                        <div class="bumibotInfo">
+                            <div class='title'>Indicador con luces de color</div>
+                            <div class='subtitle'>
+                                <ul>
+                                    <li>Verde: cargando</li>
+                                    <li>Azul: cargado totalmente</li>
+                                    <li>Rojo: fallo</li>
+                                    <li>Intermitente: girando</li>
+                                    <li>Cada estado está indicado de forma clara</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bumibotParts">
+                        <div class="bumibotInfo">
+                            <div class='title'>Chasis estable y sólido</div>
+                            <div class='subtitle'>
+                                Equipado con radar y sistema de detección de gran rendimiento, movimiento equilibrado y navegación inercial.
+                            </div>
+                        </div>
+                        <img src='./resources/img/bumibot/4.jpg'>
+                    </div>
+                </div>
+                <img src='./resources/img/bumibot/divisor.jpg'>
+                <div class="bumibotSkills">
+                    <div class="bumibotHeader">
+                        <div class="title">Versátil y fácil de usar</div>
+                    </div>
+                </div>
+                <div class="bumibotSkills">
+                    <div class="bumibotHeader">
+                        <div class="title">Versátil y fácil de usar</div>
+                    </div>
+                </div>
+                <div class="bumibotSkills">
+                    <div class="bumibotHeader">
+                        <div class="title">Versátil y fácil de usar</div>
                     </div>
                 </div>
             </article>
