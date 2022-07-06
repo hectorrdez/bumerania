@@ -66,9 +66,23 @@
                         </div>
                         <div class="chip">
                             <a href="https://www.linkedin.com/in/taianepaz/" target="_blank">
-                                <div class="img"><img src="./resources/img/employers/1591813150059.jfif" alt=""></div>
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5603AQGsqZcOddY2PA/profile-displayphoto-shrink_200_200/0/1591813150059?e=1662595200&v=beta&t=92578otZVO2v8b72bxQd46iJoE7i4_9EbNTeeBaeoLM" alt=""></div>
                                 <div class="name">Taiane Santos da Paz </div>
                                 <div class="function">Export Commercial Department</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/hectorrdez/" target="_blank">
+                                <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C4E03AQE_VbNXQYmc9w/profile-displayphoto-shrink_200_200/0/1631180872803?e=1662595200&v=beta&t=vgLUaxVH51bgpxI31I8jN_UU5W0bjqJiqT-4FRoVTtQ" alt=""></div>
+                                <div class="name">Héctor Rodríguez Tovar</div>
+                                <div class="function">Web Dev (en prácticas)</div>
+                            </a>
+                        </div>
+                        <div class="chip">
+                            <a href="https://www.linkedin.com/in/antonioblancoccordoba/" target="_blank">
+                                <div class="img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt=""></div>
+                                <div class="name">Antonio Blanco Córdoba</div>
+                                <div class="function">Web Dev (en prácticas)</div>
                             </a>
                         </div>
                     </div>
