@@ -421,13 +421,13 @@ main
                 margin: 1em
                 background-color: white
                 border-radius: 1.5em
-
     article.white
         background-color: white
         display: flex
         font-family: roboto
         justify-content: center
         flex-wrap: wrap
+
         div.image
             justify-content: center
             align-items: center
@@ -504,6 +504,37 @@ main
                         margin-top: 2em
                     &:hover
                         box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
+    .pageBumi
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%
+        .detailsBumi
+            display: flex
+            flex-wrap: wrap
+            width: 40%
+            .titleBumi
+                font-family: "Muli"
+                font-size: 2em
+                font-weight: 800
+                line-height: 2em
+                text-align: center
+            .descriptionBumi
+            .listBumi
+                ul
+                    li
+                        font-size: 2em
+                        list-style: none
+                        padding-left: 2rem
+                        background-image: url('/resources/icons/check-solid-green.png')
+                        background-position: 0 50%
+                        background-size: 1.3rem 1.3rem
+                        background-repeat: no-repeat
+        div
+            display: flex
+            flex-wrap: wrap
+            img
+                width: 30em
         div.partner
             width: 100%
             flex-wrap: wrap
@@ -511,6 +542,7 @@ main
             img
                 min-width: 12em
                 width: 20%
+
 /* Page  Selected (Header) */
 .pageSelected
     color: grey
