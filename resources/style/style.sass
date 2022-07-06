@@ -77,6 +77,22 @@ $colorGreen: #67bda6
     -webkit-user-drag: none
     -webkit-user-select: none
 
+/* width */
+::-webkit-scrollbar
+    width: 10px
+
+/* Track */
+::-webkit-scrollbar-track
+    background: white
+
+/* Handle */
+::-webkit-scrollbar-thumb
+    background: $colorGreen
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover
+    background: #52a891
+
 /* All Links */
 a
     color: $colorGreen
@@ -129,6 +145,7 @@ body
     margin: 0
     padding: 0
     width: 100%
+
 // Bumerania
 .bumerania
     margin-bottom: .9rem
@@ -197,20 +214,31 @@ footer
 .grid
     display: flex
     flex-wrap: wrap
+    justify-content: center
+    background-color: rgba(grey, 0.2)
+    padding: 1em
     .chip
         min-width: 10em
         width: 20%
         text-align: center
         padding: 1em
-        border: 5px solid rgba($colorGreen, 0)
+        border: 3px solid rgba(grey, 0)
+        border-radius: 10px
         @include transition()
         align-items: flex-start
         .img
             width: 100%
-            border-radius: 20px
+            border-radius: 10px
+            max-height: 9.3em
+            background-color: rgba(grey, 0.4)
+            display: flex
+            justify-content: center
+            align-items: center
             overflow: hidden
+            object-fit: cover
             img
                 width: 100%
+                height: 100%
         .name
             font-weight: bold
             font-size: 1em
@@ -223,6 +251,8 @@ footer
             margin-top: .3em
         &:hover
             border-color: $colorGreen
+            transform: translate(-10px, -10px)
+            box-shadow: 5px 5px 10px rgba($colorBlack, 0.3)
 /* Header */
 header
     z-index: 2
@@ -734,19 +764,20 @@ main
     justify-content: center
     align-items: center
     flex-direction: column
-    img.log
-        filter: drop-shadow(5px 5px 0px $colorGreen) drop-shadow(-5px -5px 0px $colorGreen)
-        max-width: 80%
-        max-height: 80%
+    .logo
+        max-width: 50%
+        max-height: 50%
+        img
+            width: 100%
     .gif
-        width: 30em
-        height: 20em
+        width: 20em
+        height: 15em
         display: flex
         align-items: center
         justify-content: center
         overflow: hidden
         img.gif
-            height: 110%
+            height: 120%
 
 /* Section */
 .bg
@@ -796,12 +827,11 @@ main
 @media screen and (max-width: 576px)
 @media screen and (min-width: 576px)
 @media screen and (min-width: 768px)
-    #preloader
-        .logo
-            display: none
+
 @media screen and (max-width: 768px)
     .premioContainer
         flex-direction: column
+
 @media screen and (max-width: 1300px)
     header
         text-align: left
