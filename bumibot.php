@@ -13,7 +13,7 @@
     <?php $pageSelected = 'bumibot';
     include_once './resources/includes/header.php' ?>
     <main>
-        <section class="video" style="overflow-y: hidden; height: 660px">
+        <!-- <section class="video" style="overflow-y: hidden; height: 660px">
             <div class="video">
                 <iframe style="object-fit:contain" src="https://www.youtube.com/embed/uHf_8AYcwLs?controls=0&autoplay=1&mute=1&rel=0&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fbumerania.com&widgetid=1" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen="1" id="widget2" width="640" height="360"></iframe>
             </div>
@@ -30,7 +30,7 @@
                     <div class="subtitle">El Robot Camarero</div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class='bg'>
             <article class="category">
                 <div class="content center" style='font-size:2em;font-style:italic;font-family:"Roboto"'>
