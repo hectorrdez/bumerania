@@ -40,6 +40,13 @@ $colorGreen: #67bda6
     transition: $time all ease
 
 /* All Animations */
+@keyframes appair-v
+    0%
+        opacity: 0%
+        transform: translateY(+50px)
+    100%
+        opacity: 100%
+        transform: translateY(0)
 
 @-webkit-keyframes appearMenu
   100% 
@@ -186,6 +193,36 @@ footer
                     &:hover
                         color: white
 
+/* Grid */
+.grid
+    display: flex
+    flex-wrap: wrap
+    .chip
+        min-width: 10em
+        width: 20%
+        text-align: center
+        padding: 1em
+        border: 5px solid rgba($colorGreen, 0)
+        @include transition()
+        align-items: flex-start
+        .img
+            width: 100%
+            border-radius: 20px
+            overflow: hidden
+            img
+                width: 100%
+        .name
+            font-weight: bold
+            font-size: 1em
+            color: $colorGreen
+            margin-top: .3em
+        .function
+            color: $colorBlack
+            font-style: italic
+            font-size: .7em
+            margin-top: .3em
+        &:hover
+            border-color: $colorGreen
 /* Header */
 header
     z-index: 2
@@ -377,6 +414,63 @@ main
                 right: 0
                 width: 100%
                 height: 100%
+        div.superposition
+            top: 30%
+            position: absolute
+            color: white
+            height: 100%
+            width: 100%
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                text-transform: uppercase
+                .title
+                    font-size: 10vw
+                    font-weight: bold
+                .subtitle
+                    margin-top: .5em
+                    font-size: 3em
+    section.portada
+        background: black
+        display: flex
+        justify-content: center
+        align-items: center
+        z-index: -1
+        position: relative
+        overflow: hidden
+        article.img
+            position: absolute
+            height: fit-content
+            position: relative
+            overflow: hidden
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            padding: 0
+            img
+                width: 100%
+        div.superposition
+            top: 30%
+            position: absolute
+            color: white
+            height: 100%
+            width: 100%
+            animation: appair-v 1s ease-in-out
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                text-transform: uppercase
+                .title
+                    font-size: 5vw
+                    font-weight: bold
+                .subtitle
+                    margin-top: .5em
+                    font-size: 3em
 
     article
         background-color: rgba(black , 0.7)
@@ -429,12 +523,31 @@ main
                 font-weight: 300
                 line-height: 2em
                 font-family: roboto
+
+        div.press
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            .pressVideo
+                padding: 1em
+                margin: 1em
+                background-color: white
+                border-radius: 1.5em
+
     article.white
         background-color: white
         display: flex
         font-family: roboto
         justify-content: center
         flex-wrap: wrap
+        div.partner
+            width: 100%
+            flex-wrap: wrap
+            display: flex
+            img
+                min-width: 12em
+                width: 20%
+
         div.image
             justify-content: center
             align-items: center
@@ -443,6 +556,16 @@ main
             max-width: 30%
             img
                 max-width: 100%
+        .content2
+            max-width: 70%
+            padding: 0 .5em
+            flex-wrap: wrap
+            min-width: 20em
+            .title
+                font-size: 3em
+                font-weight: bold
+                font-family: montserrat
+                text-align: center
         .content
             max-width: 30%
             padding: 0 .5em
@@ -458,6 +581,26 @@ main
                 width: 100%
                 display: flex
                 justify-content: center
+            .premioContainer
+                margin: 3em
+                width: 60%
+                display: flex
+                .premio
+                    flex-wrap: wrap
+                    display: flex
+                    min-width: 12em
+                    align-items: stretch
+                    div
+                        padding: 1em
+                        text-align: center
+                        flex-wrap: wrap
+                        display: flex
+                        color: #333
+                        font-size: 1em
+                        font-style: italic
+                        font-weight: 400
+                        line-height: 1.4
+                        font-family: muli
             .subtitle2
                 font-size: 1.5em
                 font-weight: bold
@@ -490,6 +633,51 @@ main
                         margin-top: 2em
                     &:hover
                         box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
+
+    .pageBumi
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%
+        .detailsBumi
+            display: flex
+            flex-wrap: wrap
+            width: 40%
+            .titleBumi
+                font-family: "Muli"
+                font-size: 2em
+                font-weight: 800
+                line-height: 2em
+                text-align: center
+            .descriptionBumi
+            .listBumi
+                ul
+                    li
+                        font-size: 2em
+                        list-style: none
+                        padding-left: 2rem
+                        background-image: url('/resources/icons/check-solid-green.png')
+                        background-position: 0 50%
+                        background-size: 1.3rem 1.3rem
+                        background-repeat: no-repeat
+        div
+            display: flex
+            flex-wrap: wrap
+            img
+                width: 30em
+        div.partner
+            width: 100%
+            flex-wrap: wrap
+            display: flex
+            img
+                min-width: 12em
+                width: 20%
+
+/* Page  Selected (Header) */
+.pageSelected
+    color: grey
+    &:hover
+        color: grey
 
 /* Preloader */
 #preloader
@@ -543,7 +731,26 @@ main
         &:hover
             opacity: 0.8
 
-    /* All @Media */
+/* Wrappers */
+.wrap2
+    display: flex
+    justify-content: space-around
+    .img
+        img
+            width: 100%
+        .footerImg
+            font-style: italic
+            text-align: center
+    .content
+        width: 50% !important
+        text-align: left !important
+        max-width: 50% !important
+        .title
+            text-align: left !important
+        .text
+            text-align: left !important
+
+/* All @Media */
 @media screen and(max-width: 576px)
 @media screen and(min-width: 576px)
 @media screen and (min-width: 768px)
@@ -582,11 +789,6 @@ main
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
 @media screen and(orientation: portrait)
-    header
-        // position: -webkit-sticky
-        position: fixed
-        top: 0
-        z-index: 100
     div.content
         width: 100%
     article.category

@@ -31,7 +31,38 @@
                 </div>
             </div>
         </section>
-
+        <section class='bg'>
+            <article class="category">
+                <div class="content center" style='font-size:2em;font-style:italic;font-family:"Roboto"'>
+                    Una experiencia gastronómica de valor
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="white">
+                <div class="pageBumi">
+                    <div class="detailsBumi">
+                        <div class="titleBumi">
+                            Diseño compacto y ligero que mejora su movilidad
+                        </div>
+                        <div class="descriptionBumi">
+                            Los robots camareros son una opción novedosa y eficiente para complementar a los profesionales del sector. Son ágiles, dinámicos e interactivos, preparados para seguir el ritmo de los procesos en un restaurante, bar o cafetería, incluso en espacios ajustados.
+                        </div>
+                        <div class="listBumi">
+                            <ul>
+                                <li>Gestión digital</li>
+                                <li>Visión SLAM</li>
+                                <li>Sistema inteligente para evitar obstáculos</li>
+                                <li>Opciones múltiples de promoción</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./resources/img/bumibot.jpg">
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
     <?php include_once './resources/includes/footer.php' ?>
 </body>
