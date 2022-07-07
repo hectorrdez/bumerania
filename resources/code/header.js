@@ -1,10 +1,10 @@
 const menuBtn = document.querySelectorAll(".menuBtn");
-const menu = document.querySelector("header nav");
-console.log(window.innerWidth);
+const headerNav = document.querySelector(".headerVertical nav");
+// console.log(window.innerWidth);
 for (let i = 0; i < menuBtn.length; i++) {
     menuBtn[i].addEventListener("click", () => {
-        menu.classList.toggle("active")
-        if (menu.classList.contains("active")) {
+        headerNav.classList.toggle("active")
+        if (headerNav.classList.contains("active")) {
             document.querySelector(".menuBtnTransparent").display = "block"
         } else {
             document.querySelector(".menuBtnTransparent").display = "none"
@@ -12,10 +12,9 @@ for (let i = 0; i < menuBtn.length; i++) {
     })
 }
 
-
-
 const category = document.querySelectorAll(".category");
 const categoryContent = document.querySelectorAll(".categoryContent");
+const categoryContainer = document.querySelectorAll(".categoryContainer");
 const productContainer = document.querySelectorAll(".products li");
 const products = document.querySelectorAll(".productName")
 const productContent = document.querySelector(".productContent");
@@ -25,54 +24,95 @@ const productContent = document.querySelector(".productContent");
 for (let i = 0; i < category.length; i++) {
     category[i].addEventListener('mouseover', () => {
         if (screen.orientation.type == "landscape-primary") {
-            if (window.innerWidth > 1300) {
-                if (categoryContent[i].innerHTML.includes("productName")) {
-                    categoryContent[i].style.display = "block";
-                } else {
-                    categoryContent[i].style.display = "flex";
 
-                }
+            if (categoryContent[i].innerHTML.includes("productName")) {
+                categoryContent[i].style.display = "block";
+            } else {
+                categoryContent[i].style.display = "flex";
+
             }
+
         }
 
     });
     category[i].addEventListener('mouseout', () => {
-        categoryContent[i].style.display = "none";
+        if (screen.orientation.type == "landscape-primary") {
+
+            categoryContent[i].style.display = "none";
+
+        }
     })
 }
 // // MOSTRAR LA IMAGEN DE PRODUCTO
 for (let i = 0; i < productContainer.length; i++) {
-    productContainer[i].addEventListener('mouseover', () => {
+    if (screen.orientation.type == "landscape-primary") {
 
-        const productContentIMG = document.querySelector(".productContentIMG");
+        productContainer[i].addEventListener('mouseover', () => {
 
-        switch (products[i].innerText) {
-            case "BumiBot":
-                productContentIMG.src = "http://localhost/resources/img/bumibot.png";
-                break
-            case "Temi":
-                productContentIMG.src = "http://localhost/resources/img/temi.jpg";
-                break
-            case "SmartTable":
-                productContentIMG.src = "http://localhost/resources/img/smarttable.png";
-                break
-            case "Ares":
-                productContentIMG.src = "http://localhost/resources/img/ares.png";
-                break
-        }
-        productContent.style.display = "block"
-        productContentIMG.addEventListener('mouseover', () => {
-            productContainer.style.display = "block"
+            const productContentIMG = document.querySelector(".productContentIMG");
+
+            switch (products[i].innerText) {
+                case "BumiBot":
+                    productContentIMG.src = "http://localhost/resources/img/bumibot.png";
+                    break
+                case "Temi":
+                    productContentIMG.src = "http://localhost/resources/img/temi.jpg";
+                    break
+                case "SmartTable":
+                    productContentIMG.src = "http://localhost/resources/img/smarttable.png";
+                    break
+                case "Ares":
+                    productContentIMG.src = "http://localhost/resources/img/ares.png";
+                    break
+            }
+            productContent.style.display = "block"
+            productContentIMG.addEventListener('mouseover', () => {
+                productContainer.style.display = "block"
+            })
+        });
+        productContainer[i].addEventListener('mouseout', () => {
+            productContent.style.display = "none"
         })
-    });
-    productContainer[i].addEventListener('mouseout', () => {
-        productContent.style.display = "none"
-    })
+
+    }
 }
 
+// BOTON GO TOP UP ARRIBA
 
 const btnUp = document.querySelector(".btnUp")
 
 btnUp.addEventListener("click", function () {
     window.scrollTo(0, 0)
 })
+
+// MENU DESPLEGABLE MODO MOVIL
+const categoryVertical = document.querySelectorAll(".categoryVertical")
+const categoryContainerVertical = document.querySelectorAll(".categoryContainerVertical")
+const categoryContentVertical = document.querySelectorAll(".categoryContentVertical")
+
+for (i = 0; i < categoryContainerVertical.length; i++) {
+    categoryContainerVertical[i].style.height = 0
+    console.log(categoryContainerVertical[0]);
+
+    if (i == 0) {
+        categoryVertical[i].addEventListener('click', () => {
+            if (categoryContainerVertical[0].style.height == "0px") {
+                categoryContainerVertical[0].style.height = "fit-content"
+                categoryContainerVertical[1].style.height = 0
+            } else {
+                categoryContainerVertical[0].style.height = 0
+            }
+        })
+    }
+    if (i == 1) {
+        categoryVertical[i].addEventListener('click', () => {
+            if (categoryContainerVertical[1].style.height == "0px") {
+                categoryContainerVertical[1].style.height = "fit-content"
+                categoryContainerVertical[0].style.height = 0
+            } else {
+                categoryContainerVertical[1].style.height = 0
+            }
+
+        })
+    }
+}

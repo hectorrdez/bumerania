@@ -21,7 +21,7 @@
     <main>
         <section class="video">
             <div class="video">
-                <iframe style="object-fit:contain" height="720px" width="1280px" src="https://www.youtube-nocookie.com/embed/abv6JRsCsv4?autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&mute=1&rel=0&showinfo=0&playlist=abv6JRsCsv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe>
+                <!-- <iframe style="object-fit:contain" height="720px" width="1280px" src="https://www.youtube-nocookie.com/embed/abv6JRsCsv4?autoplay=1&controls=0&disablekb=1&loop=1&modestbranding=1&mute=1&rel=0&showinfo=0&playlist=abv6JRsCsv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"></iframe> -->
             </div>
         </section>
         <section class='bg'>
@@ -215,18 +215,18 @@
                         </div>
                     </div>
                     <div class="swiper">
-                        // Additional required wrapper
+                        <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                            // Slides
+                            <!-- Slides -->
                             <div class="swiper-slide">Slide 1</div>
                             <div class="swiper-slide">Slide 2</div>
                             <div class="swiper-slide">Slide 3</div>
                             ...
                         </div>
-                        // If we need pagination
+                        <!-- If we need pagination -->
                         <div class="swiper-pagination"></div>
 
-                        // If we need navigation buttons
+                        <!-- If we need navigation buttons -->
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
@@ -267,7 +267,7 @@
                 </div>
             </article>
         </section>
-        <section class="bg">
+        <section class='bg'>
             <article class="category">
                 <div class="press center">
                     <div class='pressVideo'>
@@ -296,8 +296,6 @@
                     </div>
                 </div>
             </article>
-        </section>
-        <section class='bg'>
             <article class='category'>
                 <div class="title">PARTNERS
                     <div style="width: 30%;">
