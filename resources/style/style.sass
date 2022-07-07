@@ -461,6 +461,36 @@ hr.white
 main
     max-width: 100%
     min-height: 60em
+    section.header
+        position: relative
+        width: 100%
+        height: 35em
+        background-image: url(/resources/img/headerRSC.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        z-index: -1
+        .overlay
+            background-color: rgba(0,0,0,.44)
+            position: relative
+            height: 35em
+            .superposition
+                top: 15%
+                position: absolute
+                color: white
+                height: 100%
+                width: 100%
+                .title
+                    width: 100%
+                    text-align: center
+                    font-family: "Montserrat"
+                    font-size: 4.3em
+                    line-height: 1.3em
+                    font-weight: 800
+                    hr
+                        width: 20%
+                        margin-top: .1em
+                        height: .1em
     section.video
         background: black
         display: flex
@@ -661,6 +691,39 @@ main
         font-family: roboto
         justify-content: center
         flex-wrap: wrap
+        div.solidarity
+            .title
+                font-size: 2em
+                font-weight: 600
+                font-family: "Roboto"
+                line-height: 2.5em
+                span
+                    font-size: 1.4em
+                    color: $colorGreen
+                    font-family: "playfair-display"
+        .develope
+            padding: 0 20%
+            .title
+                font-weight: bolder
+                font-size: 2em
+                font-family: "Muli"
+                line-height: 2.3em
+            .subtitle
+                font-weight: bolder
+                font-size: 1em
+                font-family: "Roboto"
+                margin-bottom: 1em
+                color: #747474
+            .paragraph
+                color: #747474
+                font-size: 1em
+                margin-bottom: 1em
+                line-height: 1em
+                p
+                    font-family: "Roboto"
+                    margin-bottom: .9rem
+                    line-height: 1.7em
+
         div.partner
             width: 100%
             flex-wrap: wrap
