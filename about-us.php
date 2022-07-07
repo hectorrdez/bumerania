@@ -151,6 +151,13 @@
                             </a>
                         </div>
                         <div class="chip">
+                            <a href="https://www.linkedin.com/in/carlos-aragon%C3%A9s-soriano-6144611ba" target="_blank">
+                                <div class="img"><img src="./resources/img/286555747_708651543719740_3737559539732140398_n.jpg" alt=""></div>
+                                <div class="name">Carlos Aragonés Soriano</div>
+                                <div class="function">Tech Support Boss</div>
+                            </a>
+                        </div>
+                        <div class="chip">
                             <a href="https://www.linkedin.com/in/taianepaz/" target="_blank">
                                 <div class="img"><img src="https://media-exp2.licdn.com/dms/image/C5603AQGsqZcOddY2PA/profile-displayphoto-shrink_200_200/0/1591813150059?e=1662595200&v=beta&t=92578otZVO2v8b72bxQd46iJoE7i4_9EbNTeeBaeoLM" alt=""></div>
                                 <div class="name">Taiane Santos da Paz </div>
