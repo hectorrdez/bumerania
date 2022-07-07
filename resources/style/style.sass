@@ -431,7 +431,7 @@ main
                     font-weight: bold
                 .subtitle
                     margin-top: .5em
-                    font-size: 3em
+                    font-size: 3vw
     section.portada
         background: black
         display: flex
@@ -532,6 +532,17 @@ main
                 margin: 1em
                 background-color: white
                 border-radius: 1.5em
+    article.bumibotFeatures
+        display: flex
+        justify-content: center
+        .bumibotList
+            display: flex
+            margin-top: 5em
+            ul
+                list-style: none
+                li
+                    font-size: 1.5em
+                    line-height: 2em
     article.bumibot
         width: 100%
         text-align: center
@@ -554,6 +565,29 @@ main
             height: 495px
             width: 880px
             margin-top: 2em
+    article.form
+        background-color: rgb(244, 244, 244)
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        .title
+            color: black
+            font-family: "Muli"
+            font-size: 2em
+            font-weight: 800
+            line-height: 2.5em
+            width: 100%
+            text-align: center
+            margin-bottom: 2em
+            hr
+                width: 32%
+                margin-top: -.5em
+        iframe
+            border: 0
+            width: 50%
+            height: 45em
+        img
+            padding: 3em 0
     article.white
         background-color: white
         display: flex
@@ -600,6 +634,7 @@ main
                 margin: 5em
                 img
                     width: 580px
+                    border-radius: 2em
                 .bumibotInfo
                     width: 30%
                     margin: 0 2em
@@ -865,6 +900,117 @@ main
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
 @media screen and(orientation: portrait)
+    section.video
+        padding-top: 2em
+        height: 40% !important
+        div.superposition
+            top: 70% !important
+            position: absolute
+            color: white
+            height: 100%
+            width: 50% !important
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                text-transform: uppercase
+                .title
+                    font-size: 5vw !important
+                    font-weight: bold
+                .subtitle
+                    font-size: 10vw
+    article.bumibotFeatures
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        .bumibotList
+            margin: 0 !important
+            ul
+                padding: 1em !important
+                li
+                    font-size: 1em !important
+    article.form
+        width: 100% !important
+        .title
+            width: 80% !important
+            line-height: 1em !important
+            font-size: 1.5em !important
+            hr
+                margin-top: .5em !important
+                width: 80% !important
+        img
+            width: 50% !important
+        iframe
+            width: 90% !important
+    article.white
+        .pageBumi
+            .detailsBumi
+                width: 100%
+                .titleBumi
+                    width: 100%
+                .listBumi
+                    ul
+                        li
+                            font-size: 1.4em
+                            img
+                                width: 1em
+
+            img.bumibot
+                width: 75%
+                padding-left: 20%
+        .bumibotSkills
+            display: flex
+            hr
+                width: 50% !important
+            .bumibotHeader
+                display: flex
+                width: 100% !important
+                text-align: center !important
+                .title
+                    font-size: 1.8em !important
+                    line-height: 1.5em !important
+                    padding-bottom: 1em !important
+                .subtitle
+                    width: 100% !important
+                    padding: 0 1em !important
+            .bumibotParts
+                display: block !important
+                width: 100% !important
+                margin: 0 !important
+                .bumibotInfo
+                    width: 100% !important
+                    margin: 0 !important
+                    padding: 1em !important
+                    text-align: center
+                    .title
+                        width: 100% !important
+                        line-height: 1em !important
+                    .subtitle
+                        width: 100% !important
+                        ul
+                            margin-top: 0 !important
+                            li
+                                margin: 0 !important
+                                line-height: 1em !important
+                img
+                    width: 100% !important
+                    padding: 1em 1em !important
+    article.bumibot
+        .title
+            font-size: 1.3em !important
+            line-height: 1.5em !important
+            padding: 0 .5em
+        .subtitle
+            padding: 0 .5em
+            p
+                width: 100% !important
+                padding: 0 .5em
+        video
+            width: 100% !important
+            height: auto !important
+            margin: 0 !important
+
     div.content
         width: 100%
     article.category
@@ -880,6 +1026,8 @@ main
             padding-top: 1em
         .subtitle2
             width: 100%
+        .content
+            text-align: center
     .accordion
         flex-direction: column
         width: 100%
@@ -921,6 +1069,7 @@ main
                         height: 1em
                         filter: invert(1)
                         margin-right: 0.1em
+
 @media screen and (orientation: landscape)
     article.category
         padding: 5em 1em
