@@ -590,7 +590,6 @@ main
                 font-weight: 300
                 line-height: 2em
                 font-family: roboto
-
         div.press
             display: flex
             flex-wrap: wrap
@@ -600,9 +599,29 @@ main
                 margin: .5em
                 background-color: white
                 border-radius: 1.5em
-                iframe
-                    width: 100%
-                    height: 50%
+
+    article.bumibot
+        width: 100%
+        text-align: center
+        font-family: "Muli"
+        .title
+            width: 100%
+            color: white
+            font-size: 2em
+            font-weight: 800
+            line-height: 2.6em
+        .subtitle
+            width: 100%
+            color: white
+            display: flex
+            justify-content: center
+            p
+                width: 60%
+                font-size: 1em
+        video
+            height: 495px
+            width: 880px
+            margin-top: 2em
 
     article.white
         background-color: white
@@ -617,6 +636,55 @@ main
             img
                 min-width: 12em
                 width: 20%
+        .bumibotSkills
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: center
+            .bumibotHeader
+                display: flex
+                flex-wrap: wrap
+                width: 100%
+                justify-content: center
+                .title
+                    font-size: 2.8em
+                    font-weight: 800
+                    line-height: 3em
+                    font-family: 'Muli', roboto
+                    span
+                        color: $colorGreen
+                        font-style: italic
+                        font-family: "playfair-display"
+                .subtitle
+                    font-size: 1.1em
+                    font-weight: 400
+                    line-height: 1.5em
+                    width: 40%
+                    text-align: center
+                    font-family: "Roboto"
+            .bumibotParts
+                width: 100%
+                justify-content: center
+                display: flex
+                margin: 5em
+                img
+                    width: 580px
+                .bumibotInfo
+                    width: 30%
+                    margin: 0 2em
+                    .title
+                        font-family: "Muli"
+                        font-size: 2em
+                        font-weight: 800
+                        line-height: 2.5em
+
+                    .subtitle
+                        font-size: 1.2em
+                        ul
+                            list-style: none
+                            li
+                                margin-left: -2em
+                                line-height: 2em
 
         div.image
             justify-content: center
@@ -714,24 +782,31 @@ main
         .detailsBumi
             display: flex
             flex-wrap: wrap
-            width: 40%
+            width: 35%
             .titleBumi
                 font-family: "Muli"
                 font-size: 2em
                 font-weight: 800
                 line-height: 2em
                 text-align: center
+                margin-top: 2em
             .descriptionBumi
+                font-size: 1.1em
+                text-align: center
+                line-height: 2em
+                font-weight: 800
             .listBumi
                 ul
                     li
-                        font-size: 2em
+                        font-size: 1.7em
+                        line-height: 2em
+                        font-weight: 800
                         list-style: none
-                        padding-left: 2rem
-                        background-image: url('/resources/icons/check-solid-green.png')
-                        background-position: 0 50%
-                        background-size: 1.3rem 1.3rem
-                        background-repeat: no-repeat
+                        img
+                            width: 1.5em
+                            margin-bottom: -.5em
+                            margin-right: .5em
+                            filter: invert(67%) sepia(43%) saturate(522%) hue-rotate(110deg) brightness(88%) contrast(83%)
         div
             display: flex
             flex-wrap: wrap
