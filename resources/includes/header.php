@@ -1,6 +1,6 @@
 <header class="headerHorizontal">
     <div class="logo">
-        <a href="#"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
+        <a href="../index"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
     </div>
     <nav>
         <a class="menu" href="<?php if (!isset($basePath)) echo './';
@@ -74,7 +74,7 @@
 </header>
 <header class="headerVertical">
     <div class="logo">
-        <a href="#"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
+        <a href="../index"><img src="../resources/img/logo-blanco-cortado.png" alt="Bumerania logo" class="logo"></a>
     </div>
     <nav>
         <a class="menu" href="<?php if (!isset($basePath)) echo './';
