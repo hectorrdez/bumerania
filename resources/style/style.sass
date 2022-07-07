@@ -50,8 +50,8 @@ $colorGreen: #67bda6
 
 @-webkit-keyframes appearMenu
   100% 
-    -webkit-transform: translateX(0)
-    transform: translateX(0)
+    -webkit-transform: translateX(-5%)
+    transform: translateX(-5%)
 
   0% 
     -webkit-transform: translateX(-100%)
@@ -59,8 +59,8 @@ $colorGreen: #67bda6
 
 @keyframes appearMenu
     100%
-        -webkit-transform: translateX(0)
-        transform: translateX(0)
+        -webkit-transform: translateX(-5%)
+        transform: translateX(-5%)
 
     0%
         -webkit-transform: translateX(-100%)
@@ -287,6 +287,7 @@ header
             position: relative
             padding: 2em .5em
             @include transition
+            color: white
 
             .symbol
                 transform: rotate(90deg)
@@ -310,11 +311,8 @@ header
                         @include transition()
                         &:hover
                             color: $colorGreen
-
             &:hover
                 color: $colorGreen
-                .symbol
-                    transform: rotate(0deg)
 
             .us
                 display: none
@@ -329,6 +327,12 @@ header
                         height: 2em
                     &:hover
                         color: $colorGreen
+        .category
+            .productContent
+                display: none
+            &:hover
+                .symbol
+                    transform: rotate(0deg)
 
         .productContent
             display: none
@@ -624,7 +628,6 @@ main
             display: flex
             flex-wrap: wrap
             .pressVideo
-                width: 90vw
                 padding: 1em
                 margin: .5em
                 background-color: white
@@ -1003,9 +1006,14 @@ main
     .premioContainer
         flex-direction: column
 
+@media screen and (min-width: 1300px)
+    .headerVertical
+        display: none
 @media screen and (max-width: 1300px)
-    header
-        text-align: left
+    .headerHorizontal
+        display: none
+    .headerVertical
+        text-align: center
         justify-content: space-between
         padding: 0 1vw
         button
@@ -1016,18 +1024,13 @@ main
             flex-direction: column
             position: absolute
             top: 12vh
-            transform: translateX(-100%)
             width: fit-content
             height: fit-content
             background-color: $colorBlack
 
-            .category
-                &:hover
-                    .categoryContent
-                        display: none
         nav.active
             animation: appearMenu .4s ease-in-out
-            transform: translateX(0)
+            transform: translateX(-5%)
             display: flex
             position: absolute
             height: 100vh
@@ -1038,6 +1041,34 @@ main
             a
                 span
                     display: none
+
+            .categoryVertical
+                padding-bottom: 0
+                .categoryContainerVertical
+                    margin-top: .5em
+                    height: fit-content
+                    display: block
+                    border-top: 1px solid $colorBlack
+                    overflow: hidden
+                    .categoryContentVertical
+                        margin-top: 0
+                        margin-bottom: 0
+                        position: relative
+                        overflow: hidden
+                        display: flex
+                        flex-direction: column
+                        height: fit-content
+                        padding: 0
+                        li
+                            padding: 1em
+                            width: 10em
+                            text-align: center
+                            list-style: none
+                            text-align: left
+                            padding-left: 0
+                            a
+                                img
+                                    display: none
 
         .menuBtnContainer
             width: 100%
