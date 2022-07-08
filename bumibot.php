@@ -13,7 +13,7 @@
     <?php $pageSelected = 'bumibot';
     include_once './resources/includes/header.php' ?>
     <main>
-        <!-- <section class="video" style="overflow-y: hidden; height: 660px">
+        <section class="video" style="overflow-y: hidden; height: 660px">
             <div class="video">
                 <iframe style="object-fit:contain" src="https://www.youtube.com/embed/uHf_8AYcwLs?controls=0&autoplay=1&mute=1&rel=0&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fbumerania.com&widgetid=1" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen="1" id="widget2" width="640" height="360"></iframe>
             </div>
@@ -30,7 +30,7 @@
                     <div class="subtitle">El Robot Camarero</div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class='bg'>
             <article class="category">
                 <div class="content center" style='font-size:2em;font-style:italic;font-family:"Roboto"'>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <div>
-                        <img src="./resources/img/bumibot.png">
+                        <img src="./resources/img/bumibot.png" class='bumibot'>
                     </div>
                 </div>
             </article>
@@ -143,22 +143,72 @@
                         <img src='./resources/img/bumibot/4.jpg'>
                     </div>
                 </div>
-                <img src='./resources/img/bumibot/divisor.jpg'>
+                <img src='./resources/img/bumibot/divisor.jpg' style='width:100%'>
                 <div class="bumibotSkills">
                     <div class="bumibotHeader">
                         <div class="title">Versátil y fácil de usar</div>
                     </div>
+                    <hr class='green' style='width:25%;margin-top:-1.5em'>
                 </div>
                 <div class="bumibotSkills">
-                    <div class="bumibotHeader">
-                        <div class="title">Versátil y fácil de usar</div>
+                    <div class="bumibotParts">
+                        <img src='./resources/img/bumibot/5.jpg'>
+                        <div class="bumibotInfo">
+                            <div class='title'>Entrega estable y precisa</div>
+                            <div class='subtitle'>
+                                El robot camarero brinda un servicio de entrega estable a diferentes velocidades y se puede pausar al tocar su pantalla. El destino de entrega se puede cambiar y la comida se puede recoger durante la entrega. El robot también puede transmitir anuncios durante todo el tiempo de su recorrido
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bumibotParts">
+                        <div class="bumibotInfo">
+                            <div class='title' style='line-height:1.2em;margin-bottom:1em'>Modo crucero - accesible desde cualquier lugar</div>
+                            <div class='subtitle'>
+                                Se puede repartir o recoger comida en cada punto habilitado durante el recorrido. Al mismo tiempo también puede atraer nuevos clientes mostrando los anuncios.
+                            </div>
+                        </div>
+                        <img src='./resources/img/bumibot/6.jpg'>
                     </div>
                 </div>
-                <div class="bumibotSkills">
-                    <div class="bumibotHeader">
-                        <div class="title">Versátil y fácil de usar</div>
-                    </div>
+            </article>
+        </section>
+        <section class="bg">
+            <article class="bumibotFeatures">
+                <img src='./resources/img/bumibot.png'>
+                <div class="bumibotList">
+                    <ul>
+                        <li>DIMENSIONES</li>
+                        <li>PESO</li>
+                        <li>PESO QUE SOPORTA</li>
+                        <li>TIEMPO DE BATERÍA</li>
+                        <li>TIEMPO DE CARGA</li>
+                        <li>VELOCIDAD MÁXIMA</li>
+                        <li>GRADUALIDAD</li>
+                        <li>TAMAÑO DE PANTALLA</li>
+                        <li>SOPORTES DE RED</li>
+                    </ul>
+                    <ul>
+                        <li>526 x 493 x 1320 mm</li>
+                        <li>40 kG</li>
+                        <li>40 kG</li>
+                        <li>12-15 h</li>
+                        <li>3,5 h</li>
+                        <li>0,5-1,2 m/s</li>
+                        <li>5º</li>
+                        <li>10,1" 1080p</li>
+                        <li>4G-WIFI 2,4G/5G</li>
+                    </ul>
                 </div>
+            </article>
+        </section>
+        <section>
+            <article class="form">
+                <div class="title">
+                    Solicita un presupuesto personalizado
+                    <hr class='green'>
+                </div>
+                <img src='./resources/img/bumibot.png'>
+                <iframe src="https://forms.zohopublic.com/bumeran/form/BumiBotformlanding/formperma/ua9ed5sgDKy7EBVTvBcksB2GVDe1YEi7PSaFwzKuid8"></iframe>
             </article>
         </section>
     </main>

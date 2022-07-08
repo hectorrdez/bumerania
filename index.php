@@ -214,23 +214,19 @@
                             <hr class='green'>
                         </div>
                     </div>
-                    <div class="swiper">
-                        // Additional required wrapper
-                        <div class="swiper-wrapper">
-                            // Slides
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            ...
+                    <div class="center">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/amiFnZd8dD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></div>
+                                <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/VVudCFaO7f0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></div>
+                                <div class="swiper-slide"><iframe src="https://www.youtube.com/embed/hQrrNy7foA4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></iframe></div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
                         </div>
-                        // If we need pagination
-                        <div class="swiper-pagination"></div>
-
-                        // If we need navigation buttons
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     </div>
-
                 </div>
             </article>
         </section>
@@ -267,7 +263,7 @@
                 </div>
             </article>
         </section>
-        <section class="bg">
+        <section class='bg'>
             <article class="category">
                 <div class="press center">
                     <div class='pressVideo'>
@@ -296,8 +292,6 @@
                     </div>
                 </div>
             </article>
-        </section>
-        <section class='bg'>
             <article class='category'>
                 <div class="title">PARTNERS
                     <div style="width: 30%;">

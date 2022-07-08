@@ -50,8 +50,8 @@ $colorGreen: #67bda6
 
 @-webkit-keyframes appearMenu
   100% 
-    -webkit-transform: translateX(0)
-    transform: translateX(0)
+    -webkit-transform: translateX(-5%)
+    transform: translateX(-5%)
 
   0% 
     -webkit-transform: translateX(-100%)
@@ -59,8 +59,8 @@ $colorGreen: #67bda6
 
 @keyframes appearMenu
     100%
-        -webkit-transform: translateX(0)
-        transform: translateX(0)
+        -webkit-transform: translateX(-5%)
+        transform: translateX(-5%)
 
     0%
         -webkit-transform: translateX(-100%)
@@ -76,6 +76,11 @@ $colorGreen: #67bda6
     user-select: none
     -webkit-user-drag: none
     -webkit-user-select: none
+
+/* Scrollbar Firefox */
+*
+    scrollbar-width: thin
+    scrollbar-color: $colorGreen white
 
 /* width */
 ::-webkit-scrollbar
@@ -287,9 +292,10 @@ header
             position: relative
             padding: 2em .5em
             @include transition
+            color: white
 
             .symbol
-                transform: rotate(90deg)
+                transform: rotate(180deg)
                 height: .9em
                 filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
                 @include transition($time: .2s)
@@ -310,11 +316,8 @@ header
                         @include transition()
                         &:hover
                             color: $colorGreen
-
             &:hover
                 color: $colorGreen
-                .symbol
-                    transform: rotate(0deg)
 
             .us
                 display: none
@@ -329,6 +332,12 @@ header
                         height: 2em
                     &:hover
                         color: $colorGreen
+        .category
+            .productContent
+                display: none
+            &:hover
+                .symbol
+                    transform: rotate(0deg)
 
         .productContent
             display: none
@@ -461,6 +470,43 @@ hr.white
 main
     max-width: 100%
     min-height: 60em
+    section.header
+        position: relative
+        width: 100%
+        height: 35em
+        background-image: url(/resources/img/headerRSC.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        z-index: -1
+        .overlay
+            background-color: rgba(0,0,0,.44)
+            position: relative
+            height: 35em
+            .superposition
+                top: 15%
+                position: absolute
+                color: white
+                height: 100%
+                width: 100%
+                .title
+                    width: 100%
+                    text-align: center
+                    font-family: "Montserrat"
+                    font-size: 4.3em
+                    line-height: 1.3em
+                    font-weight: 800
+                    hr
+                        width: 20%
+                        margin-top: .1em
+                        height: .1em
+                .subtitle
+                    width: 100%
+                    text-align: center
+                    font-family: "Montserrat"
+                    font-size: 2em
+                    line-height: 1.3em
+                    font-weight: 800
     section.video
         background: black
         display: flex
@@ -498,7 +544,7 @@ main
                     font-weight: bold
                 .subtitle
                     margin-top: .5em
-                    font-size: 3em
+                    font-size: 3vw
     section.portada
         background: black
         display: flex
@@ -542,6 +588,57 @@ main
     article
         background-color: rgba(black , 0.7)
         padding: 2em 0
+    article.contact
+        display: flex
+        background-image: url(/resources/img/contactBG.jpg)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        div.formContact
+            text-align: center
+            width: 40%
+            margin-left: 15%
+            margin-top: 15em
+            .hello
+                font-size: 5em
+                font-weight: 800
+                line-height: 1em
+                font-family: "Muli"
+            .subHello
+                font-size: 1em
+                font-family: "Roboto"
+                font-weight: 800
+                line-height: 2.6em
+                text-transform: uppercase
+                letter-spacing: .5em
+            .mail
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: "Montserrat"
+                font-size: 1.2em
+                font-weight: 500
+                line-height: 3.1em
+                img
+                    width: 2em
+                    margin-right: .5em
+            .phone
+                display: flex
+                justify-content: center
+                align-items: center
+                font-family: "Montserrat"
+                font-size: 1.25em
+                font-weight: 500
+                line-height: 3.1em
+                color: #747474
+                img
+                    width: 1.5em
+                    margin-right: .5em
+            iframe
+                width: 600px
+                min-height: 737px
+                border: 0
+                background-color: none
     article.title
         text-align: center
         display: flex
@@ -594,12 +691,21 @@ main
             display: flex
             flex-wrap: wrap
             .pressVideo
-                width: 90vw
                 padding: 1em
                 margin: .5em
                 background-color: white
                 border-radius: 1.5em
-
+    article.bumibotFeatures
+        display: flex
+        justify-content: center
+        .bumibotList
+            display: flex
+            margin-top: 5em
+            ul
+                list-style: none
+                li
+                    font-size: 1.5em
+                    line-height: 2em
     article.bumibot
         width: 100%
         text-align: center
@@ -622,6 +728,73 @@ main
             height: 495px
             width: 880px
             margin-top: 2em
+    article.form
+        background-color: rgb(244, 244, 244)
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        .title
+            color: black
+            font-family: "Muli"
+            font-size: 2em
+            font-weight: 800
+            line-height: 2.5em
+            width: 100%
+            text-align: center
+            margin-bottom: 2em
+            hr
+                width: 32%
+                margin-top: -.5em
+        iframe
+            border: 0
+            width: 50%
+            height: 45em
+        img
+            padding: 3em 0
+    article.grey
+        background-color: #F7F8FB
+        display: flex
+        font-family: roboto
+        justify-content: center
+        flex-wrap: wrap
+        justify-content: center
+        div.title
+            text-align: center
+            color: $colorGreen
+            font-size: 2.5em
+            font-weight: 800
+        div.containerItems
+            padding: 5em 20em
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            justify-content: center
+            .items
+                border-left: 3px solid white
+                width: 45%
+                padding: 1.2em
+                margin: .5em
+                display: flex
+                background-color: white
+                .containerImg
+                    height: 100%
+                    img
+                        width: 3em
+                .containerText
+                    padding: 0 2em
+                    .titleItem
+                        font-size: 1.4em
+                        font-weight: 600
+                        line-height: 1.6em
+                    .subtitleItem
+                        color: #666666
+            .items:hover
+                border-left: 3px solid $colorGreen
+                transition: .4s
+                .titleItem
+                    color: $colorGreen
+                img
+                    filter: invert(74%) sepia(16%) saturate(847%) hue-rotate(113deg) brightness(89%) contrast(94%)
 
     article.white
         background-color: white
@@ -629,6 +802,111 @@ main
         font-family: roboto
         justify-content: center
         flex-wrap: wrap
+
+        .containerForm
+            width: 100%
+            padding: 0 20%
+            .subtitleForm
+                margin-bottom: .9em
+                font-size: 1em
+                color: #747474
+            iframe
+                border: 0
+                width: 100%
+                height: 182vh
+            p
+                font-weight: 800
+                font-size: 1.25em
+        .containerDistributors
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            width: 100%
+            padding: 5em 20em
+            .items
+                width: 25%
+                padding: 2em 2em
+                border-radius: 1em
+                img
+                    width: 100%
+            .items:hover
+                box-shadow: -30px 30px 60px 0px rgba(0, 0, 0, 0.07)
+        div.title
+            font-size: 2em
+            font-family: "Muli"
+            font-weight: 800
+            line-height: 1em
+            width: 100%
+            text-align: center
+            hr
+                width: 25%
+        div.paragraph
+            width: 100%
+            padding: 1em 15em
+            font-size: 1.5em
+            font-weight: 600
+            line-height: 2em
+            text-align: center
+            font-family: "Roboto"
+            span
+                color: $colorGreen
+                font-size: 1.8em
+                font-style: italic
+        div.zohoCRM
+            margin-top: 5em
+            img
+                width: 800px
+
+        .content
+            .center
+                .swiper
+                    width: 50%
+                    .swiper-wrapper
+                        .swiper-slide
+                            text-align: center
+                            iframe
+                                width: 560px
+                                height: 315px
+                    .swiper-button-prev
+                        filter: invert(100%) sepia(100%) saturate(300%) hue-rotate(113deg) brightness(150%) contrast(50%)
+
+                    .swiper-button-next
+                        filter: invert(100%) sepia(100%) saturate(300%) hue-rotate(113deg) brightness(150%) contrast(50%)
+
+
+        div.solidarity
+            .title
+                font-size: 2em
+                font-weight: 600
+                font-family: "Roboto"
+                line-height: 2.5em
+                span
+                    font-size: 1.4em
+                    color: $colorGreen
+                    font-family: "playfair-display"
+        .develope
+            padding: 0 20%
+            .title
+                font-weight: bolder
+                font-size: 2em
+                font-family: "Muli"
+                line-height: 2.3em
+            .subtitle
+                font-weight: bolder
+                font-size: 1em
+                font-family: "Roboto"
+                margin-bottom: 1em
+                color: #747474
+            .paragraph
+                color: #747474
+                font-size: 1em
+                margin-bottom: 1em
+                line-height: 1em
+                p
+                    font-family: "Roboto"
+                    margin-bottom: .9rem
+                    line-height: 1.7em
+
         div.partner
             width: 100%
             flex-wrap: wrap
@@ -669,6 +947,7 @@ main
                 margin: 5em
                 img
                     width: 580px
+                    border-radius: 2em
                 .bumibotInfo
                     width: 30%
                     margin: 0 2em
@@ -833,8 +1112,8 @@ main
     left: 0
     z-index: 100
     background-color: white
-    width: 100%
-    height: 100%
+    width: 100vw
+    height: 100vh
     display: flex
     justify-content: center
     align-items: center
@@ -909,11 +1188,22 @@ main
     .premioContainer
         flex-direction: column
 
+@media screen and (min-width: 1300px)
+    .headerVertical
+        display: none
 @media screen and (max-width: 1300px)
-    header
-        text-align: left
-        justify-content: space-between
-        padding: 0 1vw
+    .menuBtnTransparent
+        width: 150%
+        height: 150%
+        background-color: rgba($colorBlack, 0.5 )
+        z-index: 1
+        position: fixed
+        top: 0
+        left: 0
+        display: none
+    .headerHorizontal
+        display: none
+    .headerVertical
         button
             display: flex
             justify-content: center
@@ -922,40 +1212,275 @@ main
             flex-direction: column
             position: absolute
             top: 12vh
-            transform: translateX(-100%)
             width: fit-content
             height: fit-content
             background-color: $colorBlack
 
-            .category
-                &:hover
-                    .categoryContent
-                        display: none
         nav.active
             animation: appearMenu .4s ease-in-out
-            transform: translateX(0)
+            transform: translateX(-5%)
             display: flex
             position: absolute
             height: 100vh
             justify-content: start
+
             .menu
                 padding: 0
                 padding: 1em
+                .symbolVertical
+                    transform: rotate(180deg)
+                    height: .9em
+                    filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
+                    @include transition($time: .4s)
             a
                 span
                     display: none
 
-        .menuBtnContainer
+            .categoryVertical
+                padding-bottom: 0
+                .categoryContainerVertical
+                    margin-top: .5em
+                    height: fit-content
+                    display: block
+                    border-top: 1px solid $colorBlack
+                    overflow: hidden
+                    transition: .4s
+                    .categoryContentVertical
+                        margin-top: 0
+                        margin-bottom: 0
+                        position: relative
+                        overflow: hidden
+                        display: flex
+                        flex-direction: column
+                        height: fit-content
+                        padding: 0
+                        li
+                            padding: 1em
+                            width: 10em
+                            text-align: center
+                            list-style: none
+                            text-align: left
+                            padding-left: 0
+                            a
+                                img
+                                    display: none
+
+        .menuBtnContainerVertical
             width: 100%
             display: flex
-            justify-content: right
+            justify-content: center
+            padding: 0
 
     .languageBtn
         display: none
 @media screen and (min-width: 992px)
 @media screen and (min-width: 1200px)
 @media screen and (min-width: 1400px)
-@media screen and (orientation: portrait)
+@media screen and(orientation: portrait)
+    section.header
+        .overlay
+            width: 100%, !important
+            .superposition
+                .title
+                    font-size: 2em!important
+                .subtitle
+                    font-size: 1em!important
+    section.video
+        padding-top: 2em
+        height: 40% !important
+        div.superposition
+            top: 70% !important
+            position: absolute
+            color: white
+            height: 100%
+            width: 50% !important
+            .content
+                display: flex
+                flex-direction: column
+                justify-content: center
+                text-align: center
+                text-transform: uppercase
+                .title
+                    font-size: 5vw !important
+                    font-weight: bold
+                .subtitle
+                    font-size: 10vw
+    article.contact
+        .formContact
+            margin-top: 3em !important
+            margin-left: 0 !important
+            width: 100% !important
+            .hello
+                font-size: 2.5em !important
+            .subHello
+                font-size: .8em !important
+                letter-spacing: .2em !important
+            .title
+                hr
+                    height: .3em !important
+                    margin-top: 1em !important
+                    width: 40% !important
+            iframe
+                width: 90% !important
+                height: 800px !important
+
+    article.bumibotFeatures
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        .bumibotList
+            margin: 0 !important
+            ul
+                padding: 1em !important
+                li
+                    font-size: 1em !important
+    article.form
+        width: 100% !important
+        .title
+            width: 80% !important
+            line-height: 1em !important
+            font-size: 1.5em !important
+            hr
+                margin-top: .5em !important
+                width: 80% !important
+        img
+            width: 50% !important
+        iframe
+            width: 90% !important
+    article.grey
+        div.title
+            font-size: 1.5em !important
+
+        div.containerItems
+            padding: 1em 0 !important
+            display: flex !important
+            flex-wrap: wrap !important
+            .items
+                width: 90% !important
+                padding: 1em !important
+                margin: 1em 0 !important
+                .containerText
+                    padding: 1em !important
+    article.white
+        .containerForm
+            padding: 0 1em !important
+        .containerDistributors
+            width: 100% !important
+            display: flex
+            padding: 0 !important
+            justify-content: center !important
+            .items
+                display: flex
+                width: 100% !important
+                justify-content: center !important
+                padding: 0 !important
+
+                img
+                    width: 80% !important
+        .paragraph
+            padding: 1em !important
+        .zohoCRM
+            display: flex !important
+            flex-wrap: wrap !important
+            justify-content: center !important
+            img
+                width: 100% !important
+        div.solidarity
+            justify-content: center
+            .title
+                text-align: center !important
+                font-size: 1.5em !important
+            img
+                width: 100% !important
+                padding-bottom: 1em !important
+        .develope
+            padding: 0 1em !important
+            .title
+                font-size: 1.4em !important
+                line-height: 1.5em !important
+
+            width: 100% !important
+            height: 110vh !important
+    article.white
+        .content
+            .center
+                .swiper
+                    width: 100% !important
+                    .swiper-wrapper
+                        .swiper-slide
+                            text-align: center
+                            iframe
+                                width: 85vw
+                                height: 50vh
+
+
+        .pageBumi
+            .detailsBumi
+                width: 100%
+                .titleBumi
+                    width: 100%
+                .listBumi
+                    ul
+                        li
+                            font-size: 1.4em
+                            img
+                                width: 1em
+
+            img.bumibot
+                width: 75%
+                padding-left: 20%
+        .bumibotSkills
+            display: flex
+            hr
+                width: 50% !important
+            .bumibotHeader
+                display: flex
+                width: 100% !important
+                text-align: center !important
+                .title
+                    font-size: 1.8em !important
+                    line-height: 1.5em !important
+                    padding-bottom: 1em !important
+                .subtitle
+                    width: 100% !important
+                    padding: 0 1em !important
+            .bumibotParts
+                display: block !important
+                width: 100% !important
+                margin: 0 !important
+                .bumibotInfo
+                    width: 100% !important
+                    margin: 0 !important
+                    padding: 1em !important
+                    text-align: center
+                    .title
+                        width: 100% !important
+                        line-height: 1em !important
+                    .subtitle
+                        width: 100% !important
+                        ul
+                            margin-top: 0 !important
+                            li
+                                margin: 0 !important
+                                line-height: 1em !important
+                img
+                    width: 100% !important
+                    padding: 1em 1em !important
+    article.bumibot
+        .title
+            font-size: 1.3em !important
+            line-height: 1.5em !important
+            padding: 0 .5em
+        .subtitle
+            padding: 0 .5em
+            p
+                width: 100% !important
+                padding: 0 .5em
+        video
+            width: 100% !important
+            height: auto !important
+            margin: 0 !important
+
     div.content
         width: 100%
     article.category
@@ -971,6 +1496,8 @@ main
             padding-top: 1em
         .subtitle2
             width: 100%
+        .content
+            text-align: center
     .accordion
         flex-direction: column
         width: 100%
@@ -1012,6 +1539,7 @@ main
                         height: 1em
                         filter: invert(1)
                         margin-right: 0.1em
+
 @media screen and (orientation: landscape)
     article.category
         padding: 5em 1em
