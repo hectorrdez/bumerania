@@ -6,7 +6,7 @@
         <a class="menu" href="<?php if (!isset($basePath)) echo './';
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'style="color:grey"' ?>>INICIO</a>
         <div class="category menu" <?php if (isset($pageSelected) && ($pageSelected == 'solutions' || $pageSelected == 'bumibot' || $pageSelected == 'temi' || $pageSelected == 'smartTable' || $pageSelected == 'ares')) echo 'style="color:grey"' ?>>SOLUCIONES
-            <img class="symbol" src="../resources/icons/caret-down-solid.svg">
+            <img class="symbol" src="../resources/icons/angle-down-solid.svg">
             <div class="categoryContainer">
                 <ul class="categoryContent products">
                     <li class="product">
@@ -26,7 +26,7 @@
             <div class="productContent"><img class='productContentIMG' src=''></div>
         </div>
         <div class="category menu" <?php if (isset($pageSelected) && ($pageSelected == 'aboutUs' || $pageSelected == 'solidarity' || $pageSelected == 'successCases' || $pageSelected == 'workWithUs')) echo 'style="color:grey"' ?>>NOSOTROS
-            <img class="symbol" src="../resources/icons/caret-down-solid.svg">
+            <img class="symbol" src="../resources/icons/angle-down-solid.svg">
             <div class="categoryContainer">
                 <ul class="categoryContent us">
                     <li class="linkUs">
@@ -65,10 +65,10 @@
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
         <a class="menu" href="<?php if (!isset($basePath)) echo './contact';
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
-        <a class="menu" href="https://blog.bumerania.com/" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
+        <a class="menu" href="https://blog.bumerania.com/" target="_blank" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
         <a class="menu" href="<?php if (!isset($basePath)) echo './distributor';
-                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
-        <a class="menu" href="https://bumeran.zohodesk.com/portal/es/home" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/angle-down-solid.svg"></span></a>
+        <a class="menu" href="https://bumeran.zohodesk.com/portal/es/home" target="_blank" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
     </nav>
 
     <div class="menuBtnContainer"><button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt="Menu"></button></div>
@@ -82,7 +82,7 @@
         <a class="menu" href="<?php if (!isset($basePath)) echo './';
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'style="color:grey"' ?>>INICIO</a>
         <div class="categoryVertical menu" <?php if (isset($pageSelected) && ($pageSelected == 'solutions' || $pageSelected == 'bumibot' || $pageSelected == 'temi' || $pageSelected == 'smartTable' || $pageSelected == 'ares')) echo 'style="color:grey"' ?>>SOLUCIONES
-            <img class="symbolVertical" src="../resources/icons/caret-down-solid.svg">
+            <img class="symbolVertical" src="../resources/icons/angle-down-solid.svg">
             <div class="categoryContainerVertical">
                 <ul class="categoryContentVertical products">
                     <li class="product">
@@ -102,7 +102,7 @@
             <div class="productContent"><img class='productContentIMG' src=''></div>
         </div>
         <div class="categoryVertical menu" <?php if (isset($pageSelected) && ($pageSelected == 'aboutUs' || $pageSelected == 'solidarity' || $pageSelected == 'successCases' || $pageSelected == 'workWithUs')) echo 'style="color:grey"' ?>>NOSOTROS
-            <img class="symbolVertical" src="../resources/icons/caret-down-solid.svg">
+            <img class="symbolVertical" src="../resources/icons/angle-down-solid.svg">
             <div class="categoryContainerVertical">
                 <ul class="categoryContentVertical us">
                     <li class="linkUs">
@@ -141,10 +141,10 @@
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
         <a class="menu" href="<?php if (!isset($basePath)) echo './contact';
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
-        <a class="menu" href="https://blog.bumerania.com/" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
+        <a class="menu" href="https://blog.bumerania.com/" target="_blank" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
         <a class="menu" href="<?php if (!isset($basePath)) echo './distributor';
-                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
-        <a class="menu" href="https://bumeran.zohodesk.com/portal/es/home" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/angle-down-solid.svg"></span></a>
+        <a class="menu" href="https://bumeran.zohodesk.com/portal/es/home" target="_blank" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
     </nav>
 
     <div class="menuBtnContainerVertical"><button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt="Menu"></button></div>
