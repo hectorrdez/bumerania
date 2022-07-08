@@ -61,15 +61,17 @@
                 </ul>
             </div>
         </div>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
+        <a class="menu" href="<?php if (!isset($basePath)) echo './press';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
+        <a class="menu" href="<?php if (!isset($basePath)) echo './contact';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
+        <a class="menu" href="https://blog.bumerania.com/" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
+        <a class="menu" href="<?php if (!isset($basePath)) echo './distributor';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
+        <a class="menu" href="https://bumeran.zohodesk.com/portal/es/home" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
     </nav>
 
     <div class="menuBtnContainer"><button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt="Menu"></button></div>
-    <div class="menuBtn menuBtnTransparent"></div>
     <a href="#"><img src="../resources/icons/earth-africa-solid.svg" class="languageBtn"></a>
 </header>
 <header class="headerVertical">
@@ -80,7 +82,7 @@
         <a class="menu" href="<?php if (!isset($basePath)) echo './';
                                 else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'index') echo 'style="color:grey"' ?>>INICIO</a>
         <div class="categoryVertical menu" <?php if (isset($pageSelected) && ($pageSelected == 'solutions' || $pageSelected == 'bumibot' || $pageSelected == 'temi' || $pageSelected == 'smartTable' || $pageSelected == 'ares')) echo 'style="color:grey"' ?>>SOLUCIONES
-            <img class="symbol" src="../resources/icons/caret-down-solid.svg">
+            <img class="symbolVertical" src="../resources/icons/caret-down-solid.svg">
             <div class="categoryContainerVertical">
                 <ul class="categoryContentVertical products">
                     <li class="product">
@@ -100,7 +102,7 @@
             <div class="productContent"><img class='productContentIMG' src=''></div>
         </div>
         <div class="categoryVertical menu" <?php if (isset($pageSelected) && ($pageSelected == 'aboutUs' || $pageSelected == 'solidarity' || $pageSelected == 'successCases' || $pageSelected == 'workWithUs')) echo 'style="color:grey"' ?>>NOSOTROS
-            <img class="symbol" src="../resources/icons/caret-down-solid.svg">
+            <img class="symbolVertical" src="../resources/icons/caret-down-solid.svg">
             <div class="categoryContainerVertical">
                 <ul class="categoryContentVertical us">
                     <li class="linkUs">
@@ -135,17 +137,21 @@
                 </ul>
             </div>
         </div>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
-        <a class="menu" href="#" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
+        <a class="menu" href="<?php if (!isset($basePath)) echo './press';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'press') echo 'style="color:grey"' ?>>SALA DE PRENSA</a>
+        <a class="menu" href="<?php if (!isset($basePath)) echo './contact';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'contact') echo 'style="color:grey"' ?>>CONTACTO</a>
+        <a class="menu" href="https://blog.bumerania.com/" <?php if (isset($pageSelected) && $pageSelected == 'blog') echo 'style="color:grey"' ?>>BLOG</a>
+        <a class="menu" href="<?php if (!isset($basePath)) echo './distributor';
+                                else echo $basePath ?>" <?php if (isset($pageSelected) && $pageSelected == 'distributor') echo 'style="color:grey"' ?>>DISTRIBUIDOR<span>únete<img src="../resources/icons/caret-down-solid.svg"></span></a>
+        <a class="menu" href="https://bumeran.zohodesk.com/portal/es/home" <?php if (isset($pageSelected) && $pageSelected == 'support') echo 'style="color:grey"' ?>>SOPORTE 24/7</a>
     </nav>
 
-    <div class="menuBtnContainer"><button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt="Menu"></button></div>
-    <div class="menuBtn menuBtnTransparent"></div>
+    <div class="menuBtnContainerVertical"><button class="menuBtn"><img src="./resources/icons/bars-solid.svg" alt="Menu"></button></div>
     <a href="#"><img src="../resources/icons/earth-africa-solid.svg" class="languageBtn"></a>
 </header>
+
+<div class="menuBtn menuBtnTransparent"></div>
 
 <button class="btnUp"><img src="./resources/icons/chevron-up-solid.svg" alt="Up"></button>
 <script src="<?php if (!isset($basePath)) echo './resources/code/header.js';

@@ -290,7 +290,7 @@ header
             color: white
 
             .symbol
-                transform: rotate(90deg)
+                transform: rotate(180deg)
                 height: .9em
                 filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
                 @include transition($time: .2s)
@@ -694,6 +694,22 @@ main
         font-family: roboto
         justify-content: center
         flex-wrap: wrap
+        .content
+            .center
+                .swiper
+                    width: 50%
+                    .swiper-wrapper
+                        .swiper-slide
+                            text-align: center
+                            iframe
+                                width: 560px
+                                height: 315px
+                    .swiper-button-prev
+                        filter: invert(100%) sepia(100%) saturate(300%) hue-rotate(113deg) brightness(150%) contrast(50%)
+
+                    .swiper-button-next
+                        filter: invert(100%) sepia(100%) saturate(300%) hue-rotate(113deg) brightness(150%) contrast(50%)
+
         div.solidarity
             .title
                 font-size: 2em
@@ -932,8 +948,8 @@ main
     left: 0
     z-index: 100
     background-color: white
-    width: 100%
-    height: 100%
+    width: 100vw
+    height: 100vh
     display: flex
     justify-content: center
     align-items: center
@@ -1012,12 +1028,18 @@ main
     .headerVertical
         display: none
 @media screen and (max-width: 1300px)
+    .menuBtnTransparent
+        width: 150%
+        height: 150%
+        background-color: rgba($colorBlack, 0.5 )
+        z-index: 1
+        position: fixed
+        top: 0
+        left: 0
+        display: none
     .headerHorizontal
         display: none
     .headerVertical
-        text-align: center
-        justify-content: space-between
-        padding: 0 1vw
         button
             display: flex
             justify-content: center
@@ -1037,9 +1059,15 @@ main
             position: absolute
             height: 100vh
             justify-content: start
+
             .menu
                 padding: 0
                 padding: 1em
+                .symbolVertical
+                    transform: rotate(180deg)
+                    height: .9em
+                    filter: invert(77%) sepia(7%) saturate(2138%) hue-rotate(114deg) brightness(88%) contrast(87%)
+                    @include transition($time: .4s)
             a
                 span
                     display: none
@@ -1052,6 +1080,7 @@ main
                     display: block
                     border-top: 1px solid $colorBlack
                     overflow: hidden
+                    transition: .4s
                     .categoryContentVertical
                         margin-top: 0
                         margin-bottom: 0
@@ -1072,10 +1101,11 @@ main
                                 img
                                     display: none
 
-        .menuBtnContainer
+        .menuBtnContainerVertical
             width: 100%
             display: flex
-            justify-content: right
+            justify-content: center
+            padding: 0
 
     .languageBtn
         display: none
@@ -1125,8 +1155,20 @@ main
         img
             width: 50% !important
         iframe
-            width: 90% !important
+            width: 100% !important
+            height: 110vh !important
     article.white
+        .content
+            .center
+                .swiper
+                    width: 100% !important
+                    .swiper-wrapper
+                        .swiper-slide
+                            text-align: center
+                            iframe
+                                width: 85vw
+                                height: 50vh
+
         .pageBumi
             .detailsBumi
                 width: 100%
