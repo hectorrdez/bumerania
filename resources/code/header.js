@@ -1,13 +1,12 @@
 const menuBtn = document.querySelectorAll(".menuBtn");
 const headerNav = document.querySelector(".headerVertical nav");
-// console.log(window.innerWidth);
 for (let i = 0; i < menuBtn.length; i++) {
     menuBtn[i].addEventListener("click", () => {
         headerNav.classList.toggle("active")
         if (headerNav.classList.contains("active")) {
-            document.querySelector(".menuBtnTransparent").display = "block"
+            document.querySelector(".menuBtnTransparent").style.display = "block"
         } else {
-            document.querySelector(".menuBtnTransparent").display = "none"
+            document.querySelector(".menuBtnTransparent").style.display = "none"
         }
     })
 }
@@ -86,22 +85,31 @@ btnUp.addEventListener("click", function () {
 })
 
 // MENU DESPLEGABLE MODO MOVIL
+
 const categoryVertical = document.querySelectorAll(".categoryVertical")
 const categoryContainerVertical = document.querySelectorAll(".categoryContainerVertical")
 const categoryContentVertical = document.querySelectorAll(".categoryContentVertical")
+const imgCategory = document.querySelectorAll(".symbolVertical")
 
 for (i = 0; i < categoryContainerVertical.length; i++) {
     categoryContainerVertical[i].style.height = 0
-    console.log(categoryContainerVertical[0]);
 
     if (i == 0) {
         categoryVertical[i].addEventListener('click', () => {
             if (categoryContainerVertical[0].style.height == "0px") {
                 categoryContainerVertical[0].style.height = "fit-content"
                 categoryContainerVertical[1].style.height = 0
+
             } else {
                 categoryContainerVertical[0].style.height = 0
             }
+            if (imgCategory[0].style.transform == "rotate(0deg)") {
+                imgCategory[0].style.transform = "rotate(180deg)"
+            } else {
+                imgCategory[0].style.transform = "rotate(0deg)"
+            }
+            imgCategory[1].style.transform = "rotate(180deg)"
+
         })
     }
     if (i == 1) {
@@ -113,6 +121,17 @@ for (i = 0; i < categoryContainerVertical.length; i++) {
                 categoryContainerVertical[1].style.height = 0
             }
 
+            if (imgCategory[1].style.transform == "rotate(0deg)") {
+                imgCategory[1].style.transform = "rotate(180deg)"
+            } else {
+                imgCategory[1].style.transform = "rotate(0deg)"
+            }
+            imgCategory[0].style.transform = "rotate(180deg)"
+
         })
     }
 }
+
+
+// DIV PARA OCULTAR MENU DESPLEGABLE MOVIL
+
