@@ -104,28 +104,28 @@
                     <img src="/resources/img/acordeon/acordeon1.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon1.svg">HOSTELERÍA<br>
-                        <button onclick="window.open('#','_blank')">Más información</button>
+                        <button onclick="window.open('./bumibot','_self')">Más información</button>
                     </div>
                 </div>
                 <div class=" box">
                     <img src="/resources/img/acordeon/acordeon2.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon2.svg">RESTAURACIÓN<br>
-                        <button onclick="window.open('#','_blank')">Más información</button>
+                        <button onclick="window.open('./bumibot','_self')">Más información</button>
                     </div>
                 </div>
                 <div class="box">
                     <img src="/resources/img/acordeon/acordeon3.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon3.svg">SALUD <br>
-                        <button onclick="window.open('#','_blank')">Más información</button>
+                        <button onclick="window.open('./temi','_self')">Más información</button>
                     </div>
                 </div>
                 <div class="box">
                     <img src="/resources/img/acordeon/acordeon4.jpg">
                     <div class="content">
                         <img src="/resources/img/acordeon/acordeon4.svg">SEGURIDAD<br>
-                        <button onclick="window.open('#','_blank')">Más información</button>
+                        <button onclick="window.open('./ares','_self')">Más información</button>
                     </div>
                 </div>
             </div>
